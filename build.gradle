@@ -1,5 +1,6 @@
 apply plugin: 'java'
 apply plugin: 'com.google.protobuf'
+apply plugin: 'idea'
 
 repositories {
     mavenCentral()
@@ -22,22 +23,30 @@ dependencies{
     compile group: 'io.grpc', name: 'grpc-netty-shaded', version: '1.19.0'
     compile group: 'io.grpc', name: 'grpc-protobuf', version: '1.19.0'
     compile group: 'io.grpc', name: 'grpc-stub', version: '1.19.0'
+    compile group: 'com.google.protobuf', name: 'protobuf-java', version: '3.0.0'
 
     testCompile 'junit:junit:4.12'
+
 }
 
 
 //Advantage of pre-compiled protoc, which is published on Maven Central
-protobuf{
+protobuf {
     protoc {
-        artifact = 'com.google.protobuf:protoc:3.2.0'
-        //path = '/usr/local/bin/protoc'
+        artifact = "com.google.protobuf:protoc:3.7.0"
     }
-
+    plugins {
+        grpc {
+            artifact = 'io.grpc:protoc-gen-grpc-java:1.19.0'
+        }
+    }
     generateProtoTasks {
         all()*.plugins {
             grpc {}
         }
     }
 }
+
+
+
 
