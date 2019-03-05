@@ -29,7 +29,6 @@ dependencies{
 
 }
 
-
 //Advantage of pre-compiled protoc, which is published on Maven Central
 protobuf {
     protoc {
@@ -40,10 +39,38 @@ protobuf {
             artifact = 'io.grpc:protoc-gen-grpc-java:1.19.0'
         }
     }
+
+    generatedFilesBaseDir = "$projectDir/generated/"
+
     generateProtoTasks {
         all()*.plugins {
             grpc {}
         }
+    }
+}
+
+//src/main/java/virtual/exhibition/MultiUser/Synchronizer
+sourceSets {
+    main {
+        java {
+            srcDir 'src/main/java'
+        }
+        
+        proto {
+            srcDir 'src/main/proto'
+        }
+        
+
+        resources {
+            srcDir 'src/main/resources'
+        }
+    }
+
+    test {
+        java {
+            srcDir 'src/test/java'
+        }
+
     }
 }
 
