@@ -5,11 +5,11 @@ import io.grpc.ServerBuilder;
 
 import java.io.IOException;
 
-public class MyGrpcServer {
+public class VREPServer {
 
     public static void main(String[] args) throws IOException, InterruptedException{
 
-        Server server = ServerBuilder.forPort(8080).addService(new GreetingServiceImpl()).build();
+        Server server = ServerBuilder.forPort(8080).addService().build();
 
         server.start();
 
