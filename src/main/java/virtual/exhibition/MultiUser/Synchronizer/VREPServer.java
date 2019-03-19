@@ -9,7 +9,7 @@ public class VREPServer {
 
     public static void main(String[] args) throws IOException, InterruptedException{
 
-        Server server = ServerBuilder.forPort(8080).addService().build();
+        Server server = ServerBuilder.forPort(8080).addService(new MultiUserSyncImpl()).build();
 
         server.start();
 
