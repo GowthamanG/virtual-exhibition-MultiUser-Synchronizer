@@ -24,43 +24,43 @@ public final class MultiUserSync {
     int getId();
 
     /**
-     * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerPosition playerPosition = 2;</code>
+     * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerPosition = 2;</code>
      */
     boolean hasPlayerPosition();
     /**
-     * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerPosition playerPosition = 2;</code>
+     * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerPosition = 2;</code>
      */
-    virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition getPlayerPosition();
+    virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector getPlayerPosition();
     /**
-     * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerPosition playerPosition = 2;</code>
+     * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerPosition = 2;</code>
      */
-    virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPositionOrBuilder getPlayerPositionOrBuilder();
+    virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.VectorOrBuilder getPlayerPositionOrBuilder();
 
     /**
-     * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerRotation playerRotation = 3;</code>
+     * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerRotation = 3;</code>
      */
     boolean hasPlayerRotation();
     /**
-     * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerRotation playerRotation = 3;</code>
+     * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerRotation = 3;</code>
      */
-    virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation getPlayerRotation();
+    virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector getPlayerRotation();
     /**
-     * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerRotation playerRotation = 3;</code>
+     * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerRotation = 3;</code>
      */
-    virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotationOrBuilder getPlayerRotationOrBuilder();
+    virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.VectorOrBuilder getPlayerRotationOrBuilder();
 
     /**
-     * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerScale playerScale = 4;</code>
+     * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerScale = 4;</code>
      */
     boolean hasPlayerScale();
     /**
-     * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerScale playerScale = 4;</code>
+     * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerScale = 4;</code>
      */
-    virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale getPlayerScale();
+    virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector getPlayerScale();
     /**
-     * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerScale playerScale = 4;</code>
+     * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerScale = 4;</code>
      */
-    virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScaleOrBuilder getPlayerScaleOrBuilder();
+    virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.VectorOrBuilder getPlayerScaleOrBuilder();
   }
   /**
    * Protobuf type {@code virtual.exhibition.MultiUser.Synchronizer.Player}
@@ -107,11 +107,11 @@ public final class MultiUserSync {
               break;
             }
             case 18: {
-              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition.Builder subBuilder = null;
+              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.Builder subBuilder = null;
               if (playerPosition_ != null) {
                 subBuilder = playerPosition_.toBuilder();
               }
-              playerPosition_ = input.readMessage(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition.parser(), extensionRegistry);
+              playerPosition_ = input.readMessage(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(playerPosition_);
                 playerPosition_ = subBuilder.buildPartial();
@@ -120,11 +120,11 @@ public final class MultiUserSync {
               break;
             }
             case 26: {
-              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation.Builder subBuilder = null;
+              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.Builder subBuilder = null;
               if (playerRotation_ != null) {
                 subBuilder = playerRotation_.toBuilder();
               }
-              playerRotation_ = input.readMessage(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation.parser(), extensionRegistry);
+              playerRotation_ = input.readMessage(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(playerRotation_);
                 playerRotation_ = subBuilder.buildPartial();
@@ -133,11 +133,11 @@ public final class MultiUserSync {
               break;
             }
             case 34: {
-              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale.Builder subBuilder = null;
+              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.Builder subBuilder = null;
               if (playerScale_ != null) {
                 subBuilder = playerScale_.toBuilder();
               }
-              playerScale_ = input.readMessage(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale.parser(), extensionRegistry);
+              playerScale_ = input.readMessage(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(playerScale_);
                 playerScale_ = subBuilder.buildPartial();
@@ -187,65 +187,65 @@ public final class MultiUserSync {
     }
 
     public static final int PLAYERPOSITION_FIELD_NUMBER = 2;
-    private virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition playerPosition_;
+    private virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector playerPosition_;
     /**
-     * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerPosition playerPosition = 2;</code>
+     * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerPosition = 2;</code>
      */
     public boolean hasPlayerPosition() {
       return playerPosition_ != null;
     }
     /**
-     * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerPosition playerPosition = 2;</code>
+     * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerPosition = 2;</code>
      */
-    public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition getPlayerPosition() {
-      return playerPosition_ == null ? virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition.getDefaultInstance() : playerPosition_;
+    public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector getPlayerPosition() {
+      return playerPosition_ == null ? virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.getDefaultInstance() : playerPosition_;
     }
     /**
-     * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerPosition playerPosition = 2;</code>
+     * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerPosition = 2;</code>
      */
-    public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPositionOrBuilder getPlayerPositionOrBuilder() {
+    public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.VectorOrBuilder getPlayerPositionOrBuilder() {
       return getPlayerPosition();
     }
 
     public static final int PLAYERROTATION_FIELD_NUMBER = 3;
-    private virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation playerRotation_;
+    private virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector playerRotation_;
     /**
-     * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerRotation playerRotation = 3;</code>
+     * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerRotation = 3;</code>
      */
     public boolean hasPlayerRotation() {
       return playerRotation_ != null;
     }
     /**
-     * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerRotation playerRotation = 3;</code>
+     * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerRotation = 3;</code>
      */
-    public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation getPlayerRotation() {
-      return playerRotation_ == null ? virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation.getDefaultInstance() : playerRotation_;
+    public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector getPlayerRotation() {
+      return playerRotation_ == null ? virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.getDefaultInstance() : playerRotation_;
     }
     /**
-     * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerRotation playerRotation = 3;</code>
+     * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerRotation = 3;</code>
      */
-    public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotationOrBuilder getPlayerRotationOrBuilder() {
+    public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.VectorOrBuilder getPlayerRotationOrBuilder() {
       return getPlayerRotation();
     }
 
     public static final int PLAYERSCALE_FIELD_NUMBER = 4;
-    private virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale playerScale_;
+    private virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector playerScale_;
     /**
-     * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerScale playerScale = 4;</code>
+     * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerScale = 4;</code>
      */
     public boolean hasPlayerScale() {
       return playerScale_ != null;
     }
     /**
-     * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerScale playerScale = 4;</code>
+     * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerScale = 4;</code>
      */
-    public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale getPlayerScale() {
-      return playerScale_ == null ? virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale.getDefaultInstance() : playerScale_;
+    public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector getPlayerScale() {
+      return playerScale_ == null ? virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.getDefaultInstance() : playerScale_;
     }
     /**
-     * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerScale playerScale = 4;</code>
+     * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerScale = 4;</code>
      */
-    public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScaleOrBuilder getPlayerScaleOrBuilder() {
+    public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.VectorOrBuilder getPlayerScaleOrBuilder() {
       return getPlayerScale();
     }
 
@@ -667,29 +667,29 @@ public final class MultiUserSync {
         return this;
       }
 
-      private virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition playerPosition_;
+      private virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector playerPosition_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition.Builder, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPositionOrBuilder> playerPositionBuilder_;
+          virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.Builder, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.VectorOrBuilder> playerPositionBuilder_;
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerPosition playerPosition = 2;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerPosition = 2;</code>
        */
       public boolean hasPlayerPosition() {
         return playerPositionBuilder_ != null || playerPosition_ != null;
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerPosition playerPosition = 2;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerPosition = 2;</code>
        */
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition getPlayerPosition() {
+      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector getPlayerPosition() {
         if (playerPositionBuilder_ == null) {
-          return playerPosition_ == null ? virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition.getDefaultInstance() : playerPosition_;
+          return playerPosition_ == null ? virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.getDefaultInstance() : playerPosition_;
         } else {
           return playerPositionBuilder_.getMessage();
         }
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerPosition playerPosition = 2;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerPosition = 2;</code>
        */
-      public Builder setPlayerPosition(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition value) {
+      public Builder setPlayerPosition(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector value) {
         if (playerPositionBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -703,10 +703,10 @@ public final class MultiUserSync {
         return this;
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerPosition playerPosition = 2;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerPosition = 2;</code>
        */
       public Builder setPlayerPosition(
-          virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition.Builder builderForValue) {
+          virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.Builder builderForValue) {
         if (playerPositionBuilder_ == null) {
           playerPosition_ = builderForValue.build();
           onChanged();
@@ -717,13 +717,13 @@ public final class MultiUserSync {
         return this;
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerPosition playerPosition = 2;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerPosition = 2;</code>
        */
-      public Builder mergePlayerPosition(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition value) {
+      public Builder mergePlayerPosition(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector value) {
         if (playerPositionBuilder_ == null) {
           if (playerPosition_ != null) {
             playerPosition_ =
-              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition.newBuilder(playerPosition_).mergeFrom(value).buildPartial();
+              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.newBuilder(playerPosition_).mergeFrom(value).buildPartial();
           } else {
             playerPosition_ = value;
           }
@@ -735,7 +735,7 @@ public final class MultiUserSync {
         return this;
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerPosition playerPosition = 2;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerPosition = 2;</code>
        */
       public Builder clearPlayerPosition() {
         if (playerPositionBuilder_ == null) {
@@ -749,33 +749,33 @@ public final class MultiUserSync {
         return this;
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerPosition playerPosition = 2;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerPosition = 2;</code>
        */
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition.Builder getPlayerPositionBuilder() {
+      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.Builder getPlayerPositionBuilder() {
         
         onChanged();
         return getPlayerPositionFieldBuilder().getBuilder();
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerPosition playerPosition = 2;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerPosition = 2;</code>
        */
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPositionOrBuilder getPlayerPositionOrBuilder() {
+      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.VectorOrBuilder getPlayerPositionOrBuilder() {
         if (playerPositionBuilder_ != null) {
           return playerPositionBuilder_.getMessageOrBuilder();
         } else {
           return playerPosition_ == null ?
-              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition.getDefaultInstance() : playerPosition_;
+              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.getDefaultInstance() : playerPosition_;
         }
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerPosition playerPosition = 2;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerPosition = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition.Builder, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPositionOrBuilder> 
+          virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.Builder, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.VectorOrBuilder> 
           getPlayerPositionFieldBuilder() {
         if (playerPositionBuilder_ == null) {
           playerPositionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition.Builder, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPositionOrBuilder>(
+              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.Builder, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.VectorOrBuilder>(
                   getPlayerPosition(),
                   getParentForChildren(),
                   isClean());
@@ -784,29 +784,29 @@ public final class MultiUserSync {
         return playerPositionBuilder_;
       }
 
-      private virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation playerRotation_;
+      private virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector playerRotation_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation.Builder, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotationOrBuilder> playerRotationBuilder_;
+          virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.Builder, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.VectorOrBuilder> playerRotationBuilder_;
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerRotation playerRotation = 3;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerRotation = 3;</code>
        */
       public boolean hasPlayerRotation() {
         return playerRotationBuilder_ != null || playerRotation_ != null;
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerRotation playerRotation = 3;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerRotation = 3;</code>
        */
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation getPlayerRotation() {
+      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector getPlayerRotation() {
         if (playerRotationBuilder_ == null) {
-          return playerRotation_ == null ? virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation.getDefaultInstance() : playerRotation_;
+          return playerRotation_ == null ? virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.getDefaultInstance() : playerRotation_;
         } else {
           return playerRotationBuilder_.getMessage();
         }
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerRotation playerRotation = 3;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerRotation = 3;</code>
        */
-      public Builder setPlayerRotation(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation value) {
+      public Builder setPlayerRotation(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector value) {
         if (playerRotationBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -820,10 +820,10 @@ public final class MultiUserSync {
         return this;
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerRotation playerRotation = 3;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerRotation = 3;</code>
        */
       public Builder setPlayerRotation(
-          virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation.Builder builderForValue) {
+          virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.Builder builderForValue) {
         if (playerRotationBuilder_ == null) {
           playerRotation_ = builderForValue.build();
           onChanged();
@@ -834,13 +834,13 @@ public final class MultiUserSync {
         return this;
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerRotation playerRotation = 3;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerRotation = 3;</code>
        */
-      public Builder mergePlayerRotation(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation value) {
+      public Builder mergePlayerRotation(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector value) {
         if (playerRotationBuilder_ == null) {
           if (playerRotation_ != null) {
             playerRotation_ =
-              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation.newBuilder(playerRotation_).mergeFrom(value).buildPartial();
+              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.newBuilder(playerRotation_).mergeFrom(value).buildPartial();
           } else {
             playerRotation_ = value;
           }
@@ -852,7 +852,7 @@ public final class MultiUserSync {
         return this;
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerRotation playerRotation = 3;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerRotation = 3;</code>
        */
       public Builder clearPlayerRotation() {
         if (playerRotationBuilder_ == null) {
@@ -866,33 +866,33 @@ public final class MultiUserSync {
         return this;
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerRotation playerRotation = 3;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerRotation = 3;</code>
        */
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation.Builder getPlayerRotationBuilder() {
+      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.Builder getPlayerRotationBuilder() {
         
         onChanged();
         return getPlayerRotationFieldBuilder().getBuilder();
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerRotation playerRotation = 3;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerRotation = 3;</code>
        */
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotationOrBuilder getPlayerRotationOrBuilder() {
+      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.VectorOrBuilder getPlayerRotationOrBuilder() {
         if (playerRotationBuilder_ != null) {
           return playerRotationBuilder_.getMessageOrBuilder();
         } else {
           return playerRotation_ == null ?
-              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation.getDefaultInstance() : playerRotation_;
+              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.getDefaultInstance() : playerRotation_;
         }
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerRotation playerRotation = 3;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerRotation = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation.Builder, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotationOrBuilder> 
+          virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.Builder, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.VectorOrBuilder> 
           getPlayerRotationFieldBuilder() {
         if (playerRotationBuilder_ == null) {
           playerRotationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation.Builder, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotationOrBuilder>(
+              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.Builder, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.VectorOrBuilder>(
                   getPlayerRotation(),
                   getParentForChildren(),
                   isClean());
@@ -901,29 +901,29 @@ public final class MultiUserSync {
         return playerRotationBuilder_;
       }
 
-      private virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale playerScale_;
+      private virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector playerScale_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale.Builder, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScaleOrBuilder> playerScaleBuilder_;
+          virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.Builder, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.VectorOrBuilder> playerScaleBuilder_;
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerScale playerScale = 4;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerScale = 4;</code>
        */
       public boolean hasPlayerScale() {
         return playerScaleBuilder_ != null || playerScale_ != null;
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerScale playerScale = 4;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerScale = 4;</code>
        */
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale getPlayerScale() {
+      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector getPlayerScale() {
         if (playerScaleBuilder_ == null) {
-          return playerScale_ == null ? virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale.getDefaultInstance() : playerScale_;
+          return playerScale_ == null ? virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.getDefaultInstance() : playerScale_;
         } else {
           return playerScaleBuilder_.getMessage();
         }
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerScale playerScale = 4;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerScale = 4;</code>
        */
-      public Builder setPlayerScale(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale value) {
+      public Builder setPlayerScale(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector value) {
         if (playerScaleBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -937,10 +937,10 @@ public final class MultiUserSync {
         return this;
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerScale playerScale = 4;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerScale = 4;</code>
        */
       public Builder setPlayerScale(
-          virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale.Builder builderForValue) {
+          virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.Builder builderForValue) {
         if (playerScaleBuilder_ == null) {
           playerScale_ = builderForValue.build();
           onChanged();
@@ -951,13 +951,13 @@ public final class MultiUserSync {
         return this;
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerScale playerScale = 4;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerScale = 4;</code>
        */
-      public Builder mergePlayerScale(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale value) {
+      public Builder mergePlayerScale(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector value) {
         if (playerScaleBuilder_ == null) {
           if (playerScale_ != null) {
             playerScale_ =
-              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale.newBuilder(playerScale_).mergeFrom(value).buildPartial();
+              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.newBuilder(playerScale_).mergeFrom(value).buildPartial();
           } else {
             playerScale_ = value;
           }
@@ -969,7 +969,7 @@ public final class MultiUserSync {
         return this;
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerScale playerScale = 4;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerScale = 4;</code>
        */
       public Builder clearPlayerScale() {
         if (playerScaleBuilder_ == null) {
@@ -983,33 +983,33 @@ public final class MultiUserSync {
         return this;
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerScale playerScale = 4;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerScale = 4;</code>
        */
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale.Builder getPlayerScaleBuilder() {
+      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.Builder getPlayerScaleBuilder() {
         
         onChanged();
         return getPlayerScaleFieldBuilder().getBuilder();
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerScale playerScale = 4;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerScale = 4;</code>
        */
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScaleOrBuilder getPlayerScaleOrBuilder() {
+      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.VectorOrBuilder getPlayerScaleOrBuilder() {
         if (playerScaleBuilder_ != null) {
           return playerScaleBuilder_.getMessageOrBuilder();
         } else {
           return playerScale_ == null ?
-              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale.getDefaultInstance() : playerScale_;
+              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.getDefaultInstance() : playerScale_;
         }
       }
       /**
-       * <code>.virtual.exhibition.MultiUser.Synchronizer.PlayerScale playerScale = 4;</code>
+       * <code>.virtual.exhibition.MultiUser.Synchronizer.Vector playerScale = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale.Builder, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScaleOrBuilder> 
+          virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.Builder, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.VectorOrBuilder> 
           getPlayerScaleFieldBuilder() {
         if (playerScaleBuilder_ == null) {
           playerScaleBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale.Builder, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScaleOrBuilder>(
+              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.Builder, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.VectorOrBuilder>(
                   getPlayerScale(),
                   getParentForChildren(),
                   isClean());
@@ -1070,38 +1070,38 @@ public final class MultiUserSync {
 
   }
 
-  public interface PlayerPositionOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:virtual.exhibition.MultiUser.Synchronizer.PlayerPosition)
+  public interface VectorOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:virtual.exhibition.MultiUser.Synchronizer.Vector)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 xPosition = 1;</code>
+     * <code>float x = 1;</code>
      */
-    int getXPosition();
+    float getX();
 
     /**
-     * <code>int32 yPosition = 2;</code>
+     * <code>float y = 2;</code>
      */
-    int getYPosition();
+    float getY();
 
     /**
-     * <code>int32 zPosition = 3;</code>
+     * <code>float z = 3;</code>
      */
-    int getZPosition();
+    float getZ();
   }
   /**
-   * Protobuf type {@code virtual.exhibition.MultiUser.Synchronizer.PlayerPosition}
+   * Protobuf type {@code virtual.exhibition.MultiUser.Synchronizer.Vector}
    */
-  public  static final class PlayerPosition extends
+  public  static final class Vector extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:virtual.exhibition.MultiUser.Synchronizer.PlayerPosition)
-      PlayerPositionOrBuilder {
+      // @@protoc_insertion_point(message_implements:virtual.exhibition.MultiUser.Synchronizer.Vector)
+      VectorOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use PlayerPosition.newBuilder() to construct.
-    private PlayerPosition(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use Vector.newBuilder() to construct.
+    private Vector(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private PlayerPosition() {
+    private Vector() {
     }
 
     @java.lang.Override
@@ -1109,7 +1109,7 @@ public final class MultiUserSync {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private PlayerPosition(
+    private Vector(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1128,19 +1128,19 @@ public final class MultiUserSync {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 13: {
 
-              xPosition_ = input.readInt32();
+              x_ = input.readFloat();
               break;
             }
-            case 16: {
+            case 21: {
 
-              yPosition_ = input.readInt32();
+              y_ = input.readFloat();
               break;
             }
-            case 24: {
+            case 29: {
 
-              zPosition_ = input.readInt32();
+              z_ = input.readFloat();
               break;
             }
             default: {
@@ -1164,42 +1164,42 @@ public final class MultiUserSync {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerPosition_descriptor;
+      return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_Vector_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerPosition_fieldAccessorTable
+      return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_Vector_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition.class, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition.Builder.class);
+              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.class, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.Builder.class);
     }
 
-    public static final int XPOSITION_FIELD_NUMBER = 1;
-    private int xPosition_;
+    public static final int X_FIELD_NUMBER = 1;
+    private float x_;
     /**
-     * <code>int32 xPosition = 1;</code>
+     * <code>float x = 1;</code>
      */
-    public int getXPosition() {
-      return xPosition_;
+    public float getX() {
+      return x_;
     }
 
-    public static final int YPOSITION_FIELD_NUMBER = 2;
-    private int yPosition_;
+    public static final int Y_FIELD_NUMBER = 2;
+    private float y_;
     /**
-     * <code>int32 yPosition = 2;</code>
+     * <code>float y = 2;</code>
      */
-    public int getYPosition() {
-      return yPosition_;
+    public float getY() {
+      return y_;
     }
 
-    public static final int ZPOSITION_FIELD_NUMBER = 3;
-    private int zPosition_;
+    public static final int Z_FIELD_NUMBER = 3;
+    private float z_;
     /**
-     * <code>int32 zPosition = 3;</code>
+     * <code>float z = 3;</code>
      */
-    public int getZPosition() {
-      return zPosition_;
+    public float getZ() {
+      return z_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -1216,14 +1216,14 @@ public final class MultiUserSync {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (xPosition_ != 0) {
-        output.writeInt32(1, xPosition_);
+      if (x_ != 0F) {
+        output.writeFloat(1, x_);
       }
-      if (yPosition_ != 0) {
-        output.writeInt32(2, yPosition_);
+      if (y_ != 0F) {
+        output.writeFloat(2, y_);
       }
-      if (zPosition_ != 0) {
-        output.writeInt32(3, zPosition_);
+      if (z_ != 0F) {
+        output.writeFloat(3, z_);
       }
       unknownFields.writeTo(output);
     }
@@ -1234,17 +1234,17 @@ public final class MultiUserSync {
       if (size != -1) return size;
 
       size = 0;
-      if (xPosition_ != 0) {
+      if (x_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, xPosition_);
+          .computeFloatSize(1, x_);
       }
-      if (yPosition_ != 0) {
+      if (y_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, yPosition_);
+          .computeFloatSize(2, y_);
       }
-      if (zPosition_ != 0) {
+      if (z_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, zPosition_);
+          .computeFloatSize(3, z_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1256,17 +1256,20 @@ public final class MultiUserSync {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition)) {
+      if (!(obj instanceof virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector)) {
         return super.equals(obj);
       }
-      virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition other = (virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition) obj;
+      virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector other = (virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector) obj;
 
-      if (getXPosition()
-          != other.getXPosition()) return false;
-      if (getYPosition()
-          != other.getYPosition()) return false;
-      if (getZPosition()
-          != other.getZPosition()) return false;
+      if (java.lang.Float.floatToIntBits(getX())
+          != java.lang.Float.floatToIntBits(
+              other.getX())) return false;
+      if (java.lang.Float.floatToIntBits(getY())
+          != java.lang.Float.floatToIntBits(
+              other.getY())) return false;
+      if (java.lang.Float.floatToIntBits(getZ())
+          != java.lang.Float.floatToIntBits(
+              other.getZ())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1278,80 +1281,83 @@ public final class MultiUserSync {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + XPOSITION_FIELD_NUMBER;
-      hash = (53 * hash) + getXPosition();
-      hash = (37 * hash) + YPOSITION_FIELD_NUMBER;
-      hash = (53 * hash) + getYPosition();
-      hash = (37 * hash) + ZPOSITION_FIELD_NUMBER;
-      hash = (53 * hash) + getZPosition();
+      hash = (37 * hash) + X_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getX());
+      hash = (37 * hash) + Y_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getY());
+      hash = (37 * hash) + Z_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getZ());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition parseFrom(byte[] data)
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition parseFrom(java.io.InputStream input)
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition parseDelimitedFrom(java.io.InputStream input)
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition parseDelimitedFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1364,7 +1370,7 @@ public final class MultiUserSync {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition prototype) {
+    public static Builder newBuilder(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1380,26 +1386,26 @@ public final class MultiUserSync {
       return builder;
     }
     /**
-     * Protobuf type {@code virtual.exhibition.MultiUser.Synchronizer.PlayerPosition}
+     * Protobuf type {@code virtual.exhibition.MultiUser.Synchronizer.Vector}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:virtual.exhibition.MultiUser.Synchronizer.PlayerPosition)
-        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPositionOrBuilder {
+        // @@protoc_insertion_point(builder_implements:virtual.exhibition.MultiUser.Synchronizer.Vector)
+        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.VectorOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerPosition_descriptor;
+        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_Vector_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerPosition_fieldAccessorTable
+        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_Vector_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition.class, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition.Builder.class);
+                virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.class, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.Builder.class);
       }
 
-      // Construct using virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition.newBuilder()
+      // Construct using virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1417,11 +1423,11 @@ public final class MultiUserSync {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        xPosition_ = 0;
+        x_ = 0F;
 
-        yPosition_ = 0;
+        y_ = 0F;
 
-        zPosition_ = 0;
+        z_ = 0F;
 
         return this;
       }
@@ -1429,17 +1435,17 @@ public final class MultiUserSync {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerPosition_descriptor;
+        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_Vector_descriptor;
       }
 
       @java.lang.Override
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition getDefaultInstanceForType() {
-        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition.getDefaultInstance();
+      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector getDefaultInstanceForType() {
+        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.getDefaultInstance();
       }
 
       @java.lang.Override
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition build() {
-        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition result = buildPartial();
+      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector build() {
+        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1447,11 +1453,11 @@ public final class MultiUserSync {
       }
 
       @java.lang.Override
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition buildPartial() {
-        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition result = new virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition(this);
-        result.xPosition_ = xPosition_;
-        result.yPosition_ = yPosition_;
-        result.zPosition_ = zPosition_;
+      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector buildPartial() {
+        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector result = new virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector(this);
+        result.x_ = x_;
+        result.y_ = y_;
+        result.z_ = z_;
         onBuilt();
         return result;
       }
@@ -1490,24 +1496,24 @@ public final class MultiUserSync {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition) {
-          return mergeFrom((virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition)other);
+        if (other instanceof virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector) {
+          return mergeFrom((virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition other) {
-        if (other == virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition.getDefaultInstance()) return this;
-        if (other.getXPosition() != 0) {
-          setXPosition(other.getXPosition());
+      public Builder mergeFrom(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector other) {
+        if (other == virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector.getDefaultInstance()) return this;
+        if (other.getX() != 0F) {
+          setX(other.getX());
         }
-        if (other.getYPosition() != 0) {
-          setYPosition(other.getYPosition());
+        if (other.getY() != 0F) {
+          setY(other.getY());
         }
-        if (other.getZPosition() != 0) {
-          setZPosition(other.getZPosition());
+        if (other.getZ() != 0F) {
+          setZ(other.getZ());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1524,11 +1530,11 @@ public final class MultiUserSync {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition parsedMessage = null;
+        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition) e.getUnfinishedMessage();
+          parsedMessage = (virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1538,80 +1544,80 @@ public final class MultiUserSync {
         return this;
       }
 
-      private int xPosition_ ;
+      private float x_ ;
       /**
-       * <code>int32 xPosition = 1;</code>
+       * <code>float x = 1;</code>
        */
-      public int getXPosition() {
-        return xPosition_;
+      public float getX() {
+        return x_;
       }
       /**
-       * <code>int32 xPosition = 1;</code>
+       * <code>float x = 1;</code>
        */
-      public Builder setXPosition(int value) {
+      public Builder setX(float value) {
         
-        xPosition_ = value;
+        x_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 xPosition = 1;</code>
+       * <code>float x = 1;</code>
        */
-      public Builder clearXPosition() {
+      public Builder clearX() {
         
-        xPosition_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int yPosition_ ;
-      /**
-       * <code>int32 yPosition = 2;</code>
-       */
-      public int getYPosition() {
-        return yPosition_;
-      }
-      /**
-       * <code>int32 yPosition = 2;</code>
-       */
-      public Builder setYPosition(int value) {
-        
-        yPosition_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 yPosition = 2;</code>
-       */
-      public Builder clearYPosition() {
-        
-        yPosition_ = 0;
+        x_ = 0F;
         onChanged();
         return this;
       }
 
-      private int zPosition_ ;
+      private float y_ ;
       /**
-       * <code>int32 zPosition = 3;</code>
+       * <code>float y = 2;</code>
        */
-      public int getZPosition() {
-        return zPosition_;
+      public float getY() {
+        return y_;
       }
       /**
-       * <code>int32 zPosition = 3;</code>
+       * <code>float y = 2;</code>
        */
-      public Builder setZPosition(int value) {
+      public Builder setY(float value) {
         
-        zPosition_ = value;
+        y_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 zPosition = 3;</code>
+       * <code>float y = 2;</code>
        */
-      public Builder clearZPosition() {
+      public Builder clearY() {
         
-        zPosition_ = 0;
+        y_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private float z_ ;
+      /**
+       * <code>float z = 3;</code>
+       */
+      public float getZ() {
+        return z_;
+      }
+      /**
+       * <code>float z = 3;</code>
+       */
+      public Builder setZ(float value) {
+        
+        z_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float z = 3;</code>
+       */
+      public Builder clearZ() {
+        
+        z_ = 0F;
         onChanged();
         return this;
       }
@@ -1628,1237 +1634,41 @@ public final class MultiUserSync {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:virtual.exhibition.MultiUser.Synchronizer.PlayerPosition)
+      // @@protoc_insertion_point(builder_scope:virtual.exhibition.MultiUser.Synchronizer.Vector)
     }
 
-    // @@protoc_insertion_point(class_scope:virtual.exhibition.MultiUser.Synchronizer.PlayerPosition)
-    private static final virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:virtual.exhibition.MultiUser.Synchronizer.Vector)
+    private static final virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition();
+      DEFAULT_INSTANCE = new virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector();
     }
 
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition getDefaultInstance() {
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<PlayerPosition>
-        PARSER = new com.google.protobuf.AbstractParser<PlayerPosition>() {
+    private static final com.google.protobuf.Parser<Vector>
+        PARSER = new com.google.protobuf.AbstractParser<Vector>() {
       @java.lang.Override
-      public PlayerPosition parsePartialFrom(
+      public Vector parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new PlayerPosition(input, extensionRegistry);
+        return new Vector(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<PlayerPosition> parser() {
+    public static com.google.protobuf.Parser<Vector> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<PlayerPosition> getParserForType() {
+    public com.google.protobuf.Parser<Vector> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerPosition getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
-  public interface PlayerRotationOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:virtual.exhibition.MultiUser.Synchronizer.PlayerRotation)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>int32 xRotation = 1;</code>
-     */
-    int getXRotation();
-
-    /**
-     * <code>int32 yRotation = 2;</code>
-     */
-    int getYRotation();
-
-    /**
-     * <code>int32 zRotation = 3;</code>
-     */
-    int getZRotation();
-  }
-  /**
-   * Protobuf type {@code virtual.exhibition.MultiUser.Synchronizer.PlayerRotation}
-   */
-  public  static final class PlayerRotation extends
-      com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:virtual.exhibition.MultiUser.Synchronizer.PlayerRotation)
-      PlayerRotationOrBuilder {
-  private static final long serialVersionUID = 0L;
-    // Use PlayerRotation.newBuilder() to construct.
-    private PlayerRotation(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
-    }
-    private PlayerRotation() {
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private PlayerRotation(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              xRotation_ = input.readInt32();
-              break;
-            }
-            case 16: {
-
-              yRotation_ = input.readInt32();
-              break;
-            }
-            case 24: {
-
-              zRotation_ = input.readInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerRotation_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerRotation_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation.class, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation.Builder.class);
-    }
-
-    public static final int XROTATION_FIELD_NUMBER = 1;
-    private int xRotation_;
-    /**
-     * <code>int32 xRotation = 1;</code>
-     */
-    public int getXRotation() {
-      return xRotation_;
-    }
-
-    public static final int YROTATION_FIELD_NUMBER = 2;
-    private int yRotation_;
-    /**
-     * <code>int32 yRotation = 2;</code>
-     */
-    public int getYRotation() {
-      return yRotation_;
-    }
-
-    public static final int ZROTATION_FIELD_NUMBER = 3;
-    private int zRotation_;
-    /**
-     * <code>int32 zRotation = 3;</code>
-     */
-    public int getZRotation() {
-      return zRotation_;
-    }
-
-    private byte memoizedIsInitialized = -1;
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (xRotation_ != 0) {
-        output.writeInt32(1, xRotation_);
-      }
-      if (yRotation_ != 0) {
-        output.writeInt32(2, yRotation_);
-      }
-      if (zRotation_ != 0) {
-        output.writeInt32(3, zRotation_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (xRotation_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, xRotation_);
-      }
-      if (yRotation_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, yRotation_);
-      }
-      if (zRotation_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, zRotation_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation)) {
-        return super.equals(obj);
-      }
-      virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation other = (virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation) obj;
-
-      if (getXRotation()
-          != other.getXRotation()) return false;
-      if (getYRotation()
-          != other.getYRotation()) return false;
-      if (getZRotation()
-          != other.getZRotation()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + XROTATION_FIELD_NUMBER;
-      hash = (53 * hash) + getXRotation();
-      hash = (37 * hash) + YROTATION_FIELD_NUMBER;
-      hash = (53 * hash) + getYRotation();
-      hash = (37 * hash) + ZROTATION_FIELD_NUMBER;
-      hash = (53 * hash) + getZRotation();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    @java.lang.Override
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    @java.lang.Override
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * Protobuf type {@code virtual.exhibition.MultiUser.Synchronizer.PlayerRotation}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:virtual.exhibition.MultiUser.Synchronizer.PlayerRotation)
-        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotationOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerRotation_descriptor;
-      }
-
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerRotation_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation.class, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation.Builder.class);
-      }
-
-      // Construct using virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
-      }
-      @java.lang.Override
-      public Builder clear() {
-        super.clear();
-        xRotation_ = 0;
-
-        yRotation_ = 0;
-
-        zRotation_ = 0;
-
-        return this;
-      }
-
-      @java.lang.Override
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerRotation_descriptor;
-      }
-
-      @java.lang.Override
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation getDefaultInstanceForType() {
-        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation.getDefaultInstance();
-      }
-
-      @java.lang.Override
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation build() {
-        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      @java.lang.Override
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation buildPartial() {
-        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation result = new virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation(this);
-        result.xRotation_ = xRotation_;
-        result.yRotation_ = yRotation_;
-        result.zRotation_ = zRotation_;
-        onBuilt();
-        return result;
-      }
-
-      @java.lang.Override
-      public Builder clone() {
-        return super.clone();
-      }
-      @java.lang.Override
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return super.setField(field, value);
-      }
-      @java.lang.Override
-      public Builder clearField(
-          com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return super.clearField(field);
-      }
-      @java.lang.Override
-      public Builder clearOneof(
-          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return super.clearOneof(oneof);
-      }
-      @java.lang.Override
-      public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
-        return super.setRepeatedField(field, index, value);
-      }
-      @java.lang.Override
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return super.addRepeatedField(field, value);
-      }
-      @java.lang.Override
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation) {
-          return mergeFrom((virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation other) {
-        if (other == virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation.getDefaultInstance()) return this;
-        if (other.getXRotation() != 0) {
-          setXRotation(other.getXRotation());
-        }
-        if (other.getYRotation() != 0) {
-          setYRotation(other.getYRotation());
-        }
-        if (other.getZRotation() != 0) {
-          setZRotation(other.getZRotation());
-        }
-        this.mergeUnknownFields(other.unknownFields);
-        onChanged();
-        return this;
-      }
-
-      @java.lang.Override
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      @java.lang.Override
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-
-      private int xRotation_ ;
-      /**
-       * <code>int32 xRotation = 1;</code>
-       */
-      public int getXRotation() {
-        return xRotation_;
-      }
-      /**
-       * <code>int32 xRotation = 1;</code>
-       */
-      public Builder setXRotation(int value) {
-        
-        xRotation_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 xRotation = 1;</code>
-       */
-      public Builder clearXRotation() {
-        
-        xRotation_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int yRotation_ ;
-      /**
-       * <code>int32 yRotation = 2;</code>
-       */
-      public int getYRotation() {
-        return yRotation_;
-      }
-      /**
-       * <code>int32 yRotation = 2;</code>
-       */
-      public Builder setYRotation(int value) {
-        
-        yRotation_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 yRotation = 2;</code>
-       */
-      public Builder clearYRotation() {
-        
-        yRotation_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int zRotation_ ;
-      /**
-       * <code>int32 zRotation = 3;</code>
-       */
-      public int getZRotation() {
-        return zRotation_;
-      }
-      /**
-       * <code>int32 zRotation = 3;</code>
-       */
-      public Builder setZRotation(int value) {
-        
-        zRotation_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 zRotation = 3;</code>
-       */
-      public Builder clearZRotation() {
-        
-        zRotation_ = 0;
-        onChanged();
-        return this;
-      }
-      @java.lang.Override
-      public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFields(unknownFields);
-      }
-
-      @java.lang.Override
-      public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
-
-
-      // @@protoc_insertion_point(builder_scope:virtual.exhibition.MultiUser.Synchronizer.PlayerRotation)
-    }
-
-    // @@protoc_insertion_point(class_scope:virtual.exhibition.MultiUser.Synchronizer.PlayerRotation)
-    private static final virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation();
-    }
-
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<PlayerRotation>
-        PARSER = new com.google.protobuf.AbstractParser<PlayerRotation>() {
-      @java.lang.Override
-      public PlayerRotation parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new PlayerRotation(input, extensionRegistry);
-      }
-    };
-
-    public static com.google.protobuf.Parser<PlayerRotation> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<PlayerRotation> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerRotation getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
-  public interface PlayerScaleOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:virtual.exhibition.MultiUser.Synchronizer.PlayerScale)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>int32 xScale = 1;</code>
-     */
-    int getXScale();
-
-    /**
-     * <code>int32 yScale = 2;</code>
-     */
-    int getYScale();
-
-    /**
-     * <code>int32 zScale = 3;</code>
-     */
-    int getZScale();
-  }
-  /**
-   * Protobuf type {@code virtual.exhibition.MultiUser.Synchronizer.PlayerScale}
-   */
-  public  static final class PlayerScale extends
-      com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:virtual.exhibition.MultiUser.Synchronizer.PlayerScale)
-      PlayerScaleOrBuilder {
-  private static final long serialVersionUID = 0L;
-    // Use PlayerScale.newBuilder() to construct.
-    private PlayerScale(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
-    }
-    private PlayerScale() {
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private PlayerScale(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              xScale_ = input.readInt32();
-              break;
-            }
-            case 16: {
-
-              yScale_ = input.readInt32();
-              break;
-            }
-            case 24: {
-
-              zScale_ = input.readInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerScale_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerScale_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale.class, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale.Builder.class);
-    }
-
-    public static final int XSCALE_FIELD_NUMBER = 1;
-    private int xScale_;
-    /**
-     * <code>int32 xScale = 1;</code>
-     */
-    public int getXScale() {
-      return xScale_;
-    }
-
-    public static final int YSCALE_FIELD_NUMBER = 2;
-    private int yScale_;
-    /**
-     * <code>int32 yScale = 2;</code>
-     */
-    public int getYScale() {
-      return yScale_;
-    }
-
-    public static final int ZSCALE_FIELD_NUMBER = 3;
-    private int zScale_;
-    /**
-     * <code>int32 zScale = 3;</code>
-     */
-    public int getZScale() {
-      return zScale_;
-    }
-
-    private byte memoizedIsInitialized = -1;
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (xScale_ != 0) {
-        output.writeInt32(1, xScale_);
-      }
-      if (yScale_ != 0) {
-        output.writeInt32(2, yScale_);
-      }
-      if (zScale_ != 0) {
-        output.writeInt32(3, zScale_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (xScale_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, xScale_);
-      }
-      if (yScale_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, yScale_);
-      }
-      if (zScale_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, zScale_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale)) {
-        return super.equals(obj);
-      }
-      virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale other = (virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale) obj;
-
-      if (getXScale()
-          != other.getXScale()) return false;
-      if (getYScale()
-          != other.getYScale()) return false;
-      if (getZScale()
-          != other.getZScale()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + XSCALE_FIELD_NUMBER;
-      hash = (53 * hash) + getXScale();
-      hash = (37 * hash) + YSCALE_FIELD_NUMBER;
-      hash = (53 * hash) + getYScale();
-      hash = (37 * hash) + ZSCALE_FIELD_NUMBER;
-      hash = (53 * hash) + getZScale();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    @java.lang.Override
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    @java.lang.Override
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * Protobuf type {@code virtual.exhibition.MultiUser.Synchronizer.PlayerScale}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:virtual.exhibition.MultiUser.Synchronizer.PlayerScale)
-        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScaleOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerScale_descriptor;
-      }
-
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerScale_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale.class, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale.Builder.class);
-      }
-
-      // Construct using virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
-      }
-      @java.lang.Override
-      public Builder clear() {
-        super.clear();
-        xScale_ = 0;
-
-        yScale_ = 0;
-
-        zScale_ = 0;
-
-        return this;
-      }
-
-      @java.lang.Override
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerScale_descriptor;
-      }
-
-      @java.lang.Override
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale getDefaultInstanceForType() {
-        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale.getDefaultInstance();
-      }
-
-      @java.lang.Override
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale build() {
-        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      @java.lang.Override
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale buildPartial() {
-        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale result = new virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale(this);
-        result.xScale_ = xScale_;
-        result.yScale_ = yScale_;
-        result.zScale_ = zScale_;
-        onBuilt();
-        return result;
-      }
-
-      @java.lang.Override
-      public Builder clone() {
-        return super.clone();
-      }
-      @java.lang.Override
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return super.setField(field, value);
-      }
-      @java.lang.Override
-      public Builder clearField(
-          com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return super.clearField(field);
-      }
-      @java.lang.Override
-      public Builder clearOneof(
-          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return super.clearOneof(oneof);
-      }
-      @java.lang.Override
-      public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
-        return super.setRepeatedField(field, index, value);
-      }
-      @java.lang.Override
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return super.addRepeatedField(field, value);
-      }
-      @java.lang.Override
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale) {
-          return mergeFrom((virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale other) {
-        if (other == virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale.getDefaultInstance()) return this;
-        if (other.getXScale() != 0) {
-          setXScale(other.getXScale());
-        }
-        if (other.getYScale() != 0) {
-          setYScale(other.getYScale());
-        }
-        if (other.getZScale() != 0) {
-          setZScale(other.getZScale());
-        }
-        this.mergeUnknownFields(other.unknownFields);
-        onChanged();
-        return this;
-      }
-
-      @java.lang.Override
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      @java.lang.Override
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-
-      private int xScale_ ;
-      /**
-       * <code>int32 xScale = 1;</code>
-       */
-      public int getXScale() {
-        return xScale_;
-      }
-      /**
-       * <code>int32 xScale = 1;</code>
-       */
-      public Builder setXScale(int value) {
-        
-        xScale_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 xScale = 1;</code>
-       */
-      public Builder clearXScale() {
-        
-        xScale_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int yScale_ ;
-      /**
-       * <code>int32 yScale = 2;</code>
-       */
-      public int getYScale() {
-        return yScale_;
-      }
-      /**
-       * <code>int32 yScale = 2;</code>
-       */
-      public Builder setYScale(int value) {
-        
-        yScale_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 yScale = 2;</code>
-       */
-      public Builder clearYScale() {
-        
-        yScale_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int zScale_ ;
-      /**
-       * <code>int32 zScale = 3;</code>
-       */
-      public int getZScale() {
-        return zScale_;
-      }
-      /**
-       * <code>int32 zScale = 3;</code>
-       */
-      public Builder setZScale(int value) {
-        
-        zScale_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 zScale = 3;</code>
-       */
-      public Builder clearZScale() {
-        
-        zScale_ = 0;
-        onChanged();
-        return this;
-      }
-      @java.lang.Override
-      public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFields(unknownFields);
-      }
-
-      @java.lang.Override
-      public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
-
-
-      // @@protoc_insertion_point(builder_scope:virtual.exhibition.MultiUser.Synchronizer.PlayerScale)
-    }
-
-    // @@protoc_insertion_point(class_scope:virtual.exhibition.MultiUser.Synchronizer.PlayerScale)
-    private static final virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale();
-    }
-
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<PlayerScale>
-        PARSER = new com.google.protobuf.AbstractParser<PlayerScale>() {
-      @java.lang.Override
-      public PlayerScale parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new PlayerScale(input, extensionRegistry);
-      }
-    };
-
-    public static com.google.protobuf.Parser<PlayerScale> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<PlayerScale> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerScale getDefaultInstanceForType() {
+    public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Vector getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3893,20 +2703,10 @@ public final class MultiUserSync {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_virtual_exhibition_MultiUser_Synchronizer_Player_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerPosition_descriptor;
+    internal_static_virtual_exhibition_MultiUser_Synchronizer_Vector_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerPosition_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerRotation_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerRotation_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerScale_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerScale_fieldAccessorTable;
+      internal_static_virtual_exhibition_MultiUser_Synchronizer_Vector_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestPlayer_descriptor;
   private static final 
@@ -3927,28 +2727,23 @@ public final class MultiUserSync {
   static {
     java.lang.String[] descriptorData = {
       "\n\024multiUser-sync.proto\022)virtual.exhibiti" +
-      "on.MultiUser.Synchronizer\"\207\002\n\006Player\022\n\n\002" +
-      "id\030\001 \001(\005\022Q\n\016playerPosition\030\002 \001(\01329.virtu" +
-      "al.exhibition.MultiUser.Synchronizer.Pla" +
-      "yerPosition\022Q\n\016playerRotation\030\003 \001(\01329.vi" +
+      "on.MultiUser.Synchronizer\"\362\001\n\006Player\022\n\n\002" +
+      "id\030\001 \001(\005\022I\n\016playerPosition\030\002 \001(\01321.virtu" +
+      "al.exhibition.MultiUser.Synchronizer.Vec" +
+      "tor\022I\n\016playerRotation\030\003 \001(\01321.virtual.ex" +
+      "hibition.MultiUser.Synchronizer.Vector\022F" +
+      "\n\013playerScale\030\004 \001(\01321.virtual.exhibition" +
+      ".MultiUser.Synchronizer.Vector\")\n\006Vector" +
+      "\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\"(\n\rReq" +
+      "uestPlayer\022\027\n\017requestPlayerID\030\001 \001(\005\"\034\n\010R" +
+      "esponse\022\020\n\010response\030\001 \001(\t2\212\002\n\rmultiUserS" +
+      "ync\022~\n\tgetPlayer\0228.virtual.exhibition.Mu" +
+      "ltiUser.Synchronizer.RequestPlayer\0321.vir" +
+      "tual.exhibition.MultiUser.Synchronizer.P" +
+      "layer\"\000(\0010\001\022y\n\tsetPlayer\0221.virtual.exhib" +
+      "ition.MultiUser.Synchronizer.Player\0323.vi" +
       "rtual.exhibition.MultiUser.Synchronizer." +
-      "PlayerRotation\022K\n\013playerScale\030\004 \001(\01326.vi" +
-      "rtual.exhibition.MultiUser.Synchronizer." +
-      "PlayerScale\"I\n\016PlayerPosition\022\021\n\txPositi" +
-      "on\030\001 \001(\005\022\021\n\tyPosition\030\002 \001(\005\022\021\n\tzPosition" +
-      "\030\003 \001(\005\"I\n\016PlayerRotation\022\021\n\txRotation\030\001 " +
-      "\001(\005\022\021\n\tyRotation\030\002 \001(\005\022\021\n\tzRotation\030\003 \001(" +
-      "\005\"=\n\013PlayerScale\022\016\n\006xScale\030\001 \001(\005\022\016\n\006ySca" +
-      "le\030\002 \001(\005\022\016\n\006zScale\030\003 \001(\005\"(\n\rRequestPlaye" +
-      "r\022\027\n\017requestPlayerID\030\001 \001(\005\"\034\n\010Response\022\020" +
-      "\n\010response\030\001 \001(\t2\212\002\n\rmultiUserSync\022~\n\tge" +
-      "tPlayer\0228.virtual.exhibition.MultiUser.S" +
-      "ynchronizer.RequestPlayer\0321.virtual.exhi" +
-      "bition.MultiUser.Synchronizer.Player\"\000(\001" +
-      "0\001\022y\n\tsetPlayer\0221.virtual.exhibition.Mul" +
-      "tiUser.Synchronizer.Player\0323.virtual.exh" +
-      "ibition.MultiUser.Synchronizer.Response\"" +
-      "\000(\0010\001b\006proto3"
+      "Response\"\000(\0010\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -3968,32 +2763,20 @@ public final class MultiUserSync {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_virtual_exhibition_MultiUser_Synchronizer_Player_descriptor,
         new java.lang.String[] { "Id", "PlayerPosition", "PlayerRotation", "PlayerScale", });
-    internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerPosition_descriptor =
+    internal_static_virtual_exhibition_MultiUser_Synchronizer_Vector_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerPosition_fieldAccessorTable = new
+    internal_static_virtual_exhibition_MultiUser_Synchronizer_Vector_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerPosition_descriptor,
-        new java.lang.String[] { "XPosition", "YPosition", "ZPosition", });
-    internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerRotation_descriptor =
-      getDescriptor().getMessageTypes().get(2);
-    internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerRotation_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerRotation_descriptor,
-        new java.lang.String[] { "XRotation", "YRotation", "ZRotation", });
-    internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerScale_descriptor =
-      getDescriptor().getMessageTypes().get(3);
-    internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerScale_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_virtual_exhibition_MultiUser_Synchronizer_PlayerScale_descriptor,
-        new java.lang.String[] { "XScale", "YScale", "ZScale", });
+        internal_static_virtual_exhibition_MultiUser_Synchronizer_Vector_descriptor,
+        new java.lang.String[] { "X", "Y", "Z", });
     internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestPlayer_descriptor =
-      getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(2);
     internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestPlayer_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestPlayer_descriptor,
         new java.lang.String[] { "RequestPlayerID", });
     internal_static_virtual_exhibition_MultiUser_Synchronizer_Response_descriptor =
-      getDescriptor().getMessageTypes().get(5);
+      getDescriptor().getMessageTypes().get(3);
     internal_static_virtual_exhibition_MultiUser_Synchronizer_Response_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_virtual_exhibition_MultiUser_Synchronizer_Response_descriptor,
