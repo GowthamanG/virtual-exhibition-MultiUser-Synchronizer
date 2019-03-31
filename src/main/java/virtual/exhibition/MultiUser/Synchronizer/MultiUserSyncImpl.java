@@ -5,18 +5,20 @@ import java.util.HashMap;
 
 public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
 
-    private HashMap<Integer, MultiUserSync.Player> players = new HashMap<>();
+    private HashMap<Integer, MultiUserSync.User> users = new HashMap<>();
+
+
 
     @Override
-    public StreamObserver<MultiUserSync.RequestPlayer> getPlayer(StreamObserver<MultiUserSync.Player> responseObserver) {
+    public StreamObserver<MultiUserSync.RequestUser> getUser(StreamObserver<MultiUserSync.User> responseObserver) {
 
-        return new StreamObserver<MultiUserSync.RequestPlayer>() {
+        return new StreamObserver<MultiUserSync.RequestUser>() {
             @Override
-            public void onNext(MultiUserSync.RequestPlayer value) {
+            public void onNext(MultiUserSync.RequestUser value) {
 
-                MultiUserSync.Player player = players.get(value);
+                MultiUserSync.User user = users.get(value);
 
-                responseObserver.onNext(player);
+                responseObserver.onNext(user);
 
             }
 
@@ -34,17 +36,18 @@ public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
     }
 
     @Override
-    public StreamObserver<MultiUserSync.Player> setPlayer(StreamObserver<MultiUserSync.Response> responseObserver) {
+    public StreamObserver<MultiUserSync.User> setUser(StreamObserver<MultiUserSync.Response> responseObserver) {
 
-        return new StreamObserver<MultiUserSync.Player>() {
+        return new StreamObserver<MultiUserSync.User>() {
             @Override
-            public void onNext(MultiUserSync.Player value) {
-                players.put(value.getId(), value);
+            public void onNext(MultiUserSync.User value) {
+                users.put(value.getId(), value);
 
                 MultiUserSync.Response response = MultiUserSync.Response.newBuilder().
-                        setResponse(players.get(value.getId()).toString())
+                        setResponse(users.get(value.getId()).toString())
                         .build();
 
+                System.out.println(response.toString());
                 responseObserver.onNext(response);
             }
 

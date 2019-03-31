@@ -14,8 +14,8 @@ public final class MultiUserSync {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
-  public interface PlayerOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:virtual.exhibition.MultiUser.Synchronizer.Player)
+  public interface UserOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:virtual.exhibition.MultiUser.Synchronizer.User)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -63,18 +63,18 @@ public final class MultiUserSync {
     virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.VectorOrBuilder getPlayerScaleOrBuilder();
   }
   /**
-   * Protobuf type {@code virtual.exhibition.MultiUser.Synchronizer.Player}
+   * Protobuf type {@code virtual.exhibition.MultiUser.Synchronizer.User}
    */
-  public  static final class Player extends
+  public  static final class User extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:virtual.exhibition.MultiUser.Synchronizer.Player)
-      PlayerOrBuilder {
+      // @@protoc_insertion_point(message_implements:virtual.exhibition.MultiUser.Synchronizer.User)
+      UserOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use Player.newBuilder() to construct.
-    private Player(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use User.newBuilder() to construct.
+    private User(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private Player() {
+    private User() {
     }
 
     @java.lang.Override
@@ -82,7 +82,7 @@ public final class MultiUserSync {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private Player(
+    private User(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -166,15 +166,15 @@ public final class MultiUserSync {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_Player_descriptor;
+      return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_User_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_Player_fieldAccessorTable
+      return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_User_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player.class, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player.Builder.class);
+              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User.class, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User.Builder.class);
     }
 
     public static final int ID_FIELD_NUMBER = 1;
@@ -310,10 +310,10 @@ public final class MultiUserSync {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player)) {
+      if (!(obj instanceof virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User)) {
         return super.equals(obj);
       }
-      virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player other = (virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player) obj;
+      virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User other = (virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User) obj;
 
       if (getId()
           != other.getId()) return false;
@@ -362,69 +362,69 @@ public final class MultiUserSync {
       return hash;
     }
 
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player parseFrom(byte[] data)
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player parseFrom(java.io.InputStream input)
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player parseDelimitedFrom(java.io.InputStream input)
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player parseDelimitedFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -437,7 +437,7 @@ public final class MultiUserSync {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player prototype) {
+    public static Builder newBuilder(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -453,26 +453,26 @@ public final class MultiUserSync {
       return builder;
     }
     /**
-     * Protobuf type {@code virtual.exhibition.MultiUser.Synchronizer.Player}
+     * Protobuf type {@code virtual.exhibition.MultiUser.Synchronizer.User}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:virtual.exhibition.MultiUser.Synchronizer.Player)
-        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.PlayerOrBuilder {
+        // @@protoc_insertion_point(builder_implements:virtual.exhibition.MultiUser.Synchronizer.User)
+        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.UserOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_Player_descriptor;
+        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_User_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_Player_fieldAccessorTable
+        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_User_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player.class, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player.Builder.class);
+                virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User.class, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User.Builder.class);
       }
 
-      // Construct using virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player.newBuilder()
+      // Construct using virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -516,17 +516,17 @@ public final class MultiUserSync {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_Player_descriptor;
+        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_User_descriptor;
       }
 
       @java.lang.Override
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player getDefaultInstanceForType() {
-        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player.getDefaultInstance();
+      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User getDefaultInstanceForType() {
+        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User.getDefaultInstance();
       }
 
       @java.lang.Override
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player build() {
-        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player result = buildPartial();
+      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User build() {
+        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -534,8 +534,8 @@ public final class MultiUserSync {
       }
 
       @java.lang.Override
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player buildPartial() {
-        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player result = new virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player(this);
+      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User buildPartial() {
+        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User result = new virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User(this);
         result.id_ = id_;
         if (playerPositionBuilder_ == null) {
           result.playerPosition_ = playerPosition_;
@@ -590,16 +590,16 @@ public final class MultiUserSync {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player) {
-          return mergeFrom((virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player)other);
+        if (other instanceof virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User) {
+          return mergeFrom((virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player other) {
-        if (other == virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player.getDefaultInstance()) return this;
+      public Builder mergeFrom(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User other) {
+        if (other == virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User.getDefaultInstance()) return this;
         if (other.getId() != 0) {
           setId(other.getId());
         }
@@ -627,11 +627,11 @@ public final class MultiUserSync {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player parsedMessage = null;
+        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player) e.getUnfinishedMessage();
+          parsedMessage = (virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1030,41 +1030,41 @@ public final class MultiUserSync {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:virtual.exhibition.MultiUser.Synchronizer.Player)
+      // @@protoc_insertion_point(builder_scope:virtual.exhibition.MultiUser.Synchronizer.User)
     }
 
-    // @@protoc_insertion_point(class_scope:virtual.exhibition.MultiUser.Synchronizer.Player)
-    private static final virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:virtual.exhibition.MultiUser.Synchronizer.User)
+    private static final virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player();
+      DEFAULT_INSTANCE = new virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User();
     }
 
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player getDefaultInstance() {
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<Player>
-        PARSER = new com.google.protobuf.AbstractParser<Player>() {
+    private static final com.google.protobuf.Parser<User>
+        PARSER = new com.google.protobuf.AbstractParser<User>() {
       @java.lang.Override
-      public Player parsePartialFrom(
+      public User parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Player(input, extensionRegistry);
+        return new User(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<Player> parser() {
+    public static com.google.protobuf.Parser<User> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Player> getParserForType() {
+    public com.google.protobuf.Parser<User> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player getDefaultInstanceForType() {
+    public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1674,28 +1674,28 @@ public final class MultiUserSync {
 
   }
 
-  public interface RequestPlayerOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:virtual.exhibition.MultiUser.Synchronizer.RequestPlayer)
+  public interface RequestUserOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:virtual.exhibition.MultiUser.Synchronizer.RequestUser)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 requestPlayerID = 1;</code>
+     * <code>int32 requestUserID = 1;</code>
      */
-    int getRequestPlayerID();
+    int getRequestUserID();
   }
   /**
-   * Protobuf type {@code virtual.exhibition.MultiUser.Synchronizer.RequestPlayer}
+   * Protobuf type {@code virtual.exhibition.MultiUser.Synchronizer.RequestUser}
    */
-  public  static final class RequestPlayer extends
+  public  static final class RequestUser extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:virtual.exhibition.MultiUser.Synchronizer.RequestPlayer)
-      RequestPlayerOrBuilder {
+      // @@protoc_insertion_point(message_implements:virtual.exhibition.MultiUser.Synchronizer.RequestUser)
+      RequestUserOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use RequestPlayer.newBuilder() to construct.
-    private RequestPlayer(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use RequestUser.newBuilder() to construct.
+    private RequestUser(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private RequestPlayer() {
+    private RequestUser() {
     }
 
     @java.lang.Override
@@ -1703,7 +1703,7 @@ public final class MultiUserSync {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private RequestPlayer(
+    private RequestUser(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1724,7 +1724,7 @@ public final class MultiUserSync {
               break;
             case 8: {
 
-              requestPlayerID_ = input.readInt32();
+              requestUserID_ = input.readInt32();
               break;
             }
             default: {
@@ -1748,24 +1748,24 @@ public final class MultiUserSync {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestPlayer_descriptor;
+      return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestUser_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestPlayer_fieldAccessorTable
+      return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestUser_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer.class, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer.Builder.class);
+              virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser.class, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser.Builder.class);
     }
 
-    public static final int REQUESTPLAYERID_FIELD_NUMBER = 1;
-    private int requestPlayerID_;
+    public static final int REQUESTUSERID_FIELD_NUMBER = 1;
+    private int requestUserID_;
     /**
-     * <code>int32 requestPlayerID = 1;</code>
+     * <code>int32 requestUserID = 1;</code>
      */
-    public int getRequestPlayerID() {
-      return requestPlayerID_;
+    public int getRequestUserID() {
+      return requestUserID_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -1782,8 +1782,8 @@ public final class MultiUserSync {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (requestPlayerID_ != 0) {
-        output.writeInt32(1, requestPlayerID_);
+      if (requestUserID_ != 0) {
+        output.writeInt32(1, requestUserID_);
       }
       unknownFields.writeTo(output);
     }
@@ -1794,9 +1794,9 @@ public final class MultiUserSync {
       if (size != -1) return size;
 
       size = 0;
-      if (requestPlayerID_ != 0) {
+      if (requestUserID_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, requestPlayerID_);
+          .computeInt32Size(1, requestUserID_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1808,13 +1808,13 @@ public final class MultiUserSync {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer)) {
+      if (!(obj instanceof virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser)) {
         return super.equals(obj);
       }
-      virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer other = (virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer) obj;
+      virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser other = (virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser) obj;
 
-      if (getRequestPlayerID()
-          != other.getRequestPlayerID()) return false;
+      if (getRequestUserID()
+          != other.getRequestUserID()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1826,76 +1826,76 @@ public final class MultiUserSync {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REQUESTPLAYERID_FIELD_NUMBER;
-      hash = (53 * hash) + getRequestPlayerID();
+      hash = (37 * hash) + REQUESTUSERID_FIELD_NUMBER;
+      hash = (53 * hash) + getRequestUserID();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer parseFrom(byte[] data)
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer parseFrom(java.io.InputStream input)
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer parseDelimitedFrom(java.io.InputStream input)
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer parseDelimitedFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer parseFrom(
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1908,7 +1908,7 @@ public final class MultiUserSync {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer prototype) {
+    public static Builder newBuilder(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1924,26 +1924,26 @@ public final class MultiUserSync {
       return builder;
     }
     /**
-     * Protobuf type {@code virtual.exhibition.MultiUser.Synchronizer.RequestPlayer}
+     * Protobuf type {@code virtual.exhibition.MultiUser.Synchronizer.RequestUser}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:virtual.exhibition.MultiUser.Synchronizer.RequestPlayer)
-        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayerOrBuilder {
+        // @@protoc_insertion_point(builder_implements:virtual.exhibition.MultiUser.Synchronizer.RequestUser)
+        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUserOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestPlayer_descriptor;
+        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestUser_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestPlayer_fieldAccessorTable
+        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestUser_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer.class, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer.Builder.class);
+                virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser.class, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser.Builder.class);
       }
 
-      // Construct using virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer.newBuilder()
+      // Construct using virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1961,7 +1961,7 @@ public final class MultiUserSync {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        requestPlayerID_ = 0;
+        requestUserID_ = 0;
 
         return this;
       }
@@ -1969,17 +1969,17 @@ public final class MultiUserSync {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestPlayer_descriptor;
+        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestUser_descriptor;
       }
 
       @java.lang.Override
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer getDefaultInstanceForType() {
-        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer.getDefaultInstance();
+      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser getDefaultInstanceForType() {
+        return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser.getDefaultInstance();
       }
 
       @java.lang.Override
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer build() {
-        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer result = buildPartial();
+      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser build() {
+        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1987,9 +1987,9 @@ public final class MultiUserSync {
       }
 
       @java.lang.Override
-      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer buildPartial() {
-        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer result = new virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer(this);
-        result.requestPlayerID_ = requestPlayerID_;
+      public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser buildPartial() {
+        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser result = new virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser(this);
+        result.requestUserID_ = requestUserID_;
         onBuilt();
         return result;
       }
@@ -2028,18 +2028,18 @@ public final class MultiUserSync {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer) {
-          return mergeFrom((virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer)other);
+        if (other instanceof virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser) {
+          return mergeFrom((virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer other) {
-        if (other == virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer.getDefaultInstance()) return this;
-        if (other.getRequestPlayerID() != 0) {
-          setRequestPlayerID(other.getRequestPlayerID());
+      public Builder mergeFrom(virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser other) {
+        if (other == virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser.getDefaultInstance()) return this;
+        if (other.getRequestUserID() != 0) {
+          setRequestUserID(other.getRequestUserID());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -2056,11 +2056,11 @@ public final class MultiUserSync {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer parsedMessage = null;
+        virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer) e.getUnfinishedMessage();
+          parsedMessage = (virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -2070,28 +2070,28 @@ public final class MultiUserSync {
         return this;
       }
 
-      private int requestPlayerID_ ;
+      private int requestUserID_ ;
       /**
-       * <code>int32 requestPlayerID = 1;</code>
+       * <code>int32 requestUserID = 1;</code>
        */
-      public int getRequestPlayerID() {
-        return requestPlayerID_;
+      public int getRequestUserID() {
+        return requestUserID_;
       }
       /**
-       * <code>int32 requestPlayerID = 1;</code>
+       * <code>int32 requestUserID = 1;</code>
        */
-      public Builder setRequestPlayerID(int value) {
+      public Builder setRequestUserID(int value) {
         
-        requestPlayerID_ = value;
+        requestUserID_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 requestPlayerID = 1;</code>
+       * <code>int32 requestUserID = 1;</code>
        */
-      public Builder clearRequestPlayerID() {
+      public Builder clearRequestUserID() {
         
-        requestPlayerID_ = 0;
+        requestUserID_ = 0;
         onChanged();
         return this;
       }
@@ -2108,41 +2108,41 @@ public final class MultiUserSync {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:virtual.exhibition.MultiUser.Synchronizer.RequestPlayer)
+      // @@protoc_insertion_point(builder_scope:virtual.exhibition.MultiUser.Synchronizer.RequestUser)
     }
 
-    // @@protoc_insertion_point(class_scope:virtual.exhibition.MultiUser.Synchronizer.RequestPlayer)
-    private static final virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:virtual.exhibition.MultiUser.Synchronizer.RequestUser)
+    private static final virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer();
+      DEFAULT_INSTANCE = new virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser();
     }
 
-    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer getDefaultInstance() {
+    public static virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<RequestPlayer>
-        PARSER = new com.google.protobuf.AbstractParser<RequestPlayer>() {
+    private static final com.google.protobuf.Parser<RequestUser>
+        PARSER = new com.google.protobuf.AbstractParser<RequestUser>() {
       @java.lang.Override
-      public RequestPlayer parsePartialFrom(
+      public RequestUser parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new RequestPlayer(input, extensionRegistry);
+        return new RequestUser(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<RequestPlayer> parser() {
+    public static com.google.protobuf.Parser<RequestUser> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<RequestPlayer> getParserForType() {
+    public com.google.protobuf.Parser<RequestUser> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer getDefaultInstanceForType() {
+    public virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2698,20 +2698,20 @@ public final class MultiUserSync {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_virtual_exhibition_MultiUser_Synchronizer_Player_descriptor;
+    internal_static_virtual_exhibition_MultiUser_Synchronizer_User_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_virtual_exhibition_MultiUser_Synchronizer_Player_fieldAccessorTable;
+      internal_static_virtual_exhibition_MultiUser_Synchronizer_User_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_virtual_exhibition_MultiUser_Synchronizer_Vector_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_virtual_exhibition_MultiUser_Synchronizer_Vector_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestPlayer_descriptor;
+    internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestUser_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestPlayer_fieldAccessorTable;
+      internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestUser_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_virtual_exhibition_MultiUser_Synchronizer_Response_descriptor;
   private static final 
@@ -2727,23 +2727,23 @@ public final class MultiUserSync {
   static {
     java.lang.String[] descriptorData = {
       "\n\024multiUser-sync.proto\022)virtual.exhibiti" +
-      "on.MultiUser.Synchronizer\"\362\001\n\006Player\022\n\n\002" +
-      "id\030\001 \001(\005\022I\n\016playerPosition\030\002 \001(\01321.virtu" +
-      "al.exhibition.MultiUser.Synchronizer.Vec" +
-      "tor\022I\n\016playerRotation\030\003 \001(\01321.virtual.ex" +
-      "hibition.MultiUser.Synchronizer.Vector\022F" +
-      "\n\013playerScale\030\004 \001(\01321.virtual.exhibition" +
-      ".MultiUser.Synchronizer.Vector\")\n\006Vector" +
-      "\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\"(\n\rReq" +
-      "uestPlayer\022\027\n\017requestPlayerID\030\001 \001(\005\"\034\n\010R" +
-      "esponse\022\020\n\010response\030\001 \001(\t2\212\002\n\rmultiUserS" +
-      "ync\022~\n\tgetPlayer\0228.virtual.exhibition.Mu" +
-      "ltiUser.Synchronizer.RequestPlayer\0321.vir" +
-      "tual.exhibition.MultiUser.Synchronizer.P" +
-      "layer\"\000(\0010\001\022y\n\tsetPlayer\0221.virtual.exhib" +
-      "ition.MultiUser.Synchronizer.Player\0323.vi" +
-      "rtual.exhibition.MultiUser.Synchronizer." +
-      "Response\"\000(\0010\001b\006proto3"
+      "on.MultiUser.Synchronizer\"\360\001\n\004User\022\n\n\002id" +
+      "\030\001 \001(\005\022I\n\016playerPosition\030\002 \001(\01321.virtual" +
+      ".exhibition.MultiUser.Synchronizer.Vecto" +
+      "r\022I\n\016playerRotation\030\003 \001(\01321.virtual.exhi" +
+      "bition.MultiUser.Synchronizer.Vector\022F\n\013" +
+      "playerScale\030\004 \001(\01321.virtual.exhibition.M" +
+      "ultiUser.Synchronizer.Vector\")\n\006Vector\022\t" +
+      "\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\"$\n\013Reque" +
+      "stUser\022\025\n\rrequestUserID\030\001 \001(\005\"\034\n\010Respons" +
+      "e\022\020\n\010response\030\001 \001(\t2\200\002\n\rmultiUserSync\022x\n" +
+      "\007getUser\0226.virtual.exhibition.MultiUser." +
+      "Synchronizer.RequestUser\032/.virtual.exhib" +
+      "ition.MultiUser.Synchronizer.User\"\000(\0010\001\022" +
+      "u\n\007setUser\022/.virtual.exhibition.MultiUse" +
+      "r.Synchronizer.User\0323.virtual.exhibition" +
+      ".MultiUser.Synchronizer.Response\"\000(\0010\001b\006" +
+      "proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -2757,11 +2757,11 @@ public final class MultiUserSync {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_virtual_exhibition_MultiUser_Synchronizer_Player_descriptor =
+    internal_static_virtual_exhibition_MultiUser_Synchronizer_User_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_virtual_exhibition_MultiUser_Synchronizer_Player_fieldAccessorTable = new
+    internal_static_virtual_exhibition_MultiUser_Synchronizer_User_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_virtual_exhibition_MultiUser_Synchronizer_Player_descriptor,
+        internal_static_virtual_exhibition_MultiUser_Synchronizer_User_descriptor,
         new java.lang.String[] { "Id", "PlayerPosition", "PlayerRotation", "PlayerScale", });
     internal_static_virtual_exhibition_MultiUser_Synchronizer_Vector_descriptor =
       getDescriptor().getMessageTypes().get(1);
@@ -2769,12 +2769,12 @@ public final class MultiUserSync {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_virtual_exhibition_MultiUser_Synchronizer_Vector_descriptor,
         new java.lang.String[] { "X", "Y", "Z", });
-    internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestPlayer_descriptor =
+    internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestUser_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestPlayer_fieldAccessorTable = new
+    internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestUser_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestPlayer_descriptor,
-        new java.lang.String[] { "RequestPlayerID", });
+        internal_static_virtual_exhibition_MultiUser_Synchronizer_RequestUser_descriptor,
+        new java.lang.String[] { "RequestUserID", });
     internal_static_virtual_exhibition_MultiUser_Synchronizer_Response_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_virtual_exhibition_MultiUser_Synchronizer_Response_fieldAccessorTable = new

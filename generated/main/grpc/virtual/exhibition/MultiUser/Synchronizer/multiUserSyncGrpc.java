@@ -27,68 +27,68 @@ public final class multiUserSyncGrpc {
   public static final String SERVICE_NAME = "virtual.exhibition.MultiUser.Synchronizer.multiUserSync";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer,
-      virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player> getGetPlayerMethod;
+  private static volatile io.grpc.MethodDescriptor<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser,
+      virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User> getGetUserMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "getPlayer",
-      requestType = virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer.class,
-      responseType = virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player.class,
+      fullMethodName = SERVICE_NAME + '/' + "getUser",
+      requestType = virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser.class,
+      responseType = virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User.class,
       methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
-  public static io.grpc.MethodDescriptor<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer,
-      virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player> getGetPlayerMethod() {
-    io.grpc.MethodDescriptor<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player> getGetPlayerMethod;
-    if ((getGetPlayerMethod = multiUserSyncGrpc.getGetPlayerMethod) == null) {
+  public static io.grpc.MethodDescriptor<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser,
+      virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User> getGetUserMethod() {
+    io.grpc.MethodDescriptor<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User> getGetUserMethod;
+    if ((getGetUserMethod = multiUserSyncGrpc.getGetUserMethod) == null) {
       synchronized (multiUserSyncGrpc.class) {
-        if ((getGetPlayerMethod = multiUserSyncGrpc.getGetPlayerMethod) == null) {
-          multiUserSyncGrpc.getGetPlayerMethod = getGetPlayerMethod = 
-              io.grpc.MethodDescriptor.<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player>newBuilder()
+        if ((getGetUserMethod = multiUserSyncGrpc.getGetUserMethod) == null) {
+          multiUserSyncGrpc.getGetUserMethod = getGetUserMethod = 
+              io.grpc.MethodDescriptor.<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
               .setFullMethodName(generateFullMethodName(
-                  "virtual.exhibition.MultiUser.Synchronizer.multiUserSync", "getPlayer"))
+                  "virtual.exhibition.MultiUser.Synchronizer.multiUserSync", "getUser"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer.getDefaultInstance()))
+                  virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player.getDefaultInstance()))
-                  .setSchemaDescriptor(new multiUserSyncMethodDescriptorSupplier("getPlayer"))
+                  virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User.getDefaultInstance()))
+                  .setSchemaDescriptor(new multiUserSyncMethodDescriptorSupplier("getUser"))
                   .build();
           }
         }
      }
-     return getGetPlayerMethod;
+     return getGetUserMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player,
-      virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response> getSetPlayerMethod;
+  private static volatile io.grpc.MethodDescriptor<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User,
+      virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response> getSetUserMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "setPlayer",
-      requestType = virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player.class,
+      fullMethodName = SERVICE_NAME + '/' + "setUser",
+      requestType = virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User.class,
       responseType = virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response.class,
       methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
-  public static io.grpc.MethodDescriptor<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player,
-      virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response> getSetPlayerMethod() {
-    io.grpc.MethodDescriptor<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response> getSetPlayerMethod;
-    if ((getSetPlayerMethod = multiUserSyncGrpc.getSetPlayerMethod) == null) {
+  public static io.grpc.MethodDescriptor<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User,
+      virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response> getSetUserMethod() {
+    io.grpc.MethodDescriptor<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response> getSetUserMethod;
+    if ((getSetUserMethod = multiUserSyncGrpc.getSetUserMethod) == null) {
       synchronized (multiUserSyncGrpc.class) {
-        if ((getSetPlayerMethod = multiUserSyncGrpc.getSetPlayerMethod) == null) {
-          multiUserSyncGrpc.getSetPlayerMethod = getSetPlayerMethod = 
-              io.grpc.MethodDescriptor.<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response>newBuilder()
+        if ((getSetUserMethod = multiUserSyncGrpc.getSetUserMethod) == null) {
+          multiUserSyncGrpc.getSetUserMethod = getSetUserMethod = 
+              io.grpc.MethodDescriptor.<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
               .setFullMethodName(generateFullMethodName(
-                  "virtual.exhibition.MultiUser.Synchronizer.multiUserSync", "setPlayer"))
+                  "virtual.exhibition.MultiUser.Synchronizer.multiUserSync", "setUser"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player.getDefaultInstance()))
+                  virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response.getDefaultInstance()))
-                  .setSchemaDescriptor(new multiUserSyncMethodDescriptorSupplier("setPlayer"))
+                  .setSchemaDescriptor(new multiUserSyncMethodDescriptorSupplier("setUser"))
                   .build();
           }
         }
      }
-     return getSetPlayerMethod;
+     return getSetUserMethod;
   }
 
   /**
@@ -120,34 +120,34 @@ public final class multiUserSyncGrpc {
 
     /**
      */
-    public io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer> getPlayer(
-        io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player> responseObserver) {
-      return asyncUnimplementedStreamingCall(getGetPlayerMethod(), responseObserver);
+    public io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser> getUser(
+        io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User> responseObserver) {
+      return asyncUnimplementedStreamingCall(getGetUserMethod(), responseObserver);
     }
 
     /**
      */
-    public io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player> setPlayer(
+    public io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User> setUser(
         io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response> responseObserver) {
-      return asyncUnimplementedStreamingCall(getSetPlayerMethod(), responseObserver);
+      return asyncUnimplementedStreamingCall(getSetUserMethod(), responseObserver);
     }
 
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
-            getGetPlayerMethod(),
+            getGetUserMethod(),
             asyncBidiStreamingCall(
               new MethodHandlers<
-                virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer,
-                virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player>(
-                  this, METHODID_GET_PLAYER)))
+                virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser,
+                virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User>(
+                  this, METHODID_GET_USER)))
           .addMethod(
-            getSetPlayerMethod(),
+            getSetUserMethod(),
             asyncBidiStreamingCall(
               new MethodHandlers<
-                virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player,
+                virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User,
                 virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response>(
-                  this, METHODID_SET_PLAYER)))
+                  this, METHODID_SET_USER)))
           .build();
     }
   }
@@ -172,18 +172,18 @@ public final class multiUserSyncGrpc {
 
     /**
      */
-    public io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestPlayer> getPlayer(
-        io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player> responseObserver) {
+    public io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser> getUser(
+        io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User> responseObserver) {
       return asyncBidiStreamingCall(
-          getChannel().newCall(getGetPlayerMethod(), getCallOptions()), responseObserver);
+          getChannel().newCall(getGetUserMethod(), getCallOptions()), responseObserver);
     }
 
     /**
      */
-    public io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player> setPlayer(
+    public io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User> setUser(
         io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response> responseObserver) {
       return asyncBidiStreamingCall(
-          getChannel().newCall(getSetPlayerMethod(), getCallOptions()), responseObserver);
+          getChannel().newCall(getSetUserMethod(), getCallOptions()), responseObserver);
     }
   }
 
@@ -225,8 +225,8 @@ public final class multiUserSyncGrpc {
     }
   }
 
-  private static final int METHODID_GET_PLAYER = 0;
-  private static final int METHODID_SET_PLAYER = 1;
+  private static final int METHODID_GET_USER = 0;
+  private static final int METHODID_SET_USER = 1;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -255,11 +255,11 @@ public final class multiUserSyncGrpc {
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
-        case METHODID_GET_PLAYER:
-          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.getPlayer(
-              (io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Player>) responseObserver);
-        case METHODID_SET_PLAYER:
-          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.setPlayer(
+        case METHODID_GET_USER:
+          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.getUser(
+              (io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User>) responseObserver);
+        case METHODID_SET_USER:
+          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.setUser(
               (io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response>) responseObserver);
         default:
           throw new AssertionError();
@@ -312,8 +312,8 @@ public final class multiUserSyncGrpc {
         if (result == null) {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new multiUserSyncFileDescriptorSupplier())
-              .addMethod(getGetPlayerMethod())
-              .addMethod(getSetPlayerMethod())
+              .addMethod(getGetUserMethod())
+              .addMethod(getSetUserMethod())
               .build();
         }
       }
