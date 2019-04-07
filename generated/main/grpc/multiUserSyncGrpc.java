@@ -1,5 +1,3 @@
-package virtual.exhibition.MultiUser.Synchronizer;
-
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
 import static io.grpc.stub.ClientCalls.asyncClientStreamingCall;
@@ -24,33 +22,33 @@ public final class multiUserSyncGrpc {
 
   private multiUserSyncGrpc() {}
 
-  public static final String SERVICE_NAME = "virtual.exhibition.MultiUser.Synchronizer.multiUserSync";
+  public static final String SERVICE_NAME = "multiUserSync";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser,
-      virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User> getGetUserMethod;
+  private static volatile io.grpc.MethodDescriptor<MultiUserSync.RequestUser,
+      MultiUserSync.User> getGetUserMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "getUser",
-      requestType = virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser.class,
-      responseType = virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
-  public static io.grpc.MethodDescriptor<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser,
-      virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User> getGetUserMethod() {
-    io.grpc.MethodDescriptor<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User> getGetUserMethod;
+      requestType = MultiUserSync.RequestUser.class,
+      responseType = MultiUserSync.User.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<MultiUserSync.RequestUser,
+      MultiUserSync.User> getGetUserMethod() {
+    io.grpc.MethodDescriptor<MultiUserSync.RequestUser, MultiUserSync.User> getGetUserMethod;
     if ((getGetUserMethod = multiUserSyncGrpc.getGetUserMethod) == null) {
       synchronized (multiUserSyncGrpc.class) {
         if ((getGetUserMethod = multiUserSyncGrpc.getGetUserMethod) == null) {
           multiUserSyncGrpc.getGetUserMethod = getGetUserMethod = 
-              io.grpc.MethodDescriptor.<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User>newBuilder()
-              .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
+              io.grpc.MethodDescriptor.<MultiUserSync.RequestUser, MultiUserSync.User>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "virtual.exhibition.MultiUser.Synchronizer.multiUserSync", "getUser"))
+                  "multiUserSync", "getUser"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser.getDefaultInstance()))
+                  MultiUserSync.RequestUser.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User.getDefaultInstance()))
+                  MultiUserSync.User.getDefaultInstance()))
                   .setSchemaDescriptor(new multiUserSyncMethodDescriptorSupplier("getUser"))
                   .build();
           }
@@ -59,30 +57,30 @@ public final class multiUserSyncGrpc {
      return getGetUserMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User,
-      virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response> getSetUserMethod;
+  private static volatile io.grpc.MethodDescriptor<MultiUserSync.User,
+      MultiUserSync.Response> getSetUserMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "setUser",
-      requestType = virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User.class,
-      responseType = virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
-  public static io.grpc.MethodDescriptor<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User,
-      virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response> getSetUserMethod() {
-    io.grpc.MethodDescriptor<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response> getSetUserMethod;
+      requestType = MultiUserSync.User.class,
+      responseType = MultiUserSync.Response.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<MultiUserSync.User,
+      MultiUserSync.Response> getSetUserMethod() {
+    io.grpc.MethodDescriptor<MultiUserSync.User, MultiUserSync.Response> getSetUserMethod;
     if ((getSetUserMethod = multiUserSyncGrpc.getSetUserMethod) == null) {
       synchronized (multiUserSyncGrpc.class) {
         if ((getSetUserMethod = multiUserSyncGrpc.getSetUserMethod) == null) {
           multiUserSyncGrpc.getSetUserMethod = getSetUserMethod = 
-              io.grpc.MethodDescriptor.<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User, virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response>newBuilder()
-              .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
+              io.grpc.MethodDescriptor.<MultiUserSync.User, MultiUserSync.Response>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "virtual.exhibition.MultiUser.Synchronizer.multiUserSync", "setUser"))
+                  "multiUserSync", "setUser"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User.getDefaultInstance()))
+                  MultiUserSync.User.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response.getDefaultInstance()))
+                  MultiUserSync.Response.getDefaultInstance()))
                   .setSchemaDescriptor(new multiUserSyncMethodDescriptorSupplier("setUser"))
                   .build();
           }
@@ -120,33 +118,33 @@ public final class multiUserSyncGrpc {
 
     /**
      */
-    public io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser> getUser(
-        io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User> responseObserver) {
-      return asyncUnimplementedStreamingCall(getGetUserMethod(), responseObserver);
+    public void getUser(MultiUserSync.RequestUser request,
+        io.grpc.stub.StreamObserver<MultiUserSync.User> responseObserver) {
+      asyncUnimplementedUnaryCall(getGetUserMethod(), responseObserver);
     }
 
     /**
      */
-    public io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User> setUser(
-        io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response> responseObserver) {
-      return asyncUnimplementedStreamingCall(getSetUserMethod(), responseObserver);
+    public void setUser(MultiUserSync.User request,
+        io.grpc.stub.StreamObserver<MultiUserSync.Response> responseObserver) {
+      asyncUnimplementedUnaryCall(getSetUserMethod(), responseObserver);
     }
 
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             getGetUserMethod(),
-            asyncBidiStreamingCall(
+            asyncUnaryCall(
               new MethodHandlers<
-                virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser,
-                virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User>(
+                MultiUserSync.RequestUser,
+                MultiUserSync.User>(
                   this, METHODID_GET_USER)))
           .addMethod(
             getSetUserMethod(),
-            asyncBidiStreamingCall(
+            asyncUnaryCall(
               new MethodHandlers<
-                virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User,
-                virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response>(
+                MultiUserSync.User,
+                MultiUserSync.Response>(
                   this, METHODID_SET_USER)))
           .build();
     }
@@ -172,18 +170,18 @@ public final class multiUserSyncGrpc {
 
     /**
      */
-    public io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.RequestUser> getUser(
-        io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User> responseObserver) {
-      return asyncBidiStreamingCall(
-          getChannel().newCall(getGetUserMethod(), getCallOptions()), responseObserver);
+    public void getUser(MultiUserSync.RequestUser request,
+        io.grpc.stub.StreamObserver<MultiUserSync.User> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getGetUserMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User> setUser(
-        io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response> responseObserver) {
-      return asyncBidiStreamingCall(
-          getChannel().newCall(getSetUserMethod(), getCallOptions()), responseObserver);
+    public void setUser(MultiUserSync.User request,
+        io.grpc.stub.StreamObserver<MultiUserSync.Response> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getSetUserMethod(), getCallOptions()), request, responseObserver);
     }
   }
 
@@ -204,6 +202,20 @@ public final class multiUserSyncGrpc {
         io.grpc.CallOptions callOptions) {
       return new multiUserSyncBlockingStub(channel, callOptions);
     }
+
+    /**
+     */
+    public MultiUserSync.User getUser(MultiUserSync.RequestUser request) {
+      return blockingUnaryCall(
+          getChannel(), getGetUserMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public MultiUserSync.Response setUser(MultiUserSync.User request) {
+      return blockingUnaryCall(
+          getChannel(), getSetUserMethod(), getCallOptions(), request);
+    }
   }
 
   /**
@@ -222,6 +234,22 @@ public final class multiUserSyncGrpc {
     protected multiUserSyncFutureStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new multiUserSyncFutureStub(channel, callOptions);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<MultiUserSync.User> getUser(
+        MultiUserSync.RequestUser request) {
+      return futureUnaryCall(
+          getChannel().newCall(getGetUserMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<MultiUserSync.Response> setUser(
+        MultiUserSync.User request) {
+      return futureUnaryCall(
+          getChannel().newCall(getSetUserMethod(), getCallOptions()), request);
     }
   }
 
@@ -245,6 +273,14 @@ public final class multiUserSyncGrpc {
     @java.lang.SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
+        case METHODID_GET_USER:
+          serviceImpl.getUser((MultiUserSync.RequestUser) request,
+              (io.grpc.stub.StreamObserver<MultiUserSync.User>) responseObserver);
+          break;
+        case METHODID_SET_USER:
+          serviceImpl.setUser((MultiUserSync.User) request,
+              (io.grpc.stub.StreamObserver<MultiUserSync.Response>) responseObserver);
+          break;
         default:
           throw new AssertionError();
       }
@@ -255,12 +291,6 @@ public final class multiUserSyncGrpc {
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
-        case METHODID_GET_USER:
-          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.getUser(
-              (io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.User>) responseObserver);
-        case METHODID_SET_USER:
-          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.setUser(
-              (io.grpc.stub.StreamObserver<virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.Response>) responseObserver);
         default:
           throw new AssertionError();
       }
@@ -273,7 +303,7 @@ public final class multiUserSyncGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return virtual.exhibition.MultiUser.Synchronizer.MultiUserSync.getDescriptor();
+      return MultiUserSync.getDescriptor();
     }
 
     @java.lang.Override
