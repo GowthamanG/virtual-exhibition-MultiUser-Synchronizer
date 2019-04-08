@@ -3,6 +3,7 @@ import io.grpc.stub.StreamObserver;
 
 import java.util.HashMap;
 
+
 public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
 
     private HashMap<Integer, MultiUserSync.User> users = new HashMap<>();
@@ -66,7 +67,14 @@ public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
     @Override
     public void getUser(MultiUserSync.RequestUser request, StreamObserver<MultiUserSync.User> responseObserver) {
 
-        MultiUserSync.User user = users.get(request.getRequestUserID());
+        MultiUserSync.User user = null;
+
+        for (HashMap.Entry<Integer, MultiUserSync.User> pair : users.entrySet()) {
+            if (pair.getKey() != request.getRequestUserID()) {
+                user = users.get(request.getRequestUserID());
+                break;
+            }
+        }
 
         responseObserver.onNext(MultiUserSync.User.newBuilder(user).build());
     }
