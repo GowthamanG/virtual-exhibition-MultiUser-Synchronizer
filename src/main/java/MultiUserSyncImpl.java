@@ -71,7 +71,7 @@ public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
 
         for (HashMap.Entry<Integer, MultiUserSync.User> pair : users.entrySet()) {
             if (pair.getKey() != request.getRequestUserID()) {
-                user = users.get(request.getRequestUserID());
+                user = users.get(pair.getKey());
                 break;
             }
         }
