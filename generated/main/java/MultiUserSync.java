@@ -1068,6 +1068,1062 @@ public final class MultiUserSync {
 
   }
 
+  public interface TrackerOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:Tracker)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>int32 id = 1;</code>
+     */
+    int getId();
+
+    /**
+     * <code>.Vector trackerPosition = 2;</code>
+     */
+    boolean hasTrackerPosition();
+    /**
+     * <code>.Vector trackerPosition = 2;</code>
+     */
+    MultiUserSync.Vector getTrackerPosition();
+    /**
+     * <code>.Vector trackerPosition = 2;</code>
+     */
+    MultiUserSync.VectorOrBuilder getTrackerPositionOrBuilder();
+
+    /**
+     * <code>.Quadrublet trackerRotation = 3;</code>
+     */
+    boolean hasTrackerRotation();
+    /**
+     * <code>.Quadrublet trackerRotation = 3;</code>
+     */
+    MultiUserSync.Quadrublet getTrackerRotation();
+    /**
+     * <code>.Quadrublet trackerRotation = 3;</code>
+     */
+    MultiUserSync.QuadrubletOrBuilder getTrackerRotationOrBuilder();
+
+    /**
+     * <code>.Vector trackerScale = 4;</code>
+     */
+    boolean hasTrackerScale();
+    /**
+     * <code>.Vector trackerScale = 4;</code>
+     */
+    MultiUserSync.Vector getTrackerScale();
+    /**
+     * <code>.Vector trackerScale = 4;</code>
+     */
+    MultiUserSync.VectorOrBuilder getTrackerScaleOrBuilder();
+  }
+  /**
+   * Protobuf type {@code Tracker}
+   */
+  public  static final class Tracker extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:Tracker)
+      TrackerOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use Tracker.newBuilder() to construct.
+    private Tracker(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private Tracker() {
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private Tracker(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+
+              id_ = input.readInt32();
+              break;
+            }
+            case 18: {
+              MultiUserSync.Vector.Builder subBuilder = null;
+              if (trackerPosition_ != null) {
+                subBuilder = trackerPosition_.toBuilder();
+              }
+              trackerPosition_ = input.readMessage(MultiUserSync.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(trackerPosition_);
+                trackerPosition_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 26: {
+              MultiUserSync.Quadrublet.Builder subBuilder = null;
+              if (trackerRotation_ != null) {
+                subBuilder = trackerRotation_.toBuilder();
+              }
+              trackerRotation_ = input.readMessage(MultiUserSync.Quadrublet.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(trackerRotation_);
+                trackerRotation_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 34: {
+              MultiUserSync.Vector.Builder subBuilder = null;
+              if (trackerScale_ != null) {
+                subBuilder = trackerScale_.toBuilder();
+              }
+              trackerScale_ = input.readMessage(MultiUserSync.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(trackerScale_);
+                trackerScale_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return MultiUserSync.internal_static_Tracker_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return MultiUserSync.internal_static_Tracker_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              MultiUserSync.Tracker.class, MultiUserSync.Tracker.Builder.class);
+    }
+
+    public static final int ID_FIELD_NUMBER = 1;
+    private int id_;
+    /**
+     * <code>int32 id = 1;</code>
+     */
+    public int getId() {
+      return id_;
+    }
+
+    public static final int TRACKERPOSITION_FIELD_NUMBER = 2;
+    private MultiUserSync.Vector trackerPosition_;
+    /**
+     * <code>.Vector trackerPosition = 2;</code>
+     */
+    public boolean hasTrackerPosition() {
+      return trackerPosition_ != null;
+    }
+    /**
+     * <code>.Vector trackerPosition = 2;</code>
+     */
+    public MultiUserSync.Vector getTrackerPosition() {
+      return trackerPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : trackerPosition_;
+    }
+    /**
+     * <code>.Vector trackerPosition = 2;</code>
+     */
+    public MultiUserSync.VectorOrBuilder getTrackerPositionOrBuilder() {
+      return getTrackerPosition();
+    }
+
+    public static final int TRACKERROTATION_FIELD_NUMBER = 3;
+    private MultiUserSync.Quadrublet trackerRotation_;
+    /**
+     * <code>.Quadrublet trackerRotation = 3;</code>
+     */
+    public boolean hasTrackerRotation() {
+      return trackerRotation_ != null;
+    }
+    /**
+     * <code>.Quadrublet trackerRotation = 3;</code>
+     */
+    public MultiUserSync.Quadrublet getTrackerRotation() {
+      return trackerRotation_ == null ? MultiUserSync.Quadrublet.getDefaultInstance() : trackerRotation_;
+    }
+    /**
+     * <code>.Quadrublet trackerRotation = 3;</code>
+     */
+    public MultiUserSync.QuadrubletOrBuilder getTrackerRotationOrBuilder() {
+      return getTrackerRotation();
+    }
+
+    public static final int TRACKERSCALE_FIELD_NUMBER = 4;
+    private MultiUserSync.Vector trackerScale_;
+    /**
+     * <code>.Vector trackerScale = 4;</code>
+     */
+    public boolean hasTrackerScale() {
+      return trackerScale_ != null;
+    }
+    /**
+     * <code>.Vector trackerScale = 4;</code>
+     */
+    public MultiUserSync.Vector getTrackerScale() {
+      return trackerScale_ == null ? MultiUserSync.Vector.getDefaultInstance() : trackerScale_;
+    }
+    /**
+     * <code>.Vector trackerScale = 4;</code>
+     */
+    public MultiUserSync.VectorOrBuilder getTrackerScaleOrBuilder() {
+      return getTrackerScale();
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (id_ != 0) {
+        output.writeInt32(1, id_);
+      }
+      if (trackerPosition_ != null) {
+        output.writeMessage(2, getTrackerPosition());
+      }
+      if (trackerRotation_ != null) {
+        output.writeMessage(3, getTrackerRotation());
+      }
+      if (trackerScale_ != null) {
+        output.writeMessage(4, getTrackerScale());
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (id_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, id_);
+      }
+      if (trackerPosition_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, getTrackerPosition());
+      }
+      if (trackerRotation_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, getTrackerRotation());
+      }
+      if (trackerScale_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, getTrackerScale());
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof MultiUserSync.Tracker)) {
+        return super.equals(obj);
+      }
+      MultiUserSync.Tracker other = (MultiUserSync.Tracker) obj;
+
+      if (getId()
+          != other.getId()) return false;
+      if (hasTrackerPosition() != other.hasTrackerPosition()) return false;
+      if (hasTrackerPosition()) {
+        if (!getTrackerPosition()
+            .equals(other.getTrackerPosition())) return false;
+      }
+      if (hasTrackerRotation() != other.hasTrackerRotation()) return false;
+      if (hasTrackerRotation()) {
+        if (!getTrackerRotation()
+            .equals(other.getTrackerRotation())) return false;
+      }
+      if (hasTrackerScale() != other.hasTrackerScale()) return false;
+      if (hasTrackerScale()) {
+        if (!getTrackerScale()
+            .equals(other.getTrackerScale())) return false;
+      }
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId();
+      if (hasTrackerPosition()) {
+        hash = (37 * hash) + TRACKERPOSITION_FIELD_NUMBER;
+        hash = (53 * hash) + getTrackerPosition().hashCode();
+      }
+      if (hasTrackerRotation()) {
+        hash = (37 * hash) + TRACKERROTATION_FIELD_NUMBER;
+        hash = (53 * hash) + getTrackerRotation().hashCode();
+      }
+      if (hasTrackerScale()) {
+        hash = (37 * hash) + TRACKERSCALE_FIELD_NUMBER;
+        hash = (53 * hash) + getTrackerScale().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static MultiUserSync.Tracker parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static MultiUserSync.Tracker parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static MultiUserSync.Tracker parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static MultiUserSync.Tracker parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static MultiUserSync.Tracker parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static MultiUserSync.Tracker parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static MultiUserSync.Tracker parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static MultiUserSync.Tracker parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static MultiUserSync.Tracker parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static MultiUserSync.Tracker parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static MultiUserSync.Tracker parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static MultiUserSync.Tracker parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(MultiUserSync.Tracker prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code Tracker}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:Tracker)
+        MultiUserSync.TrackerOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return MultiUserSync.internal_static_Tracker_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return MultiUserSync.internal_static_Tracker_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                MultiUserSync.Tracker.class, MultiUserSync.Tracker.Builder.class);
+      }
+
+      // Construct using MultiUserSync.Tracker.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        id_ = 0;
+
+        if (trackerPositionBuilder_ == null) {
+          trackerPosition_ = null;
+        } else {
+          trackerPosition_ = null;
+          trackerPositionBuilder_ = null;
+        }
+        if (trackerRotationBuilder_ == null) {
+          trackerRotation_ = null;
+        } else {
+          trackerRotation_ = null;
+          trackerRotationBuilder_ = null;
+        }
+        if (trackerScaleBuilder_ == null) {
+          trackerScale_ = null;
+        } else {
+          trackerScale_ = null;
+          trackerScaleBuilder_ = null;
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return MultiUserSync.internal_static_Tracker_descriptor;
+      }
+
+      @java.lang.Override
+      public MultiUserSync.Tracker getDefaultInstanceForType() {
+        return MultiUserSync.Tracker.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public MultiUserSync.Tracker build() {
+        MultiUserSync.Tracker result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public MultiUserSync.Tracker buildPartial() {
+        MultiUserSync.Tracker result = new MultiUserSync.Tracker(this);
+        result.id_ = id_;
+        if (trackerPositionBuilder_ == null) {
+          result.trackerPosition_ = trackerPosition_;
+        } else {
+          result.trackerPosition_ = trackerPositionBuilder_.build();
+        }
+        if (trackerRotationBuilder_ == null) {
+          result.trackerRotation_ = trackerRotation_;
+        } else {
+          result.trackerRotation_ = trackerRotationBuilder_.build();
+        }
+        if (trackerScaleBuilder_ == null) {
+          result.trackerScale_ = trackerScale_;
+        } else {
+          result.trackerScale_ = trackerScaleBuilder_.build();
+        }
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof MultiUserSync.Tracker) {
+          return mergeFrom((MultiUserSync.Tracker)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(MultiUserSync.Tracker other) {
+        if (other == MultiUserSync.Tracker.getDefaultInstance()) return this;
+        if (other.getId() != 0) {
+          setId(other.getId());
+        }
+        if (other.hasTrackerPosition()) {
+          mergeTrackerPosition(other.getTrackerPosition());
+        }
+        if (other.hasTrackerRotation()) {
+          mergeTrackerRotation(other.getTrackerRotation());
+        }
+        if (other.hasTrackerScale()) {
+          mergeTrackerScale(other.getTrackerScale());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        MultiUserSync.Tracker parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (MultiUserSync.Tracker) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private int id_ ;
+      /**
+       * <code>int32 id = 1;</code>
+       */
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <code>int32 id = 1;</code>
+       */
+      public Builder setId(int value) {
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 id = 1;</code>
+       */
+      public Builder clearId() {
+        
+        id_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private MultiUserSync.Vector trackerPosition_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> trackerPositionBuilder_;
+      /**
+       * <code>.Vector trackerPosition = 2;</code>
+       */
+      public boolean hasTrackerPosition() {
+        return trackerPositionBuilder_ != null || trackerPosition_ != null;
+      }
+      /**
+       * <code>.Vector trackerPosition = 2;</code>
+       */
+      public MultiUserSync.Vector getTrackerPosition() {
+        if (trackerPositionBuilder_ == null) {
+          return trackerPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : trackerPosition_;
+        } else {
+          return trackerPositionBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector trackerPosition = 2;</code>
+       */
+      public Builder setTrackerPosition(MultiUserSync.Vector value) {
+        if (trackerPositionBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          trackerPosition_ = value;
+          onChanged();
+        } else {
+          trackerPositionBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector trackerPosition = 2;</code>
+       */
+      public Builder setTrackerPosition(
+          MultiUserSync.Vector.Builder builderForValue) {
+        if (trackerPositionBuilder_ == null) {
+          trackerPosition_ = builderForValue.build();
+          onChanged();
+        } else {
+          trackerPositionBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector trackerPosition = 2;</code>
+       */
+      public Builder mergeTrackerPosition(MultiUserSync.Vector value) {
+        if (trackerPositionBuilder_ == null) {
+          if (trackerPosition_ != null) {
+            trackerPosition_ =
+              MultiUserSync.Vector.newBuilder(trackerPosition_).mergeFrom(value).buildPartial();
+          } else {
+            trackerPosition_ = value;
+          }
+          onChanged();
+        } else {
+          trackerPositionBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector trackerPosition = 2;</code>
+       */
+      public Builder clearTrackerPosition() {
+        if (trackerPositionBuilder_ == null) {
+          trackerPosition_ = null;
+          onChanged();
+        } else {
+          trackerPosition_ = null;
+          trackerPositionBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector trackerPosition = 2;</code>
+       */
+      public MultiUserSync.Vector.Builder getTrackerPositionBuilder() {
+        
+        onChanged();
+        return getTrackerPositionFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector trackerPosition = 2;</code>
+       */
+      public MultiUserSync.VectorOrBuilder getTrackerPositionOrBuilder() {
+        if (trackerPositionBuilder_ != null) {
+          return trackerPositionBuilder_.getMessageOrBuilder();
+        } else {
+          return trackerPosition_ == null ?
+              MultiUserSync.Vector.getDefaultInstance() : trackerPosition_;
+        }
+      }
+      /**
+       * <code>.Vector trackerPosition = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> 
+          getTrackerPositionFieldBuilder() {
+        if (trackerPositionBuilder_ == null) {
+          trackerPositionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder>(
+                  getTrackerPosition(),
+                  getParentForChildren(),
+                  isClean());
+          trackerPosition_ = null;
+        }
+        return trackerPositionBuilder_;
+      }
+
+      private MultiUserSync.Quadrublet trackerRotation_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          MultiUserSync.Quadrublet, MultiUserSync.Quadrublet.Builder, MultiUserSync.QuadrubletOrBuilder> trackerRotationBuilder_;
+      /**
+       * <code>.Quadrublet trackerRotation = 3;</code>
+       */
+      public boolean hasTrackerRotation() {
+        return trackerRotationBuilder_ != null || trackerRotation_ != null;
+      }
+      /**
+       * <code>.Quadrublet trackerRotation = 3;</code>
+       */
+      public MultiUserSync.Quadrublet getTrackerRotation() {
+        if (trackerRotationBuilder_ == null) {
+          return trackerRotation_ == null ? MultiUserSync.Quadrublet.getDefaultInstance() : trackerRotation_;
+        } else {
+          return trackerRotationBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Quadrublet trackerRotation = 3;</code>
+       */
+      public Builder setTrackerRotation(MultiUserSync.Quadrublet value) {
+        if (trackerRotationBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          trackerRotation_ = value;
+          onChanged();
+        } else {
+          trackerRotationBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Quadrublet trackerRotation = 3;</code>
+       */
+      public Builder setTrackerRotation(
+          MultiUserSync.Quadrublet.Builder builderForValue) {
+        if (trackerRotationBuilder_ == null) {
+          trackerRotation_ = builderForValue.build();
+          onChanged();
+        } else {
+          trackerRotationBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Quadrublet trackerRotation = 3;</code>
+       */
+      public Builder mergeTrackerRotation(MultiUserSync.Quadrublet value) {
+        if (trackerRotationBuilder_ == null) {
+          if (trackerRotation_ != null) {
+            trackerRotation_ =
+              MultiUserSync.Quadrublet.newBuilder(trackerRotation_).mergeFrom(value).buildPartial();
+          } else {
+            trackerRotation_ = value;
+          }
+          onChanged();
+        } else {
+          trackerRotationBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Quadrublet trackerRotation = 3;</code>
+       */
+      public Builder clearTrackerRotation() {
+        if (trackerRotationBuilder_ == null) {
+          trackerRotation_ = null;
+          onChanged();
+        } else {
+          trackerRotation_ = null;
+          trackerRotationBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Quadrublet trackerRotation = 3;</code>
+       */
+      public MultiUserSync.Quadrublet.Builder getTrackerRotationBuilder() {
+        
+        onChanged();
+        return getTrackerRotationFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Quadrublet trackerRotation = 3;</code>
+       */
+      public MultiUserSync.QuadrubletOrBuilder getTrackerRotationOrBuilder() {
+        if (trackerRotationBuilder_ != null) {
+          return trackerRotationBuilder_.getMessageOrBuilder();
+        } else {
+          return trackerRotation_ == null ?
+              MultiUserSync.Quadrublet.getDefaultInstance() : trackerRotation_;
+        }
+      }
+      /**
+       * <code>.Quadrublet trackerRotation = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          MultiUserSync.Quadrublet, MultiUserSync.Quadrublet.Builder, MultiUserSync.QuadrubletOrBuilder> 
+          getTrackerRotationFieldBuilder() {
+        if (trackerRotationBuilder_ == null) {
+          trackerRotationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              MultiUserSync.Quadrublet, MultiUserSync.Quadrublet.Builder, MultiUserSync.QuadrubletOrBuilder>(
+                  getTrackerRotation(),
+                  getParentForChildren(),
+                  isClean());
+          trackerRotation_ = null;
+        }
+        return trackerRotationBuilder_;
+      }
+
+      private MultiUserSync.Vector trackerScale_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> trackerScaleBuilder_;
+      /**
+       * <code>.Vector trackerScale = 4;</code>
+       */
+      public boolean hasTrackerScale() {
+        return trackerScaleBuilder_ != null || trackerScale_ != null;
+      }
+      /**
+       * <code>.Vector trackerScale = 4;</code>
+       */
+      public MultiUserSync.Vector getTrackerScale() {
+        if (trackerScaleBuilder_ == null) {
+          return trackerScale_ == null ? MultiUserSync.Vector.getDefaultInstance() : trackerScale_;
+        } else {
+          return trackerScaleBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector trackerScale = 4;</code>
+       */
+      public Builder setTrackerScale(MultiUserSync.Vector value) {
+        if (trackerScaleBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          trackerScale_ = value;
+          onChanged();
+        } else {
+          trackerScaleBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector trackerScale = 4;</code>
+       */
+      public Builder setTrackerScale(
+          MultiUserSync.Vector.Builder builderForValue) {
+        if (trackerScaleBuilder_ == null) {
+          trackerScale_ = builderForValue.build();
+          onChanged();
+        } else {
+          trackerScaleBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector trackerScale = 4;</code>
+       */
+      public Builder mergeTrackerScale(MultiUserSync.Vector value) {
+        if (trackerScaleBuilder_ == null) {
+          if (trackerScale_ != null) {
+            trackerScale_ =
+              MultiUserSync.Vector.newBuilder(trackerScale_).mergeFrom(value).buildPartial();
+          } else {
+            trackerScale_ = value;
+          }
+          onChanged();
+        } else {
+          trackerScaleBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector trackerScale = 4;</code>
+       */
+      public Builder clearTrackerScale() {
+        if (trackerScaleBuilder_ == null) {
+          trackerScale_ = null;
+          onChanged();
+        } else {
+          trackerScale_ = null;
+          trackerScaleBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector trackerScale = 4;</code>
+       */
+      public MultiUserSync.Vector.Builder getTrackerScaleBuilder() {
+        
+        onChanged();
+        return getTrackerScaleFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector trackerScale = 4;</code>
+       */
+      public MultiUserSync.VectorOrBuilder getTrackerScaleOrBuilder() {
+        if (trackerScaleBuilder_ != null) {
+          return trackerScaleBuilder_.getMessageOrBuilder();
+        } else {
+          return trackerScale_ == null ?
+              MultiUserSync.Vector.getDefaultInstance() : trackerScale_;
+        }
+      }
+      /**
+       * <code>.Vector trackerScale = 4;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> 
+          getTrackerScaleFieldBuilder() {
+        if (trackerScaleBuilder_ == null) {
+          trackerScaleBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder>(
+                  getTrackerScale(),
+                  getParentForChildren(),
+                  isClean());
+          trackerScale_ = null;
+        }
+        return trackerScaleBuilder_;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:Tracker)
+    }
+
+    // @@protoc_insertion_point(class_scope:Tracker)
+    private static final MultiUserSync.Tracker DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new MultiUserSync.Tracker();
+    }
+
+    public static MultiUserSync.Tracker getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<Tracker>
+        PARSER = new com.google.protobuf.AbstractParser<Tracker>() {
+      @java.lang.Override
+      public Tracker parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new Tracker(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<Tracker> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<Tracker> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public MultiUserSync.Tracker getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public interface VectorOrBuilder extends
       // @@protoc_insertion_point(interface_extends:Vector)
       com.google.protobuf.MessageOrBuilder {
@@ -2814,6 +3870,480 @@ public final class MultiUserSync {
 
   }
 
+  public interface RequestTrackerOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RequestTracker)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>int32 requestTrackerID = 1;</code>
+     */
+    int getRequestTrackerID();
+  }
+  /**
+   * Protobuf type {@code RequestTracker}
+   */
+  public  static final class RequestTracker extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:RequestTracker)
+      RequestTrackerOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use RequestTracker.newBuilder() to construct.
+    private RequestTracker(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private RequestTracker() {
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private RequestTracker(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+
+              requestTrackerID_ = input.readInt32();
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return MultiUserSync.internal_static_RequestTracker_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return MultiUserSync.internal_static_RequestTracker_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              MultiUserSync.RequestTracker.class, MultiUserSync.RequestTracker.Builder.class);
+    }
+
+    public static final int REQUESTTRACKERID_FIELD_NUMBER = 1;
+    private int requestTrackerID_;
+    /**
+     * <code>int32 requestTrackerID = 1;</code>
+     */
+    public int getRequestTrackerID() {
+      return requestTrackerID_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (requestTrackerID_ != 0) {
+        output.writeInt32(1, requestTrackerID_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (requestTrackerID_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, requestTrackerID_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof MultiUserSync.RequestTracker)) {
+        return super.equals(obj);
+      }
+      MultiUserSync.RequestTracker other = (MultiUserSync.RequestTracker) obj;
+
+      if (getRequestTrackerID()
+          != other.getRequestTrackerID()) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + REQUESTTRACKERID_FIELD_NUMBER;
+      hash = (53 * hash) + getRequestTrackerID();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static MultiUserSync.RequestTracker parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static MultiUserSync.RequestTracker parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static MultiUserSync.RequestTracker parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static MultiUserSync.RequestTracker parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static MultiUserSync.RequestTracker parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static MultiUserSync.RequestTracker parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static MultiUserSync.RequestTracker parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static MultiUserSync.RequestTracker parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static MultiUserSync.RequestTracker parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static MultiUserSync.RequestTracker parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static MultiUserSync.RequestTracker parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static MultiUserSync.RequestTracker parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(MultiUserSync.RequestTracker prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code RequestTracker}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RequestTracker)
+        MultiUserSync.RequestTrackerOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return MultiUserSync.internal_static_RequestTracker_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return MultiUserSync.internal_static_RequestTracker_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                MultiUserSync.RequestTracker.class, MultiUserSync.RequestTracker.Builder.class);
+      }
+
+      // Construct using MultiUserSync.RequestTracker.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        requestTrackerID_ = 0;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return MultiUserSync.internal_static_RequestTracker_descriptor;
+      }
+
+      @java.lang.Override
+      public MultiUserSync.RequestTracker getDefaultInstanceForType() {
+        return MultiUserSync.RequestTracker.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public MultiUserSync.RequestTracker build() {
+        MultiUserSync.RequestTracker result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public MultiUserSync.RequestTracker buildPartial() {
+        MultiUserSync.RequestTracker result = new MultiUserSync.RequestTracker(this);
+        result.requestTrackerID_ = requestTrackerID_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof MultiUserSync.RequestTracker) {
+          return mergeFrom((MultiUserSync.RequestTracker)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(MultiUserSync.RequestTracker other) {
+        if (other == MultiUserSync.RequestTracker.getDefaultInstance()) return this;
+        if (other.getRequestTrackerID() != 0) {
+          setRequestTrackerID(other.getRequestTrackerID());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        MultiUserSync.RequestTracker parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (MultiUserSync.RequestTracker) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private int requestTrackerID_ ;
+      /**
+       * <code>int32 requestTrackerID = 1;</code>
+       */
+      public int getRequestTrackerID() {
+        return requestTrackerID_;
+      }
+      /**
+       * <code>int32 requestTrackerID = 1;</code>
+       */
+      public Builder setRequestTrackerID(int value) {
+        
+        requestTrackerID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 requestTrackerID = 1;</code>
+       */
+      public Builder clearRequestTrackerID() {
+        
+        requestTrackerID_ = 0;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:RequestTracker)
+    }
+
+    // @@protoc_insertion_point(class_scope:RequestTracker)
+    private static final MultiUserSync.RequestTracker DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new MultiUserSync.RequestTracker();
+    }
+
+    public static MultiUserSync.RequestTracker getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<RequestTracker>
+        PARSER = new com.google.protobuf.AbstractParser<RequestTracker>() {
+      @java.lang.Override
+      public RequestTracker parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new RequestTracker(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<RequestTracker> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RequestTracker> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public MultiUserSync.RequestTracker getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public interface ResponseOrBuilder extends
       // @@protoc_insertion_point(interface_extends:Response)
       com.google.protobuf.MessageOrBuilder {
@@ -3369,6 +4899,11 @@ public final class MultiUserSync {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_User_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Tracker_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Tracker_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_Vector_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -3383,6 +4918,11 @@ public final class MultiUserSync {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_RequestUser_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_RequestTracker_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_RequestTracker_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_Response_descriptor;
   private static final 
@@ -3400,13 +4940,20 @@ public final class MultiUserSync {
       "\n\024multiUser-sync.proto\"p\n\004User\022\n\n\002id\030\001 \001" +
       "(\005\022\035\n\014userPosition\030\002 \001(\0132\007.Vector\022!\n\014use" +
       "rRotation\030\003 \001(\0132\013.Quadrublet\022\032\n\tuserScal" +
-      "e\030\004 \001(\0132\007.Vector\")\n\006Vector\022\t\n\001x\030\001 \001(\002\022\t\n" +
-      "\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\"8\n\nQuadrublet\022\t\n\001x\030\001" +
-      " \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\022\t\n\001w\030\004 \001(\002\"$\n" +
-      "\013RequestUser\022\025\n\rrequestUserID\030\001 \001(\005\"\034\n\010R" +
-      "esponse\022\020\n\010response\030\001 \001(\t2P\n\rmultiUserSy" +
-      "nc\022 \n\007getUser\022\014.RequestUser\032\005.User\"\000\022\035\n\007" +
-      "setUser\022\005.User\032\t.Response\"\000b\006proto3"
+      "e\030\004 \001(\0132\007.Vector\"|\n\007Tracker\022\n\n\002id\030\001 \001(\005\022" +
+      " \n\017trackerPosition\030\002 \001(\0132\007.Vector\022$\n\017tra" +
+      "ckerRotation\030\003 \001(\0132\013.Quadrublet\022\035\n\014track" +
+      "erScale\030\004 \001(\0132\007.Vector\")\n\006Vector\022\t\n\001x\030\001 " +
+      "\001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\"8\n\nQuadrublet\022" +
+      "\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\022\t\n\001w\030\004 " +
+      "\001(\002\"$\n\013RequestUser\022\025\n\rrequestUserID\030\001 \001(" +
+      "\005\"*\n\016RequestTracker\022\030\n\020requestTrackerID\030" +
+      "\001 \001(\005\"\034\n\010Response\022\020\n\010response\030\001 \001(\t2\240\001\n\r" +
+      "multiUserSync\022 \n\007getUser\022\014.RequestUser\032\005" +
+      ".User\"\000\022\035\n\007setUser\022\005.User\032\t.Response\"\000\022)" +
+      "\n\ngetTracker\022\017.RequestTracker\032\010.Tracker\"" +
+      "\000\022#\n\nsetTracker\022\010.Tracker\032\t.Response\"\000b\006" +
+      "proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -3426,26 +4973,38 @@ public final class MultiUserSync {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_User_descriptor,
         new java.lang.String[] { "Id", "UserPosition", "UserRotation", "UserScale", });
-    internal_static_Vector_descriptor =
+    internal_static_Tracker_descriptor =
       getDescriptor().getMessageTypes().get(1);
+    internal_static_Tracker_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Tracker_descriptor,
+        new java.lang.String[] { "Id", "TrackerPosition", "TrackerRotation", "TrackerScale", });
+    internal_static_Vector_descriptor =
+      getDescriptor().getMessageTypes().get(2);
     internal_static_Vector_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Vector_descriptor,
         new java.lang.String[] { "X", "Y", "Z", });
     internal_static_Quadrublet_descriptor =
-      getDescriptor().getMessageTypes().get(2);
+      getDescriptor().getMessageTypes().get(3);
     internal_static_Quadrublet_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Quadrublet_descriptor,
         new java.lang.String[] { "X", "Y", "Z", "W", });
     internal_static_RequestUser_descriptor =
-      getDescriptor().getMessageTypes().get(3);
+      getDescriptor().getMessageTypes().get(4);
     internal_static_RequestUser_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RequestUser_descriptor,
         new java.lang.String[] { "RequestUserID", });
+    internal_static_RequestTracker_descriptor =
+      getDescriptor().getMessageTypes().get(5);
+    internal_static_RequestTracker_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_RequestTracker_descriptor,
+        new java.lang.String[] { "RequestTrackerID", });
     internal_static_Response_descriptor =
-      getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(6);
     internal_static_Response_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Response_descriptor,

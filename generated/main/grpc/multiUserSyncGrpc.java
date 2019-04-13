@@ -89,6 +89,70 @@ public final class multiUserSyncGrpc {
      return getSetUserMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<MultiUserSync.RequestTracker,
+      MultiUserSync.Tracker> getGetTrackerMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "getTracker",
+      requestType = MultiUserSync.RequestTracker.class,
+      responseType = MultiUserSync.Tracker.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<MultiUserSync.RequestTracker,
+      MultiUserSync.Tracker> getGetTrackerMethod() {
+    io.grpc.MethodDescriptor<MultiUserSync.RequestTracker, MultiUserSync.Tracker> getGetTrackerMethod;
+    if ((getGetTrackerMethod = multiUserSyncGrpc.getGetTrackerMethod) == null) {
+      synchronized (multiUserSyncGrpc.class) {
+        if ((getGetTrackerMethod = multiUserSyncGrpc.getGetTrackerMethod) == null) {
+          multiUserSyncGrpc.getGetTrackerMethod = getGetTrackerMethod = 
+              io.grpc.MethodDescriptor.<MultiUserSync.RequestTracker, MultiUserSync.Tracker>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(
+                  "multiUserSync", "getTracker"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  MultiUserSync.RequestTracker.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  MultiUserSync.Tracker.getDefaultInstance()))
+                  .setSchemaDescriptor(new multiUserSyncMethodDescriptorSupplier("getTracker"))
+                  .build();
+          }
+        }
+     }
+     return getGetTrackerMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<MultiUserSync.Tracker,
+      MultiUserSync.Response> getSetTrackerMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "setTracker",
+      requestType = MultiUserSync.Tracker.class,
+      responseType = MultiUserSync.Response.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<MultiUserSync.Tracker,
+      MultiUserSync.Response> getSetTrackerMethod() {
+    io.grpc.MethodDescriptor<MultiUserSync.Tracker, MultiUserSync.Response> getSetTrackerMethod;
+    if ((getSetTrackerMethod = multiUserSyncGrpc.getSetTrackerMethod) == null) {
+      synchronized (multiUserSyncGrpc.class) {
+        if ((getSetTrackerMethod = multiUserSyncGrpc.getSetTrackerMethod) == null) {
+          multiUserSyncGrpc.getSetTrackerMethod = getSetTrackerMethod = 
+              io.grpc.MethodDescriptor.<MultiUserSync.Tracker, MultiUserSync.Response>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(
+                  "multiUserSync", "setTracker"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  MultiUserSync.Tracker.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  MultiUserSync.Response.getDefaultInstance()))
+                  .setSchemaDescriptor(new multiUserSyncMethodDescriptorSupplier("setTracker"))
+                  .build();
+          }
+        }
+     }
+     return getSetTrackerMethod;
+  }
+
   /**
    * Creates a new async stub that supports all call types for the service
    */
@@ -130,6 +194,20 @@ public final class multiUserSyncGrpc {
       asyncUnimplementedUnaryCall(getSetUserMethod(), responseObserver);
     }
 
+    /**
+     */
+    public void getTracker(MultiUserSync.RequestTracker request,
+        io.grpc.stub.StreamObserver<MultiUserSync.Tracker> responseObserver) {
+      asyncUnimplementedUnaryCall(getGetTrackerMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public void setTracker(MultiUserSync.Tracker request,
+        io.grpc.stub.StreamObserver<MultiUserSync.Response> responseObserver) {
+      asyncUnimplementedUnaryCall(getSetTrackerMethod(), responseObserver);
+    }
+
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
@@ -146,6 +224,20 @@ public final class multiUserSyncGrpc {
                 MultiUserSync.User,
                 MultiUserSync.Response>(
                   this, METHODID_SET_USER)))
+          .addMethod(
+            getGetTrackerMethod(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                MultiUserSync.RequestTracker,
+                MultiUserSync.Tracker>(
+                  this, METHODID_GET_TRACKER)))
+          .addMethod(
+            getSetTrackerMethod(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                MultiUserSync.Tracker,
+                MultiUserSync.Response>(
+                  this, METHODID_SET_TRACKER)))
           .build();
     }
   }
@@ -183,6 +275,22 @@ public final class multiUserSyncGrpc {
       asyncUnaryCall(
           getChannel().newCall(getSetUserMethod(), getCallOptions()), request, responseObserver);
     }
+
+    /**
+     */
+    public void getTracker(MultiUserSync.RequestTracker request,
+        io.grpc.stub.StreamObserver<MultiUserSync.Tracker> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getGetTrackerMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void setTracker(MultiUserSync.Tracker request,
+        io.grpc.stub.StreamObserver<MultiUserSync.Response> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getSetTrackerMethod(), getCallOptions()), request, responseObserver);
+    }
   }
 
   /**
@@ -215,6 +323,20 @@ public final class multiUserSyncGrpc {
     public MultiUserSync.Response setUser(MultiUserSync.User request) {
       return blockingUnaryCall(
           getChannel(), getSetUserMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public MultiUserSync.Tracker getTracker(MultiUserSync.RequestTracker request) {
+      return blockingUnaryCall(
+          getChannel(), getGetTrackerMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public MultiUserSync.Response setTracker(MultiUserSync.Tracker request) {
+      return blockingUnaryCall(
+          getChannel(), getSetTrackerMethod(), getCallOptions(), request);
     }
   }
 
@@ -251,10 +373,28 @@ public final class multiUserSyncGrpc {
       return futureUnaryCall(
           getChannel().newCall(getSetUserMethod(), getCallOptions()), request);
     }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<MultiUserSync.Tracker> getTracker(
+        MultiUserSync.RequestTracker request) {
+      return futureUnaryCall(
+          getChannel().newCall(getGetTrackerMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<MultiUserSync.Response> setTracker(
+        MultiUserSync.Tracker request) {
+      return futureUnaryCall(
+          getChannel().newCall(getSetTrackerMethod(), getCallOptions()), request);
+    }
   }
 
   private static final int METHODID_GET_USER = 0;
   private static final int METHODID_SET_USER = 1;
+  private static final int METHODID_GET_TRACKER = 2;
+  private static final int METHODID_SET_TRACKER = 3;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -279,6 +419,14 @@ public final class multiUserSyncGrpc {
           break;
         case METHODID_SET_USER:
           serviceImpl.setUser((MultiUserSync.User) request,
+              (io.grpc.stub.StreamObserver<MultiUserSync.Response>) responseObserver);
+          break;
+        case METHODID_GET_TRACKER:
+          serviceImpl.getTracker((MultiUserSync.RequestTracker) request,
+              (io.grpc.stub.StreamObserver<MultiUserSync.Tracker>) responseObserver);
+          break;
+        case METHODID_SET_TRACKER:
+          serviceImpl.setTracker((MultiUserSync.Tracker) request,
               (io.grpc.stub.StreamObserver<MultiUserSync.Response>) responseObserver);
           break;
         default:
@@ -344,6 +492,8 @@ public final class multiUserSyncGrpc {
               .setSchemaDescriptor(new multiUserSyncFileDescriptorSupplier())
               .addMethod(getGetUserMethod())
               .addMethod(getSetUserMethod())
+              .addMethod(getGetTrackerMethod())
+              .addMethod(getSetTrackerMethod())
               .build();
         }
       }
