@@ -77,6 +77,8 @@ public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
         }
 
         responseObserver.onNext(MultiUserSync.User.newBuilder(user).build());
+
+        responseObserver.onCompleted();
     }
 
     @Override
@@ -87,5 +89,7 @@ public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
                 setResponse("User us set: " + users.get(request.getId()).toString()).build());
 
         System.out.println(users);
+
+        responseObserver.onCompleted();
     }
 }
