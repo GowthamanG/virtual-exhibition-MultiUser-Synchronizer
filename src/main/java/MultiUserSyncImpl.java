@@ -7,6 +7,7 @@ import java.util.HashMap;
 public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
 
     private HashMap<Integer, MultiUserSync.User> users = new HashMap<>();
+    private HashMap<Integer, MultiUserSync.Tracker> trackers = new HashMap<>();
 
 
 
@@ -89,6 +90,34 @@ public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
                 setResponse("User us set: " + users.get(request.getId()).toString()).build());
 
         System.out.println(users);
+
+        responseObserver.onCompleted();
+    }
+
+    @Override
+    public void getTracker(MultiUserSync.RequestTracker request, StreamObserver<MultiUserSync.Tracker> responseObserver) {
+        MultiUserSync.Tracker tracker = null;
+
+        for (HashMap.Entry<Integer, MultiUserSync.User> pair : users.entrySet()) {
+            if (pair.getKey() != request.getRequestTrackerID()) {
+                tracker = trackers.get(pair.getKey());
+                break;
+            }
+        }
+
+        responseObserver.onNext(MultiUserSync.Tracker.newBuilder(tracker).build());
+
+        responseObserver.onCompleted();
+    }
+
+    @Override
+    public void setTracker(MultiUserSync.Tracker request, StreamObserver<MultiUserSync.Response> responseObserver) {
+        trackers.put(request.getId(), request);
+
+        responseObserver.onNext(MultiUserSync.Response.newBuilder().
+                setResponse("User us set: " + trackers.get(request.getId()).toString()).build());
+
+        System.out.println(trackers);
 
         responseObserver.onCompleted();
     }
