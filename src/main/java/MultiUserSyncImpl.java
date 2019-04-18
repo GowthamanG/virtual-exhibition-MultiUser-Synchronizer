@@ -98,7 +98,7 @@ public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
     public void getTracker(MultiUserSync.RequestTracker request, StreamObserver<MultiUserSync.Tracker> responseObserver) {
         MultiUserSync.Tracker tracker = null;
 
-        for (HashMap.Entry<Integer, MultiUserSync.User> pair : users.entrySet()) {
+        for (HashMap.Entry<Integer, MultiUserSync.Tracker> pair : trackers.entrySet()) {
             if (pair.getKey() != request.getRequestTrackerID()) {
                 tracker = trackers.get(pair.getKey());
                 break;
