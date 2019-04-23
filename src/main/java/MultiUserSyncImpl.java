@@ -80,6 +80,8 @@ public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
         responseObserver.onNext(MultiUserSync.User.newBuilder(user).build());
 
         responseObserver.onCompleted();
+
+        System.out.println("getUser()");
     }
 
     @Override
@@ -92,6 +94,8 @@ public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
         System.out.println(users);
 
         responseObserver.onCompleted();
+
+        System.out.println("setUser()");
     }
 
     @Override
@@ -108,6 +112,8 @@ public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
         responseObserver.onNext(MultiUserSync.Tracker.newBuilder(tracker).build());
 
         responseObserver.onCompleted();
+
+        System.out.println("getTracker()");
     }
 
     @Override
@@ -117,8 +123,8 @@ public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
         responseObserver.onNext(MultiUserSync.Response.newBuilder().
                 setResponse("User us set: " + trackers.get(request.getId()).toString()).build());
 
-        System.out.println(trackers);
-
         responseObserver.onCompleted();
+
+        System.out.println("setTracker()");
     }
 }
