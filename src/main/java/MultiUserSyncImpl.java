@@ -20,7 +20,7 @@ public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
                 break;
             }
         }
-
+        
         responseObserver.onNext(MultiUserSync.User.newBuilder(user).build());
 
         responseObserver.onCompleted();
