@@ -9,62 +9,6 @@ public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
     private HashMap<Integer, MultiUserSync.User> users = new HashMap<>();
     private HashMap<Integer, MultiUserSync.Tracker> trackers = new HashMap<>();
 
-
-
-    /*@Override
-    public StreamObserver<MultiUserSync.RequestUser> getUser(StreamObserver<MultiUserSync.User> responseObserver) {
-
-        return new StreamObserver<MultiUserSync.RequestUser>() {
-            @Override
-            public void onNext(MultiUserSync.RequestUser value) {
-
-                MultiUserSync.User user = users.get(value);
-
-                responseObserver.onNext(user);
-
-            }
-
-            @Override
-            public void onError(Throwable t) {
-                t.printStackTrace();
-            }
-
-            @Override
-            public void onCompleted() {
-                responseObserver.onCompleted();
-            }
-        };
-
-    }
-
-    @Override
-    public StreamObserver<MultiUserSync.User> setUser(StreamObserver<MultiUserSync.Response> responseObserver) {
-
-        return new StreamObserver<MultiUserSync.User>() {
-            @Override
-            public void onNext(MultiUserSync.User value) {
-                users.put(value.getId(), value);
-
-                MultiUserSync.Response response = MultiUserSync.Response.newBuilder().
-                        setResponse(users.get(value.getId()).toString())
-                        .build();
-
-                System.out.println(response.toString());
-                responseObserver.onNext(response);
-            }
-
-            @Override
-            public void onError(Throwable t) {
-                t.printStackTrace();
-            }
-
-            @Override
-            public void onCompleted() {
-                responseObserver.onCompleted();
-            }
-        };
-    }*/
-
     @Override
     public void getUser(MultiUserSync.RequestUser request, StreamObserver<MultiUserSync.User> responseObserver) {
 
@@ -80,8 +24,6 @@ public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
         responseObserver.onNext(MultiUserSync.User.newBuilder(user).build());
 
         responseObserver.onCompleted();
-
-        System.out.println("getUser()");
     }
 
     @Override
@@ -89,13 +31,11 @@ public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
         users.put(request.getId(), request);
 
         responseObserver.onNext(MultiUserSync.Response.newBuilder().
-                setResponse("User us set: " + users.get(request.getId()).toString()).build());
+                setResponse("User with ID: " + request.getId() + " is set: " + users.get(request.getId()).toString()).build());
 
         System.out.println(users);
 
         responseObserver.onCompleted();
-
-        System.out.println("setUser()");
     }
 
     @Override
@@ -112,8 +52,6 @@ public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
         responseObserver.onNext(MultiUserSync.Tracker.newBuilder(tracker).build());
 
         responseObserver.onCompleted();
-
-        System.out.println("getTracker()");
     }
 
     @Override
@@ -121,10 +59,8 @@ public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
         trackers.put(request.getId(), request);
 
         responseObserver.onNext(MultiUserSync.Response.newBuilder().
-                setResponse("User us set: " + trackers.get(request.getId()).toString()).build());
+                setResponse("Tracker with ID: " + request.getId() + " is set: " + trackers.get(request.getId()).toString()).build());
 
         responseObserver.onCompleted();
-
-        System.out.println("setTracker()");
     }
 }
