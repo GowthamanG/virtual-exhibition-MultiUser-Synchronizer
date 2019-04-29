@@ -22,56 +22,43 @@ public final class MultiUserSync {
     int getId();
 
     /**
-     * <code>.Vector userVRPosition = 2;</code>
+     * <code>.Vector userPosition = 2;</code>
      */
-    boolean hasUserVRPosition();
+    boolean hasUserPosition();
     /**
-     * <code>.Vector userVRPosition = 2;</code>
+     * <code>.Vector userPosition = 2;</code>
      */
-    MultiUserSync.Vector getUserVRPosition();
+    MultiUserSync.Vector getUserPosition();
     /**
-     * <code>.Vector userVRPosition = 2;</code>
+     * <code>.Vector userPosition = 2;</code>
      */
-    MultiUserSync.VectorOrBuilder getUserVRPositionOrBuilder();
+    MultiUserSync.VectorOrBuilder getUserPositionOrBuilder();
 
     /**
-     * <code>.Quadrublet userVRRotation = 3;</code>
+     * <code>.Quadrublet userRotation = 3;</code>
      */
-    boolean hasUserVRRotation();
+    boolean hasUserRotation();
     /**
-     * <code>.Quadrublet userVRRotation = 3;</code>
+     * <code>.Quadrublet userRotation = 3;</code>
      */
-    MultiUserSync.Quadrublet getUserVRRotation();
+    MultiUserSync.Quadrublet getUserRotation();
     /**
-     * <code>.Quadrublet userVRRotation = 3;</code>
+     * <code>.Quadrublet userRotation = 3;</code>
      */
-    MultiUserSync.QuadrubletOrBuilder getUserVRRotationOrBuilder();
+    MultiUserSync.QuadrubletOrBuilder getUserRotationOrBuilder();
 
     /**
-     * <code>.Vector userPhysicalPosition = 4;</code>
+     * <code>.Vector userScale = 4;</code>
      */
-    boolean hasUserPhysicalPosition();
+    boolean hasUserScale();
     /**
-     * <code>.Vector userPhysicalPosition = 4;</code>
+     * <code>.Vector userScale = 4;</code>
      */
-    MultiUserSync.Vector getUserPhysicalPosition();
+    MultiUserSync.Vector getUserScale();
     /**
-     * <code>.Vector userPhysicalPosition = 4;</code>
+     * <code>.Vector userScale = 4;</code>
      */
-    MultiUserSync.VectorOrBuilder getUserPhysicalPositionOrBuilder();
-
-    /**
-     * <code>.Quadrublet userPhysicalRotation = 5;</code>
-     */
-    boolean hasUserPhysicalRotation();
-    /**
-     * <code>.Quadrublet userPhysicalRotation = 5;</code>
-     */
-    MultiUserSync.Quadrublet getUserPhysicalRotation();
-    /**
-     * <code>.Quadrublet userPhysicalRotation = 5;</code>
-     */
-    MultiUserSync.QuadrubletOrBuilder getUserPhysicalRotationOrBuilder();
+    MultiUserSync.VectorOrBuilder getUserScaleOrBuilder();
   }
   /**
    * Protobuf type {@code User}
@@ -119,52 +106,39 @@ public final class MultiUserSync {
             }
             case 18: {
               MultiUserSync.Vector.Builder subBuilder = null;
-              if (userVRPosition_ != null) {
-                subBuilder = userVRPosition_.toBuilder();
+              if (userPosition_ != null) {
+                subBuilder = userPosition_.toBuilder();
               }
-              userVRPosition_ = input.readMessage(MultiUserSync.Vector.parser(), extensionRegistry);
+              userPosition_ = input.readMessage(MultiUserSync.Vector.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(userVRPosition_);
-                userVRPosition_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(userPosition_);
+                userPosition_ = subBuilder.buildPartial();
               }
 
               break;
             }
             case 26: {
               MultiUserSync.Quadrublet.Builder subBuilder = null;
-              if (userVRRotation_ != null) {
-                subBuilder = userVRRotation_.toBuilder();
+              if (userRotation_ != null) {
+                subBuilder = userRotation_.toBuilder();
               }
-              userVRRotation_ = input.readMessage(MultiUserSync.Quadrublet.parser(), extensionRegistry);
+              userRotation_ = input.readMessage(MultiUserSync.Quadrublet.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(userVRRotation_);
-                userVRRotation_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(userRotation_);
+                userRotation_ = subBuilder.buildPartial();
               }
 
               break;
             }
             case 34: {
               MultiUserSync.Vector.Builder subBuilder = null;
-              if (userPhysicalPosition_ != null) {
-                subBuilder = userPhysicalPosition_.toBuilder();
+              if (userScale_ != null) {
+                subBuilder = userScale_.toBuilder();
               }
-              userPhysicalPosition_ = input.readMessage(MultiUserSync.Vector.parser(), extensionRegistry);
+              userScale_ = input.readMessage(MultiUserSync.Vector.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(userPhysicalPosition_);
-                userPhysicalPosition_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 42: {
-              MultiUserSync.Quadrublet.Builder subBuilder = null;
-              if (userPhysicalRotation_ != null) {
-                subBuilder = userPhysicalRotation_.toBuilder();
-              }
-              userPhysicalRotation_ = input.readMessage(MultiUserSync.Quadrublet.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(userPhysicalRotation_);
-                userPhysicalRotation_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(userScale_);
+                userScale_ = subBuilder.buildPartial();
               }
 
               break;
@@ -210,88 +184,67 @@ public final class MultiUserSync {
       return id_;
     }
 
-    public static final int USERVRPOSITION_FIELD_NUMBER = 2;
-    private MultiUserSync.Vector userVRPosition_;
+    public static final int USERPOSITION_FIELD_NUMBER = 2;
+    private MultiUserSync.Vector userPosition_;
     /**
-     * <code>.Vector userVRPosition = 2;</code>
+     * <code>.Vector userPosition = 2;</code>
      */
-    public boolean hasUserVRPosition() {
-      return userVRPosition_ != null;
+    public boolean hasUserPosition() {
+      return userPosition_ != null;
     }
     /**
-     * <code>.Vector userVRPosition = 2;</code>
+     * <code>.Vector userPosition = 2;</code>
      */
-    public MultiUserSync.Vector getUserVRPosition() {
-      return userVRPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : userVRPosition_;
+    public MultiUserSync.Vector getUserPosition() {
+      return userPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : userPosition_;
     }
     /**
-     * <code>.Vector userVRPosition = 2;</code>
+     * <code>.Vector userPosition = 2;</code>
      */
-    public MultiUserSync.VectorOrBuilder getUserVRPositionOrBuilder() {
-      return getUserVRPosition();
-    }
-
-    public static final int USERVRROTATION_FIELD_NUMBER = 3;
-    private MultiUserSync.Quadrublet userVRRotation_;
-    /**
-     * <code>.Quadrublet userVRRotation = 3;</code>
-     */
-    public boolean hasUserVRRotation() {
-      return userVRRotation_ != null;
-    }
-    /**
-     * <code>.Quadrublet userVRRotation = 3;</code>
-     */
-    public MultiUserSync.Quadrublet getUserVRRotation() {
-      return userVRRotation_ == null ? MultiUserSync.Quadrublet.getDefaultInstance() : userVRRotation_;
-    }
-    /**
-     * <code>.Quadrublet userVRRotation = 3;</code>
-     */
-    public MultiUserSync.QuadrubletOrBuilder getUserVRRotationOrBuilder() {
-      return getUserVRRotation();
+    public MultiUserSync.VectorOrBuilder getUserPositionOrBuilder() {
+      return getUserPosition();
     }
 
-    public static final int USERPHYSICALPOSITION_FIELD_NUMBER = 4;
-    private MultiUserSync.Vector userPhysicalPosition_;
+    public static final int USERROTATION_FIELD_NUMBER = 3;
+    private MultiUserSync.Quadrublet userRotation_;
     /**
-     * <code>.Vector userPhysicalPosition = 4;</code>
+     * <code>.Quadrublet userRotation = 3;</code>
      */
-    public boolean hasUserPhysicalPosition() {
-      return userPhysicalPosition_ != null;
+    public boolean hasUserRotation() {
+      return userRotation_ != null;
     }
     /**
-     * <code>.Vector userPhysicalPosition = 4;</code>
+     * <code>.Quadrublet userRotation = 3;</code>
      */
-    public MultiUserSync.Vector getUserPhysicalPosition() {
-      return userPhysicalPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : userPhysicalPosition_;
+    public MultiUserSync.Quadrublet getUserRotation() {
+      return userRotation_ == null ? MultiUserSync.Quadrublet.getDefaultInstance() : userRotation_;
     }
     /**
-     * <code>.Vector userPhysicalPosition = 4;</code>
+     * <code>.Quadrublet userRotation = 3;</code>
      */
-    public MultiUserSync.VectorOrBuilder getUserPhysicalPositionOrBuilder() {
-      return getUserPhysicalPosition();
+    public MultiUserSync.QuadrubletOrBuilder getUserRotationOrBuilder() {
+      return getUserRotation();
     }
 
-    public static final int USERPHYSICALROTATION_FIELD_NUMBER = 5;
-    private MultiUserSync.Quadrublet userPhysicalRotation_;
+    public static final int USERSCALE_FIELD_NUMBER = 4;
+    private MultiUserSync.Vector userScale_;
     /**
-     * <code>.Quadrublet userPhysicalRotation = 5;</code>
+     * <code>.Vector userScale = 4;</code>
      */
-    public boolean hasUserPhysicalRotation() {
-      return userPhysicalRotation_ != null;
+    public boolean hasUserScale() {
+      return userScale_ != null;
     }
     /**
-     * <code>.Quadrublet userPhysicalRotation = 5;</code>
+     * <code>.Vector userScale = 4;</code>
      */
-    public MultiUserSync.Quadrublet getUserPhysicalRotation() {
-      return userPhysicalRotation_ == null ? MultiUserSync.Quadrublet.getDefaultInstance() : userPhysicalRotation_;
+    public MultiUserSync.Vector getUserScale() {
+      return userScale_ == null ? MultiUserSync.Vector.getDefaultInstance() : userScale_;
     }
     /**
-     * <code>.Quadrublet userPhysicalRotation = 5;</code>
+     * <code>.Vector userScale = 4;</code>
      */
-    public MultiUserSync.QuadrubletOrBuilder getUserPhysicalRotationOrBuilder() {
-      return getUserPhysicalRotation();
+    public MultiUserSync.VectorOrBuilder getUserScaleOrBuilder() {
+      return getUserScale();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -311,17 +264,14 @@ public final class MultiUserSync {
       if (id_ != 0) {
         output.writeInt32(1, id_);
       }
-      if (userVRPosition_ != null) {
-        output.writeMessage(2, getUserVRPosition());
+      if (userPosition_ != null) {
+        output.writeMessage(2, getUserPosition());
       }
-      if (userVRRotation_ != null) {
-        output.writeMessage(3, getUserVRRotation());
+      if (userRotation_ != null) {
+        output.writeMessage(3, getUserRotation());
       }
-      if (userPhysicalPosition_ != null) {
-        output.writeMessage(4, getUserPhysicalPosition());
-      }
-      if (userPhysicalRotation_ != null) {
-        output.writeMessage(5, getUserPhysicalRotation());
+      if (userScale_ != null) {
+        output.writeMessage(4, getUserScale());
       }
       unknownFields.writeTo(output);
     }
@@ -336,21 +286,17 @@ public final class MultiUserSync {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(1, id_);
       }
-      if (userVRPosition_ != null) {
+      if (userPosition_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getUserVRPosition());
+          .computeMessageSize(2, getUserPosition());
       }
-      if (userVRRotation_ != null) {
+      if (userRotation_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getUserVRRotation());
+          .computeMessageSize(3, getUserRotation());
       }
-      if (userPhysicalPosition_ != null) {
+      if (userScale_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getUserPhysicalPosition());
-      }
-      if (userPhysicalRotation_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getUserPhysicalRotation());
+          .computeMessageSize(4, getUserScale());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -369,25 +315,20 @@ public final class MultiUserSync {
 
       if (getId()
           != other.getId()) return false;
-      if (hasUserVRPosition() != other.hasUserVRPosition()) return false;
-      if (hasUserVRPosition()) {
-        if (!getUserVRPosition()
-            .equals(other.getUserVRPosition())) return false;
+      if (hasUserPosition() != other.hasUserPosition()) return false;
+      if (hasUserPosition()) {
+        if (!getUserPosition()
+            .equals(other.getUserPosition())) return false;
       }
-      if (hasUserVRRotation() != other.hasUserVRRotation()) return false;
-      if (hasUserVRRotation()) {
-        if (!getUserVRRotation()
-            .equals(other.getUserVRRotation())) return false;
+      if (hasUserRotation() != other.hasUserRotation()) return false;
+      if (hasUserRotation()) {
+        if (!getUserRotation()
+            .equals(other.getUserRotation())) return false;
       }
-      if (hasUserPhysicalPosition() != other.hasUserPhysicalPosition()) return false;
-      if (hasUserPhysicalPosition()) {
-        if (!getUserPhysicalPosition()
-            .equals(other.getUserPhysicalPosition())) return false;
-      }
-      if (hasUserPhysicalRotation() != other.hasUserPhysicalRotation()) return false;
-      if (hasUserPhysicalRotation()) {
-        if (!getUserPhysicalRotation()
-            .equals(other.getUserPhysicalRotation())) return false;
+      if (hasUserScale() != other.hasUserScale()) return false;
+      if (hasUserScale()) {
+        if (!getUserScale()
+            .equals(other.getUserScale())) return false;
       }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -402,21 +343,17 @@ public final class MultiUserSync {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + getId();
-      if (hasUserVRPosition()) {
-        hash = (37 * hash) + USERVRPOSITION_FIELD_NUMBER;
-        hash = (53 * hash) + getUserVRPosition().hashCode();
+      if (hasUserPosition()) {
+        hash = (37 * hash) + USERPOSITION_FIELD_NUMBER;
+        hash = (53 * hash) + getUserPosition().hashCode();
       }
-      if (hasUserVRRotation()) {
-        hash = (37 * hash) + USERVRROTATION_FIELD_NUMBER;
-        hash = (53 * hash) + getUserVRRotation().hashCode();
+      if (hasUserRotation()) {
+        hash = (37 * hash) + USERROTATION_FIELD_NUMBER;
+        hash = (53 * hash) + getUserRotation().hashCode();
       }
-      if (hasUserPhysicalPosition()) {
-        hash = (37 * hash) + USERPHYSICALPOSITION_FIELD_NUMBER;
-        hash = (53 * hash) + getUserPhysicalPosition().hashCode();
-      }
-      if (hasUserPhysicalRotation()) {
-        hash = (37 * hash) + USERPHYSICALROTATION_FIELD_NUMBER;
-        hash = (53 * hash) + getUserPhysicalRotation().hashCode();
+      if (hasUserScale()) {
+        hash = (37 * hash) + USERSCALE_FIELD_NUMBER;
+        hash = (53 * hash) + getUserScale().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -553,29 +490,23 @@ public final class MultiUserSync {
         super.clear();
         id_ = 0;
 
-        if (userVRPositionBuilder_ == null) {
-          userVRPosition_ = null;
+        if (userPositionBuilder_ == null) {
+          userPosition_ = null;
         } else {
-          userVRPosition_ = null;
-          userVRPositionBuilder_ = null;
+          userPosition_ = null;
+          userPositionBuilder_ = null;
         }
-        if (userVRRotationBuilder_ == null) {
-          userVRRotation_ = null;
+        if (userRotationBuilder_ == null) {
+          userRotation_ = null;
         } else {
-          userVRRotation_ = null;
-          userVRRotationBuilder_ = null;
+          userRotation_ = null;
+          userRotationBuilder_ = null;
         }
-        if (userPhysicalPositionBuilder_ == null) {
-          userPhysicalPosition_ = null;
+        if (userScaleBuilder_ == null) {
+          userScale_ = null;
         } else {
-          userPhysicalPosition_ = null;
-          userPhysicalPositionBuilder_ = null;
-        }
-        if (userPhysicalRotationBuilder_ == null) {
-          userPhysicalRotation_ = null;
-        } else {
-          userPhysicalRotation_ = null;
-          userPhysicalRotationBuilder_ = null;
+          userScale_ = null;
+          userScaleBuilder_ = null;
         }
         return this;
       }
@@ -604,25 +535,20 @@ public final class MultiUserSync {
       public MultiUserSync.User buildPartial() {
         MultiUserSync.User result = new MultiUserSync.User(this);
         result.id_ = id_;
-        if (userVRPositionBuilder_ == null) {
-          result.userVRPosition_ = userVRPosition_;
+        if (userPositionBuilder_ == null) {
+          result.userPosition_ = userPosition_;
         } else {
-          result.userVRPosition_ = userVRPositionBuilder_.build();
+          result.userPosition_ = userPositionBuilder_.build();
         }
-        if (userVRRotationBuilder_ == null) {
-          result.userVRRotation_ = userVRRotation_;
+        if (userRotationBuilder_ == null) {
+          result.userRotation_ = userRotation_;
         } else {
-          result.userVRRotation_ = userVRRotationBuilder_.build();
+          result.userRotation_ = userRotationBuilder_.build();
         }
-        if (userPhysicalPositionBuilder_ == null) {
-          result.userPhysicalPosition_ = userPhysicalPosition_;
+        if (userScaleBuilder_ == null) {
+          result.userScale_ = userScale_;
         } else {
-          result.userPhysicalPosition_ = userPhysicalPositionBuilder_.build();
-        }
-        if (userPhysicalRotationBuilder_ == null) {
-          result.userPhysicalRotation_ = userPhysicalRotation_;
-        } else {
-          result.userPhysicalRotation_ = userPhysicalRotationBuilder_.build();
+          result.userScale_ = userScaleBuilder_.build();
         }
         onBuilt();
         return result;
@@ -675,17 +601,14 @@ public final class MultiUserSync {
         if (other.getId() != 0) {
           setId(other.getId());
         }
-        if (other.hasUserVRPosition()) {
-          mergeUserVRPosition(other.getUserVRPosition());
+        if (other.hasUserPosition()) {
+          mergeUserPosition(other.getUserPosition());
         }
-        if (other.hasUserVRRotation()) {
-          mergeUserVRRotation(other.getUserVRRotation());
+        if (other.hasUserRotation()) {
+          mergeUserRotation(other.getUserRotation());
         }
-        if (other.hasUserPhysicalPosition()) {
-          mergeUserPhysicalPosition(other.getUserPhysicalPosition());
-        }
-        if (other.hasUserPhysicalRotation()) {
-          mergeUserPhysicalRotation(other.getUserPhysicalRotation());
+        if (other.hasUserScale()) {
+          mergeUserScale(other.getUserScale());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -742,472 +665,355 @@ public final class MultiUserSync {
         return this;
       }
 
-      private MultiUserSync.Vector userVRPosition_;
+      private MultiUserSync.Vector userPosition_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> userVRPositionBuilder_;
+          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> userPositionBuilder_;
       /**
-       * <code>.Vector userVRPosition = 2;</code>
+       * <code>.Vector userPosition = 2;</code>
        */
-      public boolean hasUserVRPosition() {
-        return userVRPositionBuilder_ != null || userVRPosition_ != null;
+      public boolean hasUserPosition() {
+        return userPositionBuilder_ != null || userPosition_ != null;
       }
       /**
-       * <code>.Vector userVRPosition = 2;</code>
+       * <code>.Vector userPosition = 2;</code>
        */
-      public MultiUserSync.Vector getUserVRPosition() {
-        if (userVRPositionBuilder_ == null) {
-          return userVRPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : userVRPosition_;
+      public MultiUserSync.Vector getUserPosition() {
+        if (userPositionBuilder_ == null) {
+          return userPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : userPosition_;
         } else {
-          return userVRPositionBuilder_.getMessage();
+          return userPositionBuilder_.getMessage();
         }
       }
       /**
-       * <code>.Vector userVRPosition = 2;</code>
+       * <code>.Vector userPosition = 2;</code>
        */
-      public Builder setUserVRPosition(MultiUserSync.Vector value) {
-        if (userVRPositionBuilder_ == null) {
+      public Builder setUserPosition(MultiUserSync.Vector value) {
+        if (userPositionBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          userVRPosition_ = value;
+          userPosition_ = value;
           onChanged();
         } else {
-          userVRPositionBuilder_.setMessage(value);
+          userPositionBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.Vector userVRPosition = 2;</code>
+       * <code>.Vector userPosition = 2;</code>
        */
-      public Builder setUserVRPosition(
+      public Builder setUserPosition(
           MultiUserSync.Vector.Builder builderForValue) {
-        if (userVRPositionBuilder_ == null) {
-          userVRPosition_ = builderForValue.build();
+        if (userPositionBuilder_ == null) {
+          userPosition_ = builderForValue.build();
           onChanged();
         } else {
-          userVRPositionBuilder_.setMessage(builderForValue.build());
+          userPositionBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.Vector userVRPosition = 2;</code>
+       * <code>.Vector userPosition = 2;</code>
        */
-      public Builder mergeUserVRPosition(MultiUserSync.Vector value) {
-        if (userVRPositionBuilder_ == null) {
-          if (userVRPosition_ != null) {
-            userVRPosition_ =
-              MultiUserSync.Vector.newBuilder(userVRPosition_).mergeFrom(value).buildPartial();
+      public Builder mergeUserPosition(MultiUserSync.Vector value) {
+        if (userPositionBuilder_ == null) {
+          if (userPosition_ != null) {
+            userPosition_ =
+              MultiUserSync.Vector.newBuilder(userPosition_).mergeFrom(value).buildPartial();
           } else {
-            userVRPosition_ = value;
+            userPosition_ = value;
           }
           onChanged();
         } else {
-          userVRPositionBuilder_.mergeFrom(value);
+          userPositionBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.Vector userVRPosition = 2;</code>
+       * <code>.Vector userPosition = 2;</code>
        */
-      public Builder clearUserVRPosition() {
-        if (userVRPositionBuilder_ == null) {
-          userVRPosition_ = null;
+      public Builder clearUserPosition() {
+        if (userPositionBuilder_ == null) {
+          userPosition_ = null;
           onChanged();
         } else {
-          userVRPosition_ = null;
-          userVRPositionBuilder_ = null;
+          userPosition_ = null;
+          userPositionBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.Vector userVRPosition = 2;</code>
+       * <code>.Vector userPosition = 2;</code>
        */
-      public MultiUserSync.Vector.Builder getUserVRPositionBuilder() {
+      public MultiUserSync.Vector.Builder getUserPositionBuilder() {
         
         onChanged();
-        return getUserVRPositionFieldBuilder().getBuilder();
+        return getUserPositionFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector userVRPosition = 2;</code>
+       * <code>.Vector userPosition = 2;</code>
        */
-      public MultiUserSync.VectorOrBuilder getUserVRPositionOrBuilder() {
-        if (userVRPositionBuilder_ != null) {
-          return userVRPositionBuilder_.getMessageOrBuilder();
+      public MultiUserSync.VectorOrBuilder getUserPositionOrBuilder() {
+        if (userPositionBuilder_ != null) {
+          return userPositionBuilder_.getMessageOrBuilder();
         } else {
-          return userVRPosition_ == null ?
-              MultiUserSync.Vector.getDefaultInstance() : userVRPosition_;
+          return userPosition_ == null ?
+              MultiUserSync.Vector.getDefaultInstance() : userPosition_;
         }
       }
       /**
-       * <code>.Vector userVRPosition = 2;</code>
+       * <code>.Vector userPosition = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> 
-          getUserVRPositionFieldBuilder() {
-        if (userVRPositionBuilder_ == null) {
-          userVRPositionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getUserPositionFieldBuilder() {
+        if (userPositionBuilder_ == null) {
+          userPositionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder>(
-                  getUserVRPosition(),
+                  getUserPosition(),
                   getParentForChildren(),
                   isClean());
-          userVRPosition_ = null;
+          userPosition_ = null;
         }
-        return userVRPositionBuilder_;
+        return userPositionBuilder_;
       }
 
-      private MultiUserSync.Quadrublet userVRRotation_;
+      private MultiUserSync.Quadrublet userRotation_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          MultiUserSync.Quadrublet, MultiUserSync.Quadrublet.Builder, MultiUserSync.QuadrubletOrBuilder> userVRRotationBuilder_;
+          MultiUserSync.Quadrublet, MultiUserSync.Quadrublet.Builder, MultiUserSync.QuadrubletOrBuilder> userRotationBuilder_;
       /**
-       * <code>.Quadrublet userVRRotation = 3;</code>
+       * <code>.Quadrublet userRotation = 3;</code>
        */
-      public boolean hasUserVRRotation() {
-        return userVRRotationBuilder_ != null || userVRRotation_ != null;
+      public boolean hasUserRotation() {
+        return userRotationBuilder_ != null || userRotation_ != null;
       }
       /**
-       * <code>.Quadrublet userVRRotation = 3;</code>
+       * <code>.Quadrublet userRotation = 3;</code>
        */
-      public MultiUserSync.Quadrublet getUserVRRotation() {
-        if (userVRRotationBuilder_ == null) {
-          return userVRRotation_ == null ? MultiUserSync.Quadrublet.getDefaultInstance() : userVRRotation_;
+      public MultiUserSync.Quadrublet getUserRotation() {
+        if (userRotationBuilder_ == null) {
+          return userRotation_ == null ? MultiUserSync.Quadrublet.getDefaultInstance() : userRotation_;
         } else {
-          return userVRRotationBuilder_.getMessage();
+          return userRotationBuilder_.getMessage();
         }
       }
       /**
-       * <code>.Quadrublet userVRRotation = 3;</code>
+       * <code>.Quadrublet userRotation = 3;</code>
        */
-      public Builder setUserVRRotation(MultiUserSync.Quadrublet value) {
-        if (userVRRotationBuilder_ == null) {
+      public Builder setUserRotation(MultiUserSync.Quadrublet value) {
+        if (userRotationBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          userVRRotation_ = value;
+          userRotation_ = value;
           onChanged();
         } else {
-          userVRRotationBuilder_.setMessage(value);
+          userRotationBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.Quadrublet userVRRotation = 3;</code>
+       * <code>.Quadrublet userRotation = 3;</code>
        */
-      public Builder setUserVRRotation(
+      public Builder setUserRotation(
           MultiUserSync.Quadrublet.Builder builderForValue) {
-        if (userVRRotationBuilder_ == null) {
-          userVRRotation_ = builderForValue.build();
+        if (userRotationBuilder_ == null) {
+          userRotation_ = builderForValue.build();
           onChanged();
         } else {
-          userVRRotationBuilder_.setMessage(builderForValue.build());
+          userRotationBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.Quadrublet userVRRotation = 3;</code>
+       * <code>.Quadrublet userRotation = 3;</code>
        */
-      public Builder mergeUserVRRotation(MultiUserSync.Quadrublet value) {
-        if (userVRRotationBuilder_ == null) {
-          if (userVRRotation_ != null) {
-            userVRRotation_ =
-              MultiUserSync.Quadrublet.newBuilder(userVRRotation_).mergeFrom(value).buildPartial();
+      public Builder mergeUserRotation(MultiUserSync.Quadrublet value) {
+        if (userRotationBuilder_ == null) {
+          if (userRotation_ != null) {
+            userRotation_ =
+              MultiUserSync.Quadrublet.newBuilder(userRotation_).mergeFrom(value).buildPartial();
           } else {
-            userVRRotation_ = value;
+            userRotation_ = value;
           }
           onChanged();
         } else {
-          userVRRotationBuilder_.mergeFrom(value);
+          userRotationBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.Quadrublet userVRRotation = 3;</code>
+       * <code>.Quadrublet userRotation = 3;</code>
        */
-      public Builder clearUserVRRotation() {
-        if (userVRRotationBuilder_ == null) {
-          userVRRotation_ = null;
+      public Builder clearUserRotation() {
+        if (userRotationBuilder_ == null) {
+          userRotation_ = null;
           onChanged();
         } else {
-          userVRRotation_ = null;
-          userVRRotationBuilder_ = null;
+          userRotation_ = null;
+          userRotationBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.Quadrublet userVRRotation = 3;</code>
+       * <code>.Quadrublet userRotation = 3;</code>
        */
-      public MultiUserSync.Quadrublet.Builder getUserVRRotationBuilder() {
+      public MultiUserSync.Quadrublet.Builder getUserRotationBuilder() {
         
         onChanged();
-        return getUserVRRotationFieldBuilder().getBuilder();
+        return getUserRotationFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Quadrublet userVRRotation = 3;</code>
+       * <code>.Quadrublet userRotation = 3;</code>
        */
-      public MultiUserSync.QuadrubletOrBuilder getUserVRRotationOrBuilder() {
-        if (userVRRotationBuilder_ != null) {
-          return userVRRotationBuilder_.getMessageOrBuilder();
+      public MultiUserSync.QuadrubletOrBuilder getUserRotationOrBuilder() {
+        if (userRotationBuilder_ != null) {
+          return userRotationBuilder_.getMessageOrBuilder();
         } else {
-          return userVRRotation_ == null ?
-              MultiUserSync.Quadrublet.getDefaultInstance() : userVRRotation_;
+          return userRotation_ == null ?
+              MultiUserSync.Quadrublet.getDefaultInstance() : userRotation_;
         }
       }
       /**
-       * <code>.Quadrublet userVRRotation = 3;</code>
+       * <code>.Quadrublet userRotation = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           MultiUserSync.Quadrublet, MultiUserSync.Quadrublet.Builder, MultiUserSync.QuadrubletOrBuilder> 
-          getUserVRRotationFieldBuilder() {
-        if (userVRRotationBuilder_ == null) {
-          userVRRotationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getUserRotationFieldBuilder() {
+        if (userRotationBuilder_ == null) {
+          userRotationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               MultiUserSync.Quadrublet, MultiUserSync.Quadrublet.Builder, MultiUserSync.QuadrubletOrBuilder>(
-                  getUserVRRotation(),
+                  getUserRotation(),
                   getParentForChildren(),
                   isClean());
-          userVRRotation_ = null;
+          userRotation_ = null;
         }
-        return userVRRotationBuilder_;
+        return userRotationBuilder_;
       }
 
-      private MultiUserSync.Vector userPhysicalPosition_;
+      private MultiUserSync.Vector userScale_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> userPhysicalPositionBuilder_;
+          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> userScaleBuilder_;
       /**
-       * <code>.Vector userPhysicalPosition = 4;</code>
+       * <code>.Vector userScale = 4;</code>
        */
-      public boolean hasUserPhysicalPosition() {
-        return userPhysicalPositionBuilder_ != null || userPhysicalPosition_ != null;
+      public boolean hasUserScale() {
+        return userScaleBuilder_ != null || userScale_ != null;
       }
       /**
-       * <code>.Vector userPhysicalPosition = 4;</code>
+       * <code>.Vector userScale = 4;</code>
        */
-      public MultiUserSync.Vector getUserPhysicalPosition() {
-        if (userPhysicalPositionBuilder_ == null) {
-          return userPhysicalPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : userPhysicalPosition_;
+      public MultiUserSync.Vector getUserScale() {
+        if (userScaleBuilder_ == null) {
+          return userScale_ == null ? MultiUserSync.Vector.getDefaultInstance() : userScale_;
         } else {
-          return userPhysicalPositionBuilder_.getMessage();
+          return userScaleBuilder_.getMessage();
         }
       }
       /**
-       * <code>.Vector userPhysicalPosition = 4;</code>
+       * <code>.Vector userScale = 4;</code>
        */
-      public Builder setUserPhysicalPosition(MultiUserSync.Vector value) {
-        if (userPhysicalPositionBuilder_ == null) {
+      public Builder setUserScale(MultiUserSync.Vector value) {
+        if (userScaleBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          userPhysicalPosition_ = value;
+          userScale_ = value;
           onChanged();
         } else {
-          userPhysicalPositionBuilder_.setMessage(value);
+          userScaleBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.Vector userPhysicalPosition = 4;</code>
+       * <code>.Vector userScale = 4;</code>
        */
-      public Builder setUserPhysicalPosition(
+      public Builder setUserScale(
           MultiUserSync.Vector.Builder builderForValue) {
-        if (userPhysicalPositionBuilder_ == null) {
-          userPhysicalPosition_ = builderForValue.build();
+        if (userScaleBuilder_ == null) {
+          userScale_ = builderForValue.build();
           onChanged();
         } else {
-          userPhysicalPositionBuilder_.setMessage(builderForValue.build());
+          userScaleBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.Vector userPhysicalPosition = 4;</code>
+       * <code>.Vector userScale = 4;</code>
        */
-      public Builder mergeUserPhysicalPosition(MultiUserSync.Vector value) {
-        if (userPhysicalPositionBuilder_ == null) {
-          if (userPhysicalPosition_ != null) {
-            userPhysicalPosition_ =
-              MultiUserSync.Vector.newBuilder(userPhysicalPosition_).mergeFrom(value).buildPartial();
+      public Builder mergeUserScale(MultiUserSync.Vector value) {
+        if (userScaleBuilder_ == null) {
+          if (userScale_ != null) {
+            userScale_ =
+              MultiUserSync.Vector.newBuilder(userScale_).mergeFrom(value).buildPartial();
           } else {
-            userPhysicalPosition_ = value;
+            userScale_ = value;
           }
           onChanged();
         } else {
-          userPhysicalPositionBuilder_.mergeFrom(value);
+          userScaleBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.Vector userPhysicalPosition = 4;</code>
+       * <code>.Vector userScale = 4;</code>
        */
-      public Builder clearUserPhysicalPosition() {
-        if (userPhysicalPositionBuilder_ == null) {
-          userPhysicalPosition_ = null;
+      public Builder clearUserScale() {
+        if (userScaleBuilder_ == null) {
+          userScale_ = null;
           onChanged();
         } else {
-          userPhysicalPosition_ = null;
-          userPhysicalPositionBuilder_ = null;
+          userScale_ = null;
+          userScaleBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.Vector userPhysicalPosition = 4;</code>
+       * <code>.Vector userScale = 4;</code>
        */
-      public MultiUserSync.Vector.Builder getUserPhysicalPositionBuilder() {
+      public MultiUserSync.Vector.Builder getUserScaleBuilder() {
         
         onChanged();
-        return getUserPhysicalPositionFieldBuilder().getBuilder();
+        return getUserScaleFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector userPhysicalPosition = 4;</code>
+       * <code>.Vector userScale = 4;</code>
        */
-      public MultiUserSync.VectorOrBuilder getUserPhysicalPositionOrBuilder() {
-        if (userPhysicalPositionBuilder_ != null) {
-          return userPhysicalPositionBuilder_.getMessageOrBuilder();
+      public MultiUserSync.VectorOrBuilder getUserScaleOrBuilder() {
+        if (userScaleBuilder_ != null) {
+          return userScaleBuilder_.getMessageOrBuilder();
         } else {
-          return userPhysicalPosition_ == null ?
-              MultiUserSync.Vector.getDefaultInstance() : userPhysicalPosition_;
+          return userScale_ == null ?
+              MultiUserSync.Vector.getDefaultInstance() : userScale_;
         }
       }
       /**
-       * <code>.Vector userPhysicalPosition = 4;</code>
+       * <code>.Vector userScale = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> 
-          getUserPhysicalPositionFieldBuilder() {
-        if (userPhysicalPositionBuilder_ == null) {
-          userPhysicalPositionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getUserScaleFieldBuilder() {
+        if (userScaleBuilder_ == null) {
+          userScaleBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder>(
-                  getUserPhysicalPosition(),
+                  getUserScale(),
                   getParentForChildren(),
                   isClean());
-          userPhysicalPosition_ = null;
+          userScale_ = null;
         }
-        return userPhysicalPositionBuilder_;
-      }
-
-      private MultiUserSync.Quadrublet userPhysicalRotation_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          MultiUserSync.Quadrublet, MultiUserSync.Quadrublet.Builder, MultiUserSync.QuadrubletOrBuilder> userPhysicalRotationBuilder_;
-      /**
-       * <code>.Quadrublet userPhysicalRotation = 5;</code>
-       */
-      public boolean hasUserPhysicalRotation() {
-        return userPhysicalRotationBuilder_ != null || userPhysicalRotation_ != null;
-      }
-      /**
-       * <code>.Quadrublet userPhysicalRotation = 5;</code>
-       */
-      public MultiUserSync.Quadrublet getUserPhysicalRotation() {
-        if (userPhysicalRotationBuilder_ == null) {
-          return userPhysicalRotation_ == null ? MultiUserSync.Quadrublet.getDefaultInstance() : userPhysicalRotation_;
-        } else {
-          return userPhysicalRotationBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.Quadrublet userPhysicalRotation = 5;</code>
-       */
-      public Builder setUserPhysicalRotation(MultiUserSync.Quadrublet value) {
-        if (userPhysicalRotationBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          userPhysicalRotation_ = value;
-          onChanged();
-        } else {
-          userPhysicalRotationBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Quadrublet userPhysicalRotation = 5;</code>
-       */
-      public Builder setUserPhysicalRotation(
-          MultiUserSync.Quadrublet.Builder builderForValue) {
-        if (userPhysicalRotationBuilder_ == null) {
-          userPhysicalRotation_ = builderForValue.build();
-          onChanged();
-        } else {
-          userPhysicalRotationBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Quadrublet userPhysicalRotation = 5;</code>
-       */
-      public Builder mergeUserPhysicalRotation(MultiUserSync.Quadrublet value) {
-        if (userPhysicalRotationBuilder_ == null) {
-          if (userPhysicalRotation_ != null) {
-            userPhysicalRotation_ =
-              MultiUserSync.Quadrublet.newBuilder(userPhysicalRotation_).mergeFrom(value).buildPartial();
-          } else {
-            userPhysicalRotation_ = value;
-          }
-          onChanged();
-        } else {
-          userPhysicalRotationBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Quadrublet userPhysicalRotation = 5;</code>
-       */
-      public Builder clearUserPhysicalRotation() {
-        if (userPhysicalRotationBuilder_ == null) {
-          userPhysicalRotation_ = null;
-          onChanged();
-        } else {
-          userPhysicalRotation_ = null;
-          userPhysicalRotationBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Quadrublet userPhysicalRotation = 5;</code>
-       */
-      public MultiUserSync.Quadrublet.Builder getUserPhysicalRotationBuilder() {
-        
-        onChanged();
-        return getUserPhysicalRotationFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Quadrublet userPhysicalRotation = 5;</code>
-       */
-      public MultiUserSync.QuadrubletOrBuilder getUserPhysicalRotationOrBuilder() {
-        if (userPhysicalRotationBuilder_ != null) {
-          return userPhysicalRotationBuilder_.getMessageOrBuilder();
-        } else {
-          return userPhysicalRotation_ == null ?
-              MultiUserSync.Quadrublet.getDefaultInstance() : userPhysicalRotation_;
-        }
-      }
-      /**
-       * <code>.Quadrublet userPhysicalRotation = 5;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          MultiUserSync.Quadrublet, MultiUserSync.Quadrublet.Builder, MultiUserSync.QuadrubletOrBuilder> 
-          getUserPhysicalRotationFieldBuilder() {
-        if (userPhysicalRotationBuilder_ == null) {
-          userPhysicalRotationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              MultiUserSync.Quadrublet, MultiUserSync.Quadrublet.Builder, MultiUserSync.QuadrubletOrBuilder>(
-                  getUserPhysicalRotation(),
-                  getParentForChildren(),
-                  isClean());
-          userPhysicalRotation_ = null;
-        }
-        return userPhysicalRotationBuilder_;
+        return userScaleBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1272,56 +1078,43 @@ public final class MultiUserSync {
     int getId();
 
     /**
-     * <code>.Vector trackerVRPosition = 2;</code>
+     * <code>.Vector trackerPosition = 2;</code>
      */
-    boolean hasTrackerVRPosition();
+    boolean hasTrackerPosition();
     /**
-     * <code>.Vector trackerVRPosition = 2;</code>
+     * <code>.Vector trackerPosition = 2;</code>
      */
-    MultiUserSync.Vector getTrackerVRPosition();
+    MultiUserSync.Vector getTrackerPosition();
     /**
-     * <code>.Vector trackerVRPosition = 2;</code>
+     * <code>.Vector trackerPosition = 2;</code>
      */
-    MultiUserSync.VectorOrBuilder getTrackerVRPositionOrBuilder();
+    MultiUserSync.VectorOrBuilder getTrackerPositionOrBuilder();
 
     /**
-     * <code>.Quadrublet trackerVRRotation = 3;</code>
+     * <code>.Quadrublet trackerRotation = 3;</code>
      */
-    boolean hasTrackerVRRotation();
+    boolean hasTrackerRotation();
     /**
-     * <code>.Quadrublet trackerVRRotation = 3;</code>
+     * <code>.Quadrublet trackerRotation = 3;</code>
      */
-    MultiUserSync.Quadrublet getTrackerVRRotation();
+    MultiUserSync.Quadrublet getTrackerRotation();
     /**
-     * <code>.Quadrublet trackerVRRotation = 3;</code>
+     * <code>.Quadrublet trackerRotation = 3;</code>
      */
-    MultiUserSync.QuadrubletOrBuilder getTrackerVRRotationOrBuilder();
+    MultiUserSync.QuadrubletOrBuilder getTrackerRotationOrBuilder();
 
     /**
-     * <code>.Vector trackerPhysicalPosition = 4;</code>
+     * <code>.Vector trackerScale = 4;</code>
      */
-    boolean hasTrackerPhysicalPosition();
+    boolean hasTrackerScale();
     /**
-     * <code>.Vector trackerPhysicalPosition = 4;</code>
+     * <code>.Vector trackerScale = 4;</code>
      */
-    MultiUserSync.Vector getTrackerPhysicalPosition();
+    MultiUserSync.Vector getTrackerScale();
     /**
-     * <code>.Vector trackerPhysicalPosition = 4;</code>
+     * <code>.Vector trackerScale = 4;</code>
      */
-    MultiUserSync.VectorOrBuilder getTrackerPhysicalPositionOrBuilder();
-
-    /**
-     * <code>.Quadrublet trackerPhysicalRotation = 5;</code>
-     */
-    boolean hasTrackerPhysicalRotation();
-    /**
-     * <code>.Quadrublet trackerPhysicalRotation = 5;</code>
-     */
-    MultiUserSync.Quadrublet getTrackerPhysicalRotation();
-    /**
-     * <code>.Quadrublet trackerPhysicalRotation = 5;</code>
-     */
-    MultiUserSync.QuadrubletOrBuilder getTrackerPhysicalRotationOrBuilder();
+    MultiUserSync.VectorOrBuilder getTrackerScaleOrBuilder();
   }
   /**
    * Protobuf type {@code Tracker}
@@ -1369,52 +1162,39 @@ public final class MultiUserSync {
             }
             case 18: {
               MultiUserSync.Vector.Builder subBuilder = null;
-              if (trackerVRPosition_ != null) {
-                subBuilder = trackerVRPosition_.toBuilder();
+              if (trackerPosition_ != null) {
+                subBuilder = trackerPosition_.toBuilder();
               }
-              trackerVRPosition_ = input.readMessage(MultiUserSync.Vector.parser(), extensionRegistry);
+              trackerPosition_ = input.readMessage(MultiUserSync.Vector.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(trackerVRPosition_);
-                trackerVRPosition_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(trackerPosition_);
+                trackerPosition_ = subBuilder.buildPartial();
               }
 
               break;
             }
             case 26: {
               MultiUserSync.Quadrublet.Builder subBuilder = null;
-              if (trackerVRRotation_ != null) {
-                subBuilder = trackerVRRotation_.toBuilder();
+              if (trackerRotation_ != null) {
+                subBuilder = trackerRotation_.toBuilder();
               }
-              trackerVRRotation_ = input.readMessage(MultiUserSync.Quadrublet.parser(), extensionRegistry);
+              trackerRotation_ = input.readMessage(MultiUserSync.Quadrublet.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(trackerVRRotation_);
-                trackerVRRotation_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(trackerRotation_);
+                trackerRotation_ = subBuilder.buildPartial();
               }
 
               break;
             }
             case 34: {
               MultiUserSync.Vector.Builder subBuilder = null;
-              if (trackerPhysicalPosition_ != null) {
-                subBuilder = trackerPhysicalPosition_.toBuilder();
+              if (trackerScale_ != null) {
+                subBuilder = trackerScale_.toBuilder();
               }
-              trackerPhysicalPosition_ = input.readMessage(MultiUserSync.Vector.parser(), extensionRegistry);
+              trackerScale_ = input.readMessage(MultiUserSync.Vector.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(trackerPhysicalPosition_);
-                trackerPhysicalPosition_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 42: {
-              MultiUserSync.Quadrublet.Builder subBuilder = null;
-              if (trackerPhysicalRotation_ != null) {
-                subBuilder = trackerPhysicalRotation_.toBuilder();
-              }
-              trackerPhysicalRotation_ = input.readMessage(MultiUserSync.Quadrublet.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(trackerPhysicalRotation_);
-                trackerPhysicalRotation_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(trackerScale_);
+                trackerScale_ = subBuilder.buildPartial();
               }
 
               break;
@@ -1460,88 +1240,67 @@ public final class MultiUserSync {
       return id_;
     }
 
-    public static final int TRACKERVRPOSITION_FIELD_NUMBER = 2;
-    private MultiUserSync.Vector trackerVRPosition_;
+    public static final int TRACKERPOSITION_FIELD_NUMBER = 2;
+    private MultiUserSync.Vector trackerPosition_;
     /**
-     * <code>.Vector trackerVRPosition = 2;</code>
+     * <code>.Vector trackerPosition = 2;</code>
      */
-    public boolean hasTrackerVRPosition() {
-      return trackerVRPosition_ != null;
+    public boolean hasTrackerPosition() {
+      return trackerPosition_ != null;
     }
     /**
-     * <code>.Vector trackerVRPosition = 2;</code>
+     * <code>.Vector trackerPosition = 2;</code>
      */
-    public MultiUserSync.Vector getTrackerVRPosition() {
-      return trackerVRPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : trackerVRPosition_;
+    public MultiUserSync.Vector getTrackerPosition() {
+      return trackerPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : trackerPosition_;
     }
     /**
-     * <code>.Vector trackerVRPosition = 2;</code>
+     * <code>.Vector trackerPosition = 2;</code>
      */
-    public MultiUserSync.VectorOrBuilder getTrackerVRPositionOrBuilder() {
-      return getTrackerVRPosition();
-    }
-
-    public static final int TRACKERVRROTATION_FIELD_NUMBER = 3;
-    private MultiUserSync.Quadrublet trackerVRRotation_;
-    /**
-     * <code>.Quadrublet trackerVRRotation = 3;</code>
-     */
-    public boolean hasTrackerVRRotation() {
-      return trackerVRRotation_ != null;
-    }
-    /**
-     * <code>.Quadrublet trackerVRRotation = 3;</code>
-     */
-    public MultiUserSync.Quadrublet getTrackerVRRotation() {
-      return trackerVRRotation_ == null ? MultiUserSync.Quadrublet.getDefaultInstance() : trackerVRRotation_;
-    }
-    /**
-     * <code>.Quadrublet trackerVRRotation = 3;</code>
-     */
-    public MultiUserSync.QuadrubletOrBuilder getTrackerVRRotationOrBuilder() {
-      return getTrackerVRRotation();
+    public MultiUserSync.VectorOrBuilder getTrackerPositionOrBuilder() {
+      return getTrackerPosition();
     }
 
-    public static final int TRACKERPHYSICALPOSITION_FIELD_NUMBER = 4;
-    private MultiUserSync.Vector trackerPhysicalPosition_;
+    public static final int TRACKERROTATION_FIELD_NUMBER = 3;
+    private MultiUserSync.Quadrublet trackerRotation_;
     /**
-     * <code>.Vector trackerPhysicalPosition = 4;</code>
+     * <code>.Quadrublet trackerRotation = 3;</code>
      */
-    public boolean hasTrackerPhysicalPosition() {
-      return trackerPhysicalPosition_ != null;
+    public boolean hasTrackerRotation() {
+      return trackerRotation_ != null;
     }
     /**
-     * <code>.Vector trackerPhysicalPosition = 4;</code>
+     * <code>.Quadrublet trackerRotation = 3;</code>
      */
-    public MultiUserSync.Vector getTrackerPhysicalPosition() {
-      return trackerPhysicalPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : trackerPhysicalPosition_;
+    public MultiUserSync.Quadrublet getTrackerRotation() {
+      return trackerRotation_ == null ? MultiUserSync.Quadrublet.getDefaultInstance() : trackerRotation_;
     }
     /**
-     * <code>.Vector trackerPhysicalPosition = 4;</code>
+     * <code>.Quadrublet trackerRotation = 3;</code>
      */
-    public MultiUserSync.VectorOrBuilder getTrackerPhysicalPositionOrBuilder() {
-      return getTrackerPhysicalPosition();
+    public MultiUserSync.QuadrubletOrBuilder getTrackerRotationOrBuilder() {
+      return getTrackerRotation();
     }
 
-    public static final int TRACKERPHYSICALROTATION_FIELD_NUMBER = 5;
-    private MultiUserSync.Quadrublet trackerPhysicalRotation_;
+    public static final int TRACKERSCALE_FIELD_NUMBER = 4;
+    private MultiUserSync.Vector trackerScale_;
     /**
-     * <code>.Quadrublet trackerPhysicalRotation = 5;</code>
+     * <code>.Vector trackerScale = 4;</code>
      */
-    public boolean hasTrackerPhysicalRotation() {
-      return trackerPhysicalRotation_ != null;
+    public boolean hasTrackerScale() {
+      return trackerScale_ != null;
     }
     /**
-     * <code>.Quadrublet trackerPhysicalRotation = 5;</code>
+     * <code>.Vector trackerScale = 4;</code>
      */
-    public MultiUserSync.Quadrublet getTrackerPhysicalRotation() {
-      return trackerPhysicalRotation_ == null ? MultiUserSync.Quadrublet.getDefaultInstance() : trackerPhysicalRotation_;
+    public MultiUserSync.Vector getTrackerScale() {
+      return trackerScale_ == null ? MultiUserSync.Vector.getDefaultInstance() : trackerScale_;
     }
     /**
-     * <code>.Quadrublet trackerPhysicalRotation = 5;</code>
+     * <code>.Vector trackerScale = 4;</code>
      */
-    public MultiUserSync.QuadrubletOrBuilder getTrackerPhysicalRotationOrBuilder() {
-      return getTrackerPhysicalRotation();
+    public MultiUserSync.VectorOrBuilder getTrackerScaleOrBuilder() {
+      return getTrackerScale();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -1561,17 +1320,14 @@ public final class MultiUserSync {
       if (id_ != 0) {
         output.writeInt32(1, id_);
       }
-      if (trackerVRPosition_ != null) {
-        output.writeMessage(2, getTrackerVRPosition());
+      if (trackerPosition_ != null) {
+        output.writeMessage(2, getTrackerPosition());
       }
-      if (trackerVRRotation_ != null) {
-        output.writeMessage(3, getTrackerVRRotation());
+      if (trackerRotation_ != null) {
+        output.writeMessage(3, getTrackerRotation());
       }
-      if (trackerPhysicalPosition_ != null) {
-        output.writeMessage(4, getTrackerPhysicalPosition());
-      }
-      if (trackerPhysicalRotation_ != null) {
-        output.writeMessage(5, getTrackerPhysicalRotation());
+      if (trackerScale_ != null) {
+        output.writeMessage(4, getTrackerScale());
       }
       unknownFields.writeTo(output);
     }
@@ -1586,21 +1342,17 @@ public final class MultiUserSync {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(1, id_);
       }
-      if (trackerVRPosition_ != null) {
+      if (trackerPosition_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getTrackerVRPosition());
+          .computeMessageSize(2, getTrackerPosition());
       }
-      if (trackerVRRotation_ != null) {
+      if (trackerRotation_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getTrackerVRRotation());
+          .computeMessageSize(3, getTrackerRotation());
       }
-      if (trackerPhysicalPosition_ != null) {
+      if (trackerScale_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getTrackerPhysicalPosition());
-      }
-      if (trackerPhysicalRotation_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getTrackerPhysicalRotation());
+          .computeMessageSize(4, getTrackerScale());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1619,25 +1371,20 @@ public final class MultiUserSync {
 
       if (getId()
           != other.getId()) return false;
-      if (hasTrackerVRPosition() != other.hasTrackerVRPosition()) return false;
-      if (hasTrackerVRPosition()) {
-        if (!getTrackerVRPosition()
-            .equals(other.getTrackerVRPosition())) return false;
+      if (hasTrackerPosition() != other.hasTrackerPosition()) return false;
+      if (hasTrackerPosition()) {
+        if (!getTrackerPosition()
+            .equals(other.getTrackerPosition())) return false;
       }
-      if (hasTrackerVRRotation() != other.hasTrackerVRRotation()) return false;
-      if (hasTrackerVRRotation()) {
-        if (!getTrackerVRRotation()
-            .equals(other.getTrackerVRRotation())) return false;
+      if (hasTrackerRotation() != other.hasTrackerRotation()) return false;
+      if (hasTrackerRotation()) {
+        if (!getTrackerRotation()
+            .equals(other.getTrackerRotation())) return false;
       }
-      if (hasTrackerPhysicalPosition() != other.hasTrackerPhysicalPosition()) return false;
-      if (hasTrackerPhysicalPosition()) {
-        if (!getTrackerPhysicalPosition()
-            .equals(other.getTrackerPhysicalPosition())) return false;
-      }
-      if (hasTrackerPhysicalRotation() != other.hasTrackerPhysicalRotation()) return false;
-      if (hasTrackerPhysicalRotation()) {
-        if (!getTrackerPhysicalRotation()
-            .equals(other.getTrackerPhysicalRotation())) return false;
+      if (hasTrackerScale() != other.hasTrackerScale()) return false;
+      if (hasTrackerScale()) {
+        if (!getTrackerScale()
+            .equals(other.getTrackerScale())) return false;
       }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -1652,21 +1399,17 @@ public final class MultiUserSync {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + getId();
-      if (hasTrackerVRPosition()) {
-        hash = (37 * hash) + TRACKERVRPOSITION_FIELD_NUMBER;
-        hash = (53 * hash) + getTrackerVRPosition().hashCode();
+      if (hasTrackerPosition()) {
+        hash = (37 * hash) + TRACKERPOSITION_FIELD_NUMBER;
+        hash = (53 * hash) + getTrackerPosition().hashCode();
       }
-      if (hasTrackerVRRotation()) {
-        hash = (37 * hash) + TRACKERVRROTATION_FIELD_NUMBER;
-        hash = (53 * hash) + getTrackerVRRotation().hashCode();
+      if (hasTrackerRotation()) {
+        hash = (37 * hash) + TRACKERROTATION_FIELD_NUMBER;
+        hash = (53 * hash) + getTrackerRotation().hashCode();
       }
-      if (hasTrackerPhysicalPosition()) {
-        hash = (37 * hash) + TRACKERPHYSICALPOSITION_FIELD_NUMBER;
-        hash = (53 * hash) + getTrackerPhysicalPosition().hashCode();
-      }
-      if (hasTrackerPhysicalRotation()) {
-        hash = (37 * hash) + TRACKERPHYSICALROTATION_FIELD_NUMBER;
-        hash = (53 * hash) + getTrackerPhysicalRotation().hashCode();
+      if (hasTrackerScale()) {
+        hash = (37 * hash) + TRACKERSCALE_FIELD_NUMBER;
+        hash = (53 * hash) + getTrackerScale().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -1803,29 +1546,23 @@ public final class MultiUserSync {
         super.clear();
         id_ = 0;
 
-        if (trackerVRPositionBuilder_ == null) {
-          trackerVRPosition_ = null;
+        if (trackerPositionBuilder_ == null) {
+          trackerPosition_ = null;
         } else {
-          trackerVRPosition_ = null;
-          trackerVRPositionBuilder_ = null;
+          trackerPosition_ = null;
+          trackerPositionBuilder_ = null;
         }
-        if (trackerVRRotationBuilder_ == null) {
-          trackerVRRotation_ = null;
+        if (trackerRotationBuilder_ == null) {
+          trackerRotation_ = null;
         } else {
-          trackerVRRotation_ = null;
-          trackerVRRotationBuilder_ = null;
+          trackerRotation_ = null;
+          trackerRotationBuilder_ = null;
         }
-        if (trackerPhysicalPositionBuilder_ == null) {
-          trackerPhysicalPosition_ = null;
+        if (trackerScaleBuilder_ == null) {
+          trackerScale_ = null;
         } else {
-          trackerPhysicalPosition_ = null;
-          trackerPhysicalPositionBuilder_ = null;
-        }
-        if (trackerPhysicalRotationBuilder_ == null) {
-          trackerPhysicalRotation_ = null;
-        } else {
-          trackerPhysicalRotation_ = null;
-          trackerPhysicalRotationBuilder_ = null;
+          trackerScale_ = null;
+          trackerScaleBuilder_ = null;
         }
         return this;
       }
@@ -1854,25 +1591,20 @@ public final class MultiUserSync {
       public MultiUserSync.Tracker buildPartial() {
         MultiUserSync.Tracker result = new MultiUserSync.Tracker(this);
         result.id_ = id_;
-        if (trackerVRPositionBuilder_ == null) {
-          result.trackerVRPosition_ = trackerVRPosition_;
+        if (trackerPositionBuilder_ == null) {
+          result.trackerPosition_ = trackerPosition_;
         } else {
-          result.trackerVRPosition_ = trackerVRPositionBuilder_.build();
+          result.trackerPosition_ = trackerPositionBuilder_.build();
         }
-        if (trackerVRRotationBuilder_ == null) {
-          result.trackerVRRotation_ = trackerVRRotation_;
+        if (trackerRotationBuilder_ == null) {
+          result.trackerRotation_ = trackerRotation_;
         } else {
-          result.trackerVRRotation_ = trackerVRRotationBuilder_.build();
+          result.trackerRotation_ = trackerRotationBuilder_.build();
         }
-        if (trackerPhysicalPositionBuilder_ == null) {
-          result.trackerPhysicalPosition_ = trackerPhysicalPosition_;
+        if (trackerScaleBuilder_ == null) {
+          result.trackerScale_ = trackerScale_;
         } else {
-          result.trackerPhysicalPosition_ = trackerPhysicalPositionBuilder_.build();
-        }
-        if (trackerPhysicalRotationBuilder_ == null) {
-          result.trackerPhysicalRotation_ = trackerPhysicalRotation_;
-        } else {
-          result.trackerPhysicalRotation_ = trackerPhysicalRotationBuilder_.build();
+          result.trackerScale_ = trackerScaleBuilder_.build();
         }
         onBuilt();
         return result;
@@ -1925,17 +1657,14 @@ public final class MultiUserSync {
         if (other.getId() != 0) {
           setId(other.getId());
         }
-        if (other.hasTrackerVRPosition()) {
-          mergeTrackerVRPosition(other.getTrackerVRPosition());
+        if (other.hasTrackerPosition()) {
+          mergeTrackerPosition(other.getTrackerPosition());
         }
-        if (other.hasTrackerVRRotation()) {
-          mergeTrackerVRRotation(other.getTrackerVRRotation());
+        if (other.hasTrackerRotation()) {
+          mergeTrackerRotation(other.getTrackerRotation());
         }
-        if (other.hasTrackerPhysicalPosition()) {
-          mergeTrackerPhysicalPosition(other.getTrackerPhysicalPosition());
-        }
-        if (other.hasTrackerPhysicalRotation()) {
-          mergeTrackerPhysicalRotation(other.getTrackerPhysicalRotation());
+        if (other.hasTrackerScale()) {
+          mergeTrackerScale(other.getTrackerScale());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1992,472 +1721,355 @@ public final class MultiUserSync {
         return this;
       }
 
-      private MultiUserSync.Vector trackerVRPosition_;
+      private MultiUserSync.Vector trackerPosition_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> trackerVRPositionBuilder_;
+          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> trackerPositionBuilder_;
       /**
-       * <code>.Vector trackerVRPosition = 2;</code>
+       * <code>.Vector trackerPosition = 2;</code>
        */
-      public boolean hasTrackerVRPosition() {
-        return trackerVRPositionBuilder_ != null || trackerVRPosition_ != null;
+      public boolean hasTrackerPosition() {
+        return trackerPositionBuilder_ != null || trackerPosition_ != null;
       }
       /**
-       * <code>.Vector trackerVRPosition = 2;</code>
+       * <code>.Vector trackerPosition = 2;</code>
        */
-      public MultiUserSync.Vector getTrackerVRPosition() {
-        if (trackerVRPositionBuilder_ == null) {
-          return trackerVRPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : trackerVRPosition_;
+      public MultiUserSync.Vector getTrackerPosition() {
+        if (trackerPositionBuilder_ == null) {
+          return trackerPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : trackerPosition_;
         } else {
-          return trackerVRPositionBuilder_.getMessage();
+          return trackerPositionBuilder_.getMessage();
         }
       }
       /**
-       * <code>.Vector trackerVRPosition = 2;</code>
+       * <code>.Vector trackerPosition = 2;</code>
        */
-      public Builder setTrackerVRPosition(MultiUserSync.Vector value) {
-        if (trackerVRPositionBuilder_ == null) {
+      public Builder setTrackerPosition(MultiUserSync.Vector value) {
+        if (trackerPositionBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          trackerVRPosition_ = value;
+          trackerPosition_ = value;
           onChanged();
         } else {
-          trackerVRPositionBuilder_.setMessage(value);
+          trackerPositionBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.Vector trackerVRPosition = 2;</code>
+       * <code>.Vector trackerPosition = 2;</code>
        */
-      public Builder setTrackerVRPosition(
+      public Builder setTrackerPosition(
           MultiUserSync.Vector.Builder builderForValue) {
-        if (trackerVRPositionBuilder_ == null) {
-          trackerVRPosition_ = builderForValue.build();
+        if (trackerPositionBuilder_ == null) {
+          trackerPosition_ = builderForValue.build();
           onChanged();
         } else {
-          trackerVRPositionBuilder_.setMessage(builderForValue.build());
+          trackerPositionBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.Vector trackerVRPosition = 2;</code>
+       * <code>.Vector trackerPosition = 2;</code>
        */
-      public Builder mergeTrackerVRPosition(MultiUserSync.Vector value) {
-        if (trackerVRPositionBuilder_ == null) {
-          if (trackerVRPosition_ != null) {
-            trackerVRPosition_ =
-              MultiUserSync.Vector.newBuilder(trackerVRPosition_).mergeFrom(value).buildPartial();
+      public Builder mergeTrackerPosition(MultiUserSync.Vector value) {
+        if (trackerPositionBuilder_ == null) {
+          if (trackerPosition_ != null) {
+            trackerPosition_ =
+              MultiUserSync.Vector.newBuilder(trackerPosition_).mergeFrom(value).buildPartial();
           } else {
-            trackerVRPosition_ = value;
+            trackerPosition_ = value;
           }
           onChanged();
         } else {
-          trackerVRPositionBuilder_.mergeFrom(value);
+          trackerPositionBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.Vector trackerVRPosition = 2;</code>
+       * <code>.Vector trackerPosition = 2;</code>
        */
-      public Builder clearTrackerVRPosition() {
-        if (trackerVRPositionBuilder_ == null) {
-          trackerVRPosition_ = null;
+      public Builder clearTrackerPosition() {
+        if (trackerPositionBuilder_ == null) {
+          trackerPosition_ = null;
           onChanged();
         } else {
-          trackerVRPosition_ = null;
-          trackerVRPositionBuilder_ = null;
+          trackerPosition_ = null;
+          trackerPositionBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.Vector trackerVRPosition = 2;</code>
+       * <code>.Vector trackerPosition = 2;</code>
        */
-      public MultiUserSync.Vector.Builder getTrackerVRPositionBuilder() {
+      public MultiUserSync.Vector.Builder getTrackerPositionBuilder() {
         
         onChanged();
-        return getTrackerVRPositionFieldBuilder().getBuilder();
+        return getTrackerPositionFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector trackerVRPosition = 2;</code>
+       * <code>.Vector trackerPosition = 2;</code>
        */
-      public MultiUserSync.VectorOrBuilder getTrackerVRPositionOrBuilder() {
-        if (trackerVRPositionBuilder_ != null) {
-          return trackerVRPositionBuilder_.getMessageOrBuilder();
+      public MultiUserSync.VectorOrBuilder getTrackerPositionOrBuilder() {
+        if (trackerPositionBuilder_ != null) {
+          return trackerPositionBuilder_.getMessageOrBuilder();
         } else {
-          return trackerVRPosition_ == null ?
-              MultiUserSync.Vector.getDefaultInstance() : trackerVRPosition_;
+          return trackerPosition_ == null ?
+              MultiUserSync.Vector.getDefaultInstance() : trackerPosition_;
         }
       }
       /**
-       * <code>.Vector trackerVRPosition = 2;</code>
+       * <code>.Vector trackerPosition = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> 
-          getTrackerVRPositionFieldBuilder() {
-        if (trackerVRPositionBuilder_ == null) {
-          trackerVRPositionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getTrackerPositionFieldBuilder() {
+        if (trackerPositionBuilder_ == null) {
+          trackerPositionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder>(
-                  getTrackerVRPosition(),
+                  getTrackerPosition(),
                   getParentForChildren(),
                   isClean());
-          trackerVRPosition_ = null;
+          trackerPosition_ = null;
         }
-        return trackerVRPositionBuilder_;
+        return trackerPositionBuilder_;
       }
 
-      private MultiUserSync.Quadrublet trackerVRRotation_;
+      private MultiUserSync.Quadrublet trackerRotation_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          MultiUserSync.Quadrublet, MultiUserSync.Quadrublet.Builder, MultiUserSync.QuadrubletOrBuilder> trackerVRRotationBuilder_;
+          MultiUserSync.Quadrublet, MultiUserSync.Quadrublet.Builder, MultiUserSync.QuadrubletOrBuilder> trackerRotationBuilder_;
       /**
-       * <code>.Quadrublet trackerVRRotation = 3;</code>
+       * <code>.Quadrublet trackerRotation = 3;</code>
        */
-      public boolean hasTrackerVRRotation() {
-        return trackerVRRotationBuilder_ != null || trackerVRRotation_ != null;
+      public boolean hasTrackerRotation() {
+        return trackerRotationBuilder_ != null || trackerRotation_ != null;
       }
       /**
-       * <code>.Quadrublet trackerVRRotation = 3;</code>
+       * <code>.Quadrublet trackerRotation = 3;</code>
        */
-      public MultiUserSync.Quadrublet getTrackerVRRotation() {
-        if (trackerVRRotationBuilder_ == null) {
-          return trackerVRRotation_ == null ? MultiUserSync.Quadrublet.getDefaultInstance() : trackerVRRotation_;
+      public MultiUserSync.Quadrublet getTrackerRotation() {
+        if (trackerRotationBuilder_ == null) {
+          return trackerRotation_ == null ? MultiUserSync.Quadrublet.getDefaultInstance() : trackerRotation_;
         } else {
-          return trackerVRRotationBuilder_.getMessage();
+          return trackerRotationBuilder_.getMessage();
         }
       }
       /**
-       * <code>.Quadrublet trackerVRRotation = 3;</code>
+       * <code>.Quadrublet trackerRotation = 3;</code>
        */
-      public Builder setTrackerVRRotation(MultiUserSync.Quadrublet value) {
-        if (trackerVRRotationBuilder_ == null) {
+      public Builder setTrackerRotation(MultiUserSync.Quadrublet value) {
+        if (trackerRotationBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          trackerVRRotation_ = value;
+          trackerRotation_ = value;
           onChanged();
         } else {
-          trackerVRRotationBuilder_.setMessage(value);
+          trackerRotationBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.Quadrublet trackerVRRotation = 3;</code>
+       * <code>.Quadrublet trackerRotation = 3;</code>
        */
-      public Builder setTrackerVRRotation(
+      public Builder setTrackerRotation(
           MultiUserSync.Quadrublet.Builder builderForValue) {
-        if (trackerVRRotationBuilder_ == null) {
-          trackerVRRotation_ = builderForValue.build();
+        if (trackerRotationBuilder_ == null) {
+          trackerRotation_ = builderForValue.build();
           onChanged();
         } else {
-          trackerVRRotationBuilder_.setMessage(builderForValue.build());
+          trackerRotationBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.Quadrublet trackerVRRotation = 3;</code>
+       * <code>.Quadrublet trackerRotation = 3;</code>
        */
-      public Builder mergeTrackerVRRotation(MultiUserSync.Quadrublet value) {
-        if (trackerVRRotationBuilder_ == null) {
-          if (trackerVRRotation_ != null) {
-            trackerVRRotation_ =
-              MultiUserSync.Quadrublet.newBuilder(trackerVRRotation_).mergeFrom(value).buildPartial();
+      public Builder mergeTrackerRotation(MultiUserSync.Quadrublet value) {
+        if (trackerRotationBuilder_ == null) {
+          if (trackerRotation_ != null) {
+            trackerRotation_ =
+              MultiUserSync.Quadrublet.newBuilder(trackerRotation_).mergeFrom(value).buildPartial();
           } else {
-            trackerVRRotation_ = value;
+            trackerRotation_ = value;
           }
           onChanged();
         } else {
-          trackerVRRotationBuilder_.mergeFrom(value);
+          trackerRotationBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.Quadrublet trackerVRRotation = 3;</code>
+       * <code>.Quadrublet trackerRotation = 3;</code>
        */
-      public Builder clearTrackerVRRotation() {
-        if (trackerVRRotationBuilder_ == null) {
-          trackerVRRotation_ = null;
+      public Builder clearTrackerRotation() {
+        if (trackerRotationBuilder_ == null) {
+          trackerRotation_ = null;
           onChanged();
         } else {
-          trackerVRRotation_ = null;
-          trackerVRRotationBuilder_ = null;
+          trackerRotation_ = null;
+          trackerRotationBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.Quadrublet trackerVRRotation = 3;</code>
+       * <code>.Quadrublet trackerRotation = 3;</code>
        */
-      public MultiUserSync.Quadrublet.Builder getTrackerVRRotationBuilder() {
+      public MultiUserSync.Quadrublet.Builder getTrackerRotationBuilder() {
         
         onChanged();
-        return getTrackerVRRotationFieldBuilder().getBuilder();
+        return getTrackerRotationFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Quadrublet trackerVRRotation = 3;</code>
+       * <code>.Quadrublet trackerRotation = 3;</code>
        */
-      public MultiUserSync.QuadrubletOrBuilder getTrackerVRRotationOrBuilder() {
-        if (trackerVRRotationBuilder_ != null) {
-          return trackerVRRotationBuilder_.getMessageOrBuilder();
+      public MultiUserSync.QuadrubletOrBuilder getTrackerRotationOrBuilder() {
+        if (trackerRotationBuilder_ != null) {
+          return trackerRotationBuilder_.getMessageOrBuilder();
         } else {
-          return trackerVRRotation_ == null ?
-              MultiUserSync.Quadrublet.getDefaultInstance() : trackerVRRotation_;
+          return trackerRotation_ == null ?
+              MultiUserSync.Quadrublet.getDefaultInstance() : trackerRotation_;
         }
       }
       /**
-       * <code>.Quadrublet trackerVRRotation = 3;</code>
+       * <code>.Quadrublet trackerRotation = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           MultiUserSync.Quadrublet, MultiUserSync.Quadrublet.Builder, MultiUserSync.QuadrubletOrBuilder> 
-          getTrackerVRRotationFieldBuilder() {
-        if (trackerVRRotationBuilder_ == null) {
-          trackerVRRotationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getTrackerRotationFieldBuilder() {
+        if (trackerRotationBuilder_ == null) {
+          trackerRotationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               MultiUserSync.Quadrublet, MultiUserSync.Quadrublet.Builder, MultiUserSync.QuadrubletOrBuilder>(
-                  getTrackerVRRotation(),
+                  getTrackerRotation(),
                   getParentForChildren(),
                   isClean());
-          trackerVRRotation_ = null;
+          trackerRotation_ = null;
         }
-        return trackerVRRotationBuilder_;
+        return trackerRotationBuilder_;
       }
 
-      private MultiUserSync.Vector trackerPhysicalPosition_;
+      private MultiUserSync.Vector trackerScale_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> trackerPhysicalPositionBuilder_;
+          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> trackerScaleBuilder_;
       /**
-       * <code>.Vector trackerPhysicalPosition = 4;</code>
+       * <code>.Vector trackerScale = 4;</code>
        */
-      public boolean hasTrackerPhysicalPosition() {
-        return trackerPhysicalPositionBuilder_ != null || trackerPhysicalPosition_ != null;
+      public boolean hasTrackerScale() {
+        return trackerScaleBuilder_ != null || trackerScale_ != null;
       }
       /**
-       * <code>.Vector trackerPhysicalPosition = 4;</code>
+       * <code>.Vector trackerScale = 4;</code>
        */
-      public MultiUserSync.Vector getTrackerPhysicalPosition() {
-        if (trackerPhysicalPositionBuilder_ == null) {
-          return trackerPhysicalPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : trackerPhysicalPosition_;
+      public MultiUserSync.Vector getTrackerScale() {
+        if (trackerScaleBuilder_ == null) {
+          return trackerScale_ == null ? MultiUserSync.Vector.getDefaultInstance() : trackerScale_;
         } else {
-          return trackerPhysicalPositionBuilder_.getMessage();
+          return trackerScaleBuilder_.getMessage();
         }
       }
       /**
-       * <code>.Vector trackerPhysicalPosition = 4;</code>
+       * <code>.Vector trackerScale = 4;</code>
        */
-      public Builder setTrackerPhysicalPosition(MultiUserSync.Vector value) {
-        if (trackerPhysicalPositionBuilder_ == null) {
+      public Builder setTrackerScale(MultiUserSync.Vector value) {
+        if (trackerScaleBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          trackerPhysicalPosition_ = value;
+          trackerScale_ = value;
           onChanged();
         } else {
-          trackerPhysicalPositionBuilder_.setMessage(value);
+          trackerScaleBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.Vector trackerPhysicalPosition = 4;</code>
+       * <code>.Vector trackerScale = 4;</code>
        */
-      public Builder setTrackerPhysicalPosition(
+      public Builder setTrackerScale(
           MultiUserSync.Vector.Builder builderForValue) {
-        if (trackerPhysicalPositionBuilder_ == null) {
-          trackerPhysicalPosition_ = builderForValue.build();
+        if (trackerScaleBuilder_ == null) {
+          trackerScale_ = builderForValue.build();
           onChanged();
         } else {
-          trackerPhysicalPositionBuilder_.setMessage(builderForValue.build());
+          trackerScaleBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.Vector trackerPhysicalPosition = 4;</code>
+       * <code>.Vector trackerScale = 4;</code>
        */
-      public Builder mergeTrackerPhysicalPosition(MultiUserSync.Vector value) {
-        if (trackerPhysicalPositionBuilder_ == null) {
-          if (trackerPhysicalPosition_ != null) {
-            trackerPhysicalPosition_ =
-              MultiUserSync.Vector.newBuilder(trackerPhysicalPosition_).mergeFrom(value).buildPartial();
+      public Builder mergeTrackerScale(MultiUserSync.Vector value) {
+        if (trackerScaleBuilder_ == null) {
+          if (trackerScale_ != null) {
+            trackerScale_ =
+              MultiUserSync.Vector.newBuilder(trackerScale_).mergeFrom(value).buildPartial();
           } else {
-            trackerPhysicalPosition_ = value;
+            trackerScale_ = value;
           }
           onChanged();
         } else {
-          trackerPhysicalPositionBuilder_.mergeFrom(value);
+          trackerScaleBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.Vector trackerPhysicalPosition = 4;</code>
+       * <code>.Vector trackerScale = 4;</code>
        */
-      public Builder clearTrackerPhysicalPosition() {
-        if (trackerPhysicalPositionBuilder_ == null) {
-          trackerPhysicalPosition_ = null;
+      public Builder clearTrackerScale() {
+        if (trackerScaleBuilder_ == null) {
+          trackerScale_ = null;
           onChanged();
         } else {
-          trackerPhysicalPosition_ = null;
-          trackerPhysicalPositionBuilder_ = null;
+          trackerScale_ = null;
+          trackerScaleBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.Vector trackerPhysicalPosition = 4;</code>
+       * <code>.Vector trackerScale = 4;</code>
        */
-      public MultiUserSync.Vector.Builder getTrackerPhysicalPositionBuilder() {
+      public MultiUserSync.Vector.Builder getTrackerScaleBuilder() {
         
         onChanged();
-        return getTrackerPhysicalPositionFieldBuilder().getBuilder();
+        return getTrackerScaleFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector trackerPhysicalPosition = 4;</code>
+       * <code>.Vector trackerScale = 4;</code>
        */
-      public MultiUserSync.VectorOrBuilder getTrackerPhysicalPositionOrBuilder() {
-        if (trackerPhysicalPositionBuilder_ != null) {
-          return trackerPhysicalPositionBuilder_.getMessageOrBuilder();
+      public MultiUserSync.VectorOrBuilder getTrackerScaleOrBuilder() {
+        if (trackerScaleBuilder_ != null) {
+          return trackerScaleBuilder_.getMessageOrBuilder();
         } else {
-          return trackerPhysicalPosition_ == null ?
-              MultiUserSync.Vector.getDefaultInstance() : trackerPhysicalPosition_;
+          return trackerScale_ == null ?
+              MultiUserSync.Vector.getDefaultInstance() : trackerScale_;
         }
       }
       /**
-       * <code>.Vector trackerPhysicalPosition = 4;</code>
+       * <code>.Vector trackerScale = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> 
-          getTrackerPhysicalPositionFieldBuilder() {
-        if (trackerPhysicalPositionBuilder_ == null) {
-          trackerPhysicalPositionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getTrackerScaleFieldBuilder() {
+        if (trackerScaleBuilder_ == null) {
+          trackerScaleBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder>(
-                  getTrackerPhysicalPosition(),
+                  getTrackerScale(),
                   getParentForChildren(),
                   isClean());
-          trackerPhysicalPosition_ = null;
+          trackerScale_ = null;
         }
-        return trackerPhysicalPositionBuilder_;
-      }
-
-      private MultiUserSync.Quadrublet trackerPhysicalRotation_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          MultiUserSync.Quadrublet, MultiUserSync.Quadrublet.Builder, MultiUserSync.QuadrubletOrBuilder> trackerPhysicalRotationBuilder_;
-      /**
-       * <code>.Quadrublet trackerPhysicalRotation = 5;</code>
-       */
-      public boolean hasTrackerPhysicalRotation() {
-        return trackerPhysicalRotationBuilder_ != null || trackerPhysicalRotation_ != null;
-      }
-      /**
-       * <code>.Quadrublet trackerPhysicalRotation = 5;</code>
-       */
-      public MultiUserSync.Quadrublet getTrackerPhysicalRotation() {
-        if (trackerPhysicalRotationBuilder_ == null) {
-          return trackerPhysicalRotation_ == null ? MultiUserSync.Quadrublet.getDefaultInstance() : trackerPhysicalRotation_;
-        } else {
-          return trackerPhysicalRotationBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.Quadrublet trackerPhysicalRotation = 5;</code>
-       */
-      public Builder setTrackerPhysicalRotation(MultiUserSync.Quadrublet value) {
-        if (trackerPhysicalRotationBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          trackerPhysicalRotation_ = value;
-          onChanged();
-        } else {
-          trackerPhysicalRotationBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Quadrublet trackerPhysicalRotation = 5;</code>
-       */
-      public Builder setTrackerPhysicalRotation(
-          MultiUserSync.Quadrublet.Builder builderForValue) {
-        if (trackerPhysicalRotationBuilder_ == null) {
-          trackerPhysicalRotation_ = builderForValue.build();
-          onChanged();
-        } else {
-          trackerPhysicalRotationBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Quadrublet trackerPhysicalRotation = 5;</code>
-       */
-      public Builder mergeTrackerPhysicalRotation(MultiUserSync.Quadrublet value) {
-        if (trackerPhysicalRotationBuilder_ == null) {
-          if (trackerPhysicalRotation_ != null) {
-            trackerPhysicalRotation_ =
-              MultiUserSync.Quadrublet.newBuilder(trackerPhysicalRotation_).mergeFrom(value).buildPartial();
-          } else {
-            trackerPhysicalRotation_ = value;
-          }
-          onChanged();
-        } else {
-          trackerPhysicalRotationBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Quadrublet trackerPhysicalRotation = 5;</code>
-       */
-      public Builder clearTrackerPhysicalRotation() {
-        if (trackerPhysicalRotationBuilder_ == null) {
-          trackerPhysicalRotation_ = null;
-          onChanged();
-        } else {
-          trackerPhysicalRotation_ = null;
-          trackerPhysicalRotationBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Quadrublet trackerPhysicalRotation = 5;</code>
-       */
-      public MultiUserSync.Quadrublet.Builder getTrackerPhysicalRotationBuilder() {
-        
-        onChanged();
-        return getTrackerPhysicalRotationFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Quadrublet trackerPhysicalRotation = 5;</code>
-       */
-      public MultiUserSync.QuadrubletOrBuilder getTrackerPhysicalRotationOrBuilder() {
-        if (trackerPhysicalRotationBuilder_ != null) {
-          return trackerPhysicalRotationBuilder_.getMessageOrBuilder();
-        } else {
-          return trackerPhysicalRotation_ == null ?
-              MultiUserSync.Quadrublet.getDefaultInstance() : trackerPhysicalRotation_;
-        }
-      }
-      /**
-       * <code>.Quadrublet trackerPhysicalRotation = 5;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          MultiUserSync.Quadrublet, MultiUserSync.Quadrublet.Builder, MultiUserSync.QuadrubletOrBuilder> 
-          getTrackerPhysicalRotationFieldBuilder() {
-        if (trackerPhysicalRotationBuilder_ == null) {
-          trackerPhysicalRotationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              MultiUserSync.Quadrublet, MultiUserSync.Quadrublet.Builder, MultiUserSync.QuadrubletOrBuilder>(
-                  getTrackerPhysicalRotation(),
-                  getParentForChildren(),
-                  isClean());
-          trackerPhysicalRotation_ = null;
-        }
-        return trackerPhysicalRotationBuilder_;
+        return trackerScaleBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -4732,34 +4344,34 @@ public final class MultiUserSync {
 
   }
 
-  public interface ConfirmationOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:Confirmation)
+  public interface ResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:Response)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string confirm = 1;</code>
+     * <code>string response = 1;</code>
      */
-    java.lang.String getConfirm();
+    java.lang.String getResponse();
     /**
-     * <code>string confirm = 1;</code>
+     * <code>string response = 1;</code>
      */
     com.google.protobuf.ByteString
-        getConfirmBytes();
+        getResponseBytes();
   }
   /**
-   * Protobuf type {@code Confirmation}
+   * Protobuf type {@code Response}
    */
-  public  static final class Confirmation extends
+  public  static final class Response extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:Confirmation)
-      ConfirmationOrBuilder {
+      // @@protoc_insertion_point(message_implements:Response)
+      ResponseOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use Confirmation.newBuilder() to construct.
-    private Confirmation(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use Response.newBuilder() to construct.
+    private Response(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private Confirmation() {
-      confirm_ = "";
+    private Response() {
+      response_ = "";
     }
 
     @java.lang.Override
@@ -4767,7 +4379,7 @@ public final class MultiUserSync {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private Confirmation(
+    private Response(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -4789,7 +4401,7 @@ public final class MultiUserSync {
             case 10: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              confirm_ = s;
+              response_ = s;
               break;
             }
             default: {
@@ -4813,45 +4425,45 @@ public final class MultiUserSync {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return MultiUserSync.internal_static_Confirmation_descriptor;
+      return MultiUserSync.internal_static_Response_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return MultiUserSync.internal_static_Confirmation_fieldAccessorTable
+      return MultiUserSync.internal_static_Response_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              MultiUserSync.Confirmation.class, MultiUserSync.Confirmation.Builder.class);
+              MultiUserSync.Response.class, MultiUserSync.Response.Builder.class);
     }
 
-    public static final int CONFIRM_FIELD_NUMBER = 1;
-    private volatile java.lang.Object confirm_;
+    public static final int RESPONSE_FIELD_NUMBER = 1;
+    private volatile java.lang.Object response_;
     /**
-     * <code>string confirm = 1;</code>
+     * <code>string response = 1;</code>
      */
-    public java.lang.String getConfirm() {
-      java.lang.Object ref = confirm_;
+    public java.lang.String getResponse() {
+      java.lang.Object ref = response_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        confirm_ = s;
+        response_ = s;
         return s;
       }
     }
     /**
-     * <code>string confirm = 1;</code>
+     * <code>string response = 1;</code>
      */
     public com.google.protobuf.ByteString
-        getConfirmBytes() {
-      java.lang.Object ref = confirm_;
+        getResponseBytes() {
+      java.lang.Object ref = response_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        confirm_ = b;
+        response_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -4872,8 +4484,8 @@ public final class MultiUserSync {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!getConfirmBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, confirm_);
+      if (!getResponseBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, response_);
       }
       unknownFields.writeTo(output);
     }
@@ -4884,8 +4496,8 @@ public final class MultiUserSync {
       if (size != -1) return size;
 
       size = 0;
-      if (!getConfirmBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, confirm_);
+      if (!getResponseBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, response_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -4897,13 +4509,13 @@ public final class MultiUserSync {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof MultiUserSync.Confirmation)) {
+      if (!(obj instanceof MultiUserSync.Response)) {
         return super.equals(obj);
       }
-      MultiUserSync.Confirmation other = (MultiUserSync.Confirmation) obj;
+      MultiUserSync.Response other = (MultiUserSync.Response) obj;
 
-      if (!getConfirm()
-          .equals(other.getConfirm())) return false;
+      if (!getResponse()
+          .equals(other.getResponse())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -4915,76 +4527,76 @@ public final class MultiUserSync {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CONFIRM_FIELD_NUMBER;
-      hash = (53 * hash) + getConfirm().hashCode();
+      hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
+      hash = (53 * hash) + getResponse().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static MultiUserSync.Confirmation parseFrom(
+    public static MultiUserSync.Response parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static MultiUserSync.Confirmation parseFrom(
+    public static MultiUserSync.Response parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static MultiUserSync.Confirmation parseFrom(
+    public static MultiUserSync.Response parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static MultiUserSync.Confirmation parseFrom(
+    public static MultiUserSync.Response parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static MultiUserSync.Confirmation parseFrom(byte[] data)
+    public static MultiUserSync.Response parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static MultiUserSync.Confirmation parseFrom(
+    public static MultiUserSync.Response parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static MultiUserSync.Confirmation parseFrom(java.io.InputStream input)
+    public static MultiUserSync.Response parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static MultiUserSync.Confirmation parseFrom(
+    public static MultiUserSync.Response parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static MultiUserSync.Confirmation parseDelimitedFrom(java.io.InputStream input)
+    public static MultiUserSync.Response parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static MultiUserSync.Confirmation parseDelimitedFrom(
+    public static MultiUserSync.Response parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static MultiUserSync.Confirmation parseFrom(
+    public static MultiUserSync.Response parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static MultiUserSync.Confirmation parseFrom(
+    public static MultiUserSync.Response parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4997,7 +4609,7 @@ public final class MultiUserSync {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(MultiUserSync.Confirmation prototype) {
+    public static Builder newBuilder(MultiUserSync.Response prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -5013,26 +4625,26 @@ public final class MultiUserSync {
       return builder;
     }
     /**
-     * Protobuf type {@code Confirmation}
+     * Protobuf type {@code Response}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:Confirmation)
-        MultiUserSync.ConfirmationOrBuilder {
+        // @@protoc_insertion_point(builder_implements:Response)
+        MultiUserSync.ResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return MultiUserSync.internal_static_Confirmation_descriptor;
+        return MultiUserSync.internal_static_Response_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return MultiUserSync.internal_static_Confirmation_fieldAccessorTable
+        return MultiUserSync.internal_static_Response_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                MultiUserSync.Confirmation.class, MultiUserSync.Confirmation.Builder.class);
+                MultiUserSync.Response.class, MultiUserSync.Response.Builder.class);
       }
 
-      // Construct using MultiUserSync.Confirmation.newBuilder()
+      // Construct using MultiUserSync.Response.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -5050,7 +4662,7 @@ public final class MultiUserSync {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        confirm_ = "";
+        response_ = "";
 
         return this;
       }
@@ -5058,17 +4670,17 @@ public final class MultiUserSync {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return MultiUserSync.internal_static_Confirmation_descriptor;
+        return MultiUserSync.internal_static_Response_descriptor;
       }
 
       @java.lang.Override
-      public MultiUserSync.Confirmation getDefaultInstanceForType() {
-        return MultiUserSync.Confirmation.getDefaultInstance();
+      public MultiUserSync.Response getDefaultInstanceForType() {
+        return MultiUserSync.Response.getDefaultInstance();
       }
 
       @java.lang.Override
-      public MultiUserSync.Confirmation build() {
-        MultiUserSync.Confirmation result = buildPartial();
+      public MultiUserSync.Response build() {
+        MultiUserSync.Response result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -5076,9 +4688,9 @@ public final class MultiUserSync {
       }
 
       @java.lang.Override
-      public MultiUserSync.Confirmation buildPartial() {
-        MultiUserSync.Confirmation result = new MultiUserSync.Confirmation(this);
-        result.confirm_ = confirm_;
+      public MultiUserSync.Response buildPartial() {
+        MultiUserSync.Response result = new MultiUserSync.Response(this);
+        result.response_ = response_;
         onBuilt();
         return result;
       }
@@ -5117,18 +4729,18 @@ public final class MultiUserSync {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof MultiUserSync.Confirmation) {
-          return mergeFrom((MultiUserSync.Confirmation)other);
+        if (other instanceof MultiUserSync.Response) {
+          return mergeFrom((MultiUserSync.Response)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(MultiUserSync.Confirmation other) {
-        if (other == MultiUserSync.Confirmation.getDefaultInstance()) return this;
-        if (!other.getConfirm().isEmpty()) {
-          confirm_ = other.confirm_;
+      public Builder mergeFrom(MultiUserSync.Response other) {
+        if (other == MultiUserSync.Response.getDefaultInstance()) return this;
+        if (!other.getResponse().isEmpty()) {
+          response_ = other.response_;
           onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -5146,11 +4758,11 @@ public final class MultiUserSync {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        MultiUserSync.Confirmation parsedMessage = null;
+        MultiUserSync.Response parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (MultiUserSync.Confirmation) e.getUnfinishedMessage();
+          parsedMessage = (MultiUserSync.Response) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -5160,71 +4772,71 @@ public final class MultiUserSync {
         return this;
       }
 
-      private java.lang.Object confirm_ = "";
+      private java.lang.Object response_ = "";
       /**
-       * <code>string confirm = 1;</code>
+       * <code>string response = 1;</code>
        */
-      public java.lang.String getConfirm() {
-        java.lang.Object ref = confirm_;
+      public java.lang.String getResponse() {
+        java.lang.Object ref = response_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          confirm_ = s;
+          response_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string confirm = 1;</code>
+       * <code>string response = 1;</code>
        */
       public com.google.protobuf.ByteString
-          getConfirmBytes() {
-        java.lang.Object ref = confirm_;
+          getResponseBytes() {
+        java.lang.Object ref = response_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          confirm_ = b;
+          response_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string confirm = 1;</code>
+       * <code>string response = 1;</code>
        */
-      public Builder setConfirm(
+      public Builder setResponse(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        confirm_ = value;
+        response_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string confirm = 1;</code>
+       * <code>string response = 1;</code>
        */
-      public Builder clearConfirm() {
+      public Builder clearResponse() {
         
-        confirm_ = getDefaultInstance().getConfirm();
+        response_ = getDefaultInstance().getResponse();
         onChanged();
         return this;
       }
       /**
-       * <code>string confirm = 1;</code>
+       * <code>string response = 1;</code>
        */
-      public Builder setConfirmBytes(
+      public Builder setResponseBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        confirm_ = value;
+        response_ = value;
         onChanged();
         return this;
       }
@@ -5241,41 +4853,41 @@ public final class MultiUserSync {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:Confirmation)
+      // @@protoc_insertion_point(builder_scope:Response)
     }
 
-    // @@protoc_insertion_point(class_scope:Confirmation)
-    private static final MultiUserSync.Confirmation DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:Response)
+    private static final MultiUserSync.Response DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new MultiUserSync.Confirmation();
+      DEFAULT_INSTANCE = new MultiUserSync.Response();
     }
 
-    public static MultiUserSync.Confirmation getDefaultInstance() {
+    public static MultiUserSync.Response getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<Confirmation>
-        PARSER = new com.google.protobuf.AbstractParser<Confirmation>() {
+    private static final com.google.protobuf.Parser<Response>
+        PARSER = new com.google.protobuf.AbstractParser<Response>() {
       @java.lang.Override
-      public Confirmation parsePartialFrom(
+      public Response parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Confirmation(input, extensionRegistry);
+        return new Response(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<Confirmation> parser() {
+    public static com.google.protobuf.Parser<Response> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Confirmation> getParserForType() {
+    public com.google.protobuf.Parser<Response> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public MultiUserSync.Confirmation getDefaultInstanceForType() {
+    public MultiUserSync.Response getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -5312,10 +4924,10 @@ public final class MultiUserSync {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_RequestTracker_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Confirmation_descriptor;
+    internal_static_Response_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_Confirmation_fieldAccessorTable;
+      internal_static_Response_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -5325,28 +4937,23 @@ public final class MultiUserSync {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024multiUser-sync.proto\"\252\001\n\004User\022\n\n\002id\030\001 " +
-      "\001(\005\022\037\n\016userVRPosition\030\002 \001(\0132\007.Vector\022#\n\016" +
-      "userVRRotation\030\003 \001(\0132\013.Quadrublet\022%\n\024use" +
-      "rPhysicalPosition\030\004 \001(\0132\007.Vector\022)\n\024user" +
-      "PhysicalRotation\030\005 \001(\0132\013.Quadrublet\"\271\001\n\007" +
-      "Tracker\022\n\n\002id\030\001 \001(\005\022\"\n\021trackerVRPosition" +
-      "\030\002 \001(\0132\007.Vector\022&\n\021trackerVRRotation\030\003 \001" +
-      "(\0132\013.Quadrublet\022(\n\027trackerPhysicalPositi" +
-      "on\030\004 \001(\0132\007.Vector\022,\n\027trackerPhysicalRota" +
-      "tion\030\005 \001(\0132\013.Quadrublet\")\n\006Vector\022\t\n\001x\030\001" +
-      " \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\"8\n\nQuadrublet" +
-      "\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\022\t\n\001w\030\004" +
-      " \001(\002\"$\n\013RequestUser\022\025\n\rrequestUserID\030\001 \001" +
-      "(\005\"*\n\016RequestTracker\022\030\n\020requestTrackerID" +
-      "\030\001 \001(\005\"\037\n\014Confirmation\022\017\n\007confirm\030\001 \001(\t2" +
-      "\211\002\n\rmultiUserSync\022 \n\007getUser\022\014.RequestUs" +
-      "er\032\005.User\"\000\022!\n\007setUser\022\005.User\032\r.Confirma" +
-      "tion\"\000\022)\n\ngetTracker\022\017.RequestTracker\032\010." +
-      "Tracker\"\000\022\'\n\nsetTracker\022\010.Tracker\032\r.Conf" +
-      "irmation\"\000\022/\n\023setDistanceTeleport\022\007.Vect" +
-      "or\032\r.Confirmation\"\000\022.\n\023getDistanceTelepo" +
-      "rt\022\014.RequestUser\032\007.Vector\"\000b\006proto3"
+      "\n\024multiUser-sync.proto\"p\n\004User\022\n\n\002id\030\001 \001" +
+      "(\005\022\035\n\014userPosition\030\002 \001(\0132\007.Vector\022!\n\014use" +
+      "rRotation\030\003 \001(\0132\013.Quadrublet\022\032\n\tuserScal" +
+      "e\030\004 \001(\0132\007.Vector\"|\n\007Tracker\022\n\n\002id\030\001 \001(\005\022" +
+      " \n\017trackerPosition\030\002 \001(\0132\007.Vector\022$\n\017tra" +
+      "ckerRotation\030\003 \001(\0132\013.Quadrublet\022\035\n\014track" +
+      "erScale\030\004 \001(\0132\007.Vector\")\n\006Vector\022\t\n\001x\030\001 " +
+      "\001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\"8\n\nQuadrublet\022" +
+      "\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\022\t\n\001w\030\004 " +
+      "\001(\002\"$\n\013RequestUser\022\025\n\rrequestUserID\030\001 \001(" +
+      "\005\"*\n\016RequestTracker\022\030\n\020requestTrackerID\030" +
+      "\001 \001(\005\"\034\n\010Response\022\020\n\010response\030\001 \001(\t2\240\001\n\r" +
+      "multiUserSync\022 \n\007getUser\022\014.RequestUser\032\005" +
+      ".User\"\000\022\035\n\007setUser\022\005.User\032\t.Response\"\000\022)" +
+      "\n\ngetTracker\022\017.RequestTracker\032\010.Tracker\"" +
+      "\000\022#\n\nsetTracker\022\010.Tracker\032\t.Response\"\000b\006" +
+      "proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -5365,13 +4972,13 @@ public final class MultiUserSync {
     internal_static_User_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_User_descriptor,
-        new java.lang.String[] { "Id", "UserVRPosition", "UserVRRotation", "UserPhysicalPosition", "UserPhysicalRotation", });
+        new java.lang.String[] { "Id", "UserPosition", "UserRotation", "UserScale", });
     internal_static_Tracker_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_Tracker_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Tracker_descriptor,
-        new java.lang.String[] { "Id", "TrackerVRPosition", "TrackerVRRotation", "TrackerPhysicalPosition", "TrackerPhysicalRotation", });
+        new java.lang.String[] { "Id", "TrackerPosition", "TrackerRotation", "TrackerScale", });
     internal_static_Vector_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_Vector_fieldAccessorTable = new
@@ -5396,12 +5003,12 @@ public final class MultiUserSync {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RequestTracker_descriptor,
         new java.lang.String[] { "RequestTrackerID", });
-    internal_static_Confirmation_descriptor =
+    internal_static_Response_descriptor =
       getDescriptor().getMessageTypes().get(6);
-    internal_static_Confirmation_fieldAccessorTable = new
+    internal_static_Response_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_Confirmation_descriptor,
-        new java.lang.String[] { "Confirm", });
+        internal_static_Response_descriptor,
+        new java.lang.String[] { "Response", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
