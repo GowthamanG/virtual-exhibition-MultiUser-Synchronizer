@@ -58,21 +58,21 @@ public final class multiUserSyncGrpc {
   }
 
   private static volatile io.grpc.MethodDescriptor<MultiUserSync.User,
-      MultiUserSync.Response> getSetUserMethod;
+      MultiUserSync.Confirmation> getSetUserMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "setUser",
       requestType = MultiUserSync.User.class,
-      responseType = MultiUserSync.Response.class,
+      responseType = MultiUserSync.Confirmation.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<MultiUserSync.User,
-      MultiUserSync.Response> getSetUserMethod() {
-    io.grpc.MethodDescriptor<MultiUserSync.User, MultiUserSync.Response> getSetUserMethod;
+      MultiUserSync.Confirmation> getSetUserMethod() {
+    io.grpc.MethodDescriptor<MultiUserSync.User, MultiUserSync.Confirmation> getSetUserMethod;
     if ((getSetUserMethod = multiUserSyncGrpc.getSetUserMethod) == null) {
       synchronized (multiUserSyncGrpc.class) {
         if ((getSetUserMethod = multiUserSyncGrpc.getSetUserMethod) == null) {
           multiUserSyncGrpc.getSetUserMethod = getSetUserMethod = 
-              io.grpc.MethodDescriptor.<MultiUserSync.User, MultiUserSync.Response>newBuilder()
+              io.grpc.MethodDescriptor.<MultiUserSync.User, MultiUserSync.Confirmation>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "multiUserSync", "setUser"))
@@ -80,7 +80,7 @@ public final class multiUserSyncGrpc {
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   MultiUserSync.User.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  MultiUserSync.Response.getDefaultInstance()))
+                  MultiUserSync.Confirmation.getDefaultInstance()))
                   .setSchemaDescriptor(new multiUserSyncMethodDescriptorSupplier("setUser"))
                   .build();
           }
@@ -122,21 +122,21 @@ public final class multiUserSyncGrpc {
   }
 
   private static volatile io.grpc.MethodDescriptor<MultiUserSync.Tracker,
-      MultiUserSync.Response> getSetTrackerMethod;
+      MultiUserSync.Confirmation> getSetTrackerMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "setTracker",
       requestType = MultiUserSync.Tracker.class,
-      responseType = MultiUserSync.Response.class,
+      responseType = MultiUserSync.Confirmation.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<MultiUserSync.Tracker,
-      MultiUserSync.Response> getSetTrackerMethod() {
-    io.grpc.MethodDescriptor<MultiUserSync.Tracker, MultiUserSync.Response> getSetTrackerMethod;
+      MultiUserSync.Confirmation> getSetTrackerMethod() {
+    io.grpc.MethodDescriptor<MultiUserSync.Tracker, MultiUserSync.Confirmation> getSetTrackerMethod;
     if ((getSetTrackerMethod = multiUserSyncGrpc.getSetTrackerMethod) == null) {
       synchronized (multiUserSyncGrpc.class) {
         if ((getSetTrackerMethod = multiUserSyncGrpc.getSetTrackerMethod) == null) {
           multiUserSyncGrpc.getSetTrackerMethod = getSetTrackerMethod = 
-              io.grpc.MethodDescriptor.<MultiUserSync.Tracker, MultiUserSync.Response>newBuilder()
+              io.grpc.MethodDescriptor.<MultiUserSync.Tracker, MultiUserSync.Confirmation>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "multiUserSync", "setTracker"))
@@ -144,13 +144,77 @@ public final class multiUserSyncGrpc {
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   MultiUserSync.Tracker.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  MultiUserSync.Response.getDefaultInstance()))
+                  MultiUserSync.Confirmation.getDefaultInstance()))
                   .setSchemaDescriptor(new multiUserSyncMethodDescriptorSupplier("setTracker"))
                   .build();
           }
         }
      }
      return getSetTrackerMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<MultiUserSync.Vector,
+      MultiUserSync.Confirmation> getSetDistanceTeleportMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "setDistanceTeleport",
+      requestType = MultiUserSync.Vector.class,
+      responseType = MultiUserSync.Confirmation.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<MultiUserSync.Vector,
+      MultiUserSync.Confirmation> getSetDistanceTeleportMethod() {
+    io.grpc.MethodDescriptor<MultiUserSync.Vector, MultiUserSync.Confirmation> getSetDistanceTeleportMethod;
+    if ((getSetDistanceTeleportMethod = multiUserSyncGrpc.getSetDistanceTeleportMethod) == null) {
+      synchronized (multiUserSyncGrpc.class) {
+        if ((getSetDistanceTeleportMethod = multiUserSyncGrpc.getSetDistanceTeleportMethod) == null) {
+          multiUserSyncGrpc.getSetDistanceTeleportMethod = getSetDistanceTeleportMethod = 
+              io.grpc.MethodDescriptor.<MultiUserSync.Vector, MultiUserSync.Confirmation>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(
+                  "multiUserSync", "setDistanceTeleport"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  MultiUserSync.Vector.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  MultiUserSync.Confirmation.getDefaultInstance()))
+                  .setSchemaDescriptor(new multiUserSyncMethodDescriptorSupplier("setDistanceTeleport"))
+                  .build();
+          }
+        }
+     }
+     return getSetDistanceTeleportMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<MultiUserSync.RequestUser,
+      MultiUserSync.Vector> getGetDistanceTeleportMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "getDistanceTeleport",
+      requestType = MultiUserSync.RequestUser.class,
+      responseType = MultiUserSync.Vector.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<MultiUserSync.RequestUser,
+      MultiUserSync.Vector> getGetDistanceTeleportMethod() {
+    io.grpc.MethodDescriptor<MultiUserSync.RequestUser, MultiUserSync.Vector> getGetDistanceTeleportMethod;
+    if ((getGetDistanceTeleportMethod = multiUserSyncGrpc.getGetDistanceTeleportMethod) == null) {
+      synchronized (multiUserSyncGrpc.class) {
+        if ((getGetDistanceTeleportMethod = multiUserSyncGrpc.getGetDistanceTeleportMethod) == null) {
+          multiUserSyncGrpc.getGetDistanceTeleportMethod = getGetDistanceTeleportMethod = 
+              io.grpc.MethodDescriptor.<MultiUserSync.RequestUser, MultiUserSync.Vector>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(
+                  "multiUserSync", "getDistanceTeleport"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  MultiUserSync.RequestUser.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  MultiUserSync.Vector.getDefaultInstance()))
+                  .setSchemaDescriptor(new multiUserSyncMethodDescriptorSupplier("getDistanceTeleport"))
+                  .build();
+          }
+        }
+     }
+     return getGetDistanceTeleportMethod;
   }
 
   /**
@@ -190,7 +254,7 @@ public final class multiUserSyncGrpc {
     /**
      */
     public void setUser(MultiUserSync.User request,
-        io.grpc.stub.StreamObserver<MultiUserSync.Response> responseObserver) {
+        io.grpc.stub.StreamObserver<MultiUserSync.Confirmation> responseObserver) {
       asyncUnimplementedUnaryCall(getSetUserMethod(), responseObserver);
     }
 
@@ -204,8 +268,22 @@ public final class multiUserSyncGrpc {
     /**
      */
     public void setTracker(MultiUserSync.Tracker request,
-        io.grpc.stub.StreamObserver<MultiUserSync.Response> responseObserver) {
+        io.grpc.stub.StreamObserver<MultiUserSync.Confirmation> responseObserver) {
       asyncUnimplementedUnaryCall(getSetTrackerMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public void setDistanceTeleport(MultiUserSync.Vector request,
+        io.grpc.stub.StreamObserver<MultiUserSync.Confirmation> responseObserver) {
+      asyncUnimplementedUnaryCall(getSetDistanceTeleportMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public void getDistanceTeleport(MultiUserSync.RequestUser request,
+        io.grpc.stub.StreamObserver<MultiUserSync.Vector> responseObserver) {
+      asyncUnimplementedUnaryCall(getGetDistanceTeleportMethod(), responseObserver);
     }
 
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
@@ -222,7 +300,7 @@ public final class multiUserSyncGrpc {
             asyncUnaryCall(
               new MethodHandlers<
                 MultiUserSync.User,
-                MultiUserSync.Response>(
+                MultiUserSync.Confirmation>(
                   this, METHODID_SET_USER)))
           .addMethod(
             getGetTrackerMethod(),
@@ -236,8 +314,22 @@ public final class multiUserSyncGrpc {
             asyncUnaryCall(
               new MethodHandlers<
                 MultiUserSync.Tracker,
-                MultiUserSync.Response>(
+                MultiUserSync.Confirmation>(
                   this, METHODID_SET_TRACKER)))
+          .addMethod(
+            getSetDistanceTeleportMethod(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                MultiUserSync.Vector,
+                MultiUserSync.Confirmation>(
+                  this, METHODID_SET_DISTANCE_TELEPORT)))
+          .addMethod(
+            getGetDistanceTeleportMethod(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                MultiUserSync.RequestUser,
+                MultiUserSync.Vector>(
+                  this, METHODID_GET_DISTANCE_TELEPORT)))
           .build();
     }
   }
@@ -271,7 +363,7 @@ public final class multiUserSyncGrpc {
     /**
      */
     public void setUser(MultiUserSync.User request,
-        io.grpc.stub.StreamObserver<MultiUserSync.Response> responseObserver) {
+        io.grpc.stub.StreamObserver<MultiUserSync.Confirmation> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getSetUserMethod(), getCallOptions()), request, responseObserver);
     }
@@ -287,9 +379,25 @@ public final class multiUserSyncGrpc {
     /**
      */
     public void setTracker(MultiUserSync.Tracker request,
-        io.grpc.stub.StreamObserver<MultiUserSync.Response> responseObserver) {
+        io.grpc.stub.StreamObserver<MultiUserSync.Confirmation> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getSetTrackerMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void setDistanceTeleport(MultiUserSync.Vector request,
+        io.grpc.stub.StreamObserver<MultiUserSync.Confirmation> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getSetDistanceTeleportMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void getDistanceTeleport(MultiUserSync.RequestUser request,
+        io.grpc.stub.StreamObserver<MultiUserSync.Vector> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getGetDistanceTeleportMethod(), getCallOptions()), request, responseObserver);
     }
   }
 
@@ -320,7 +428,7 @@ public final class multiUserSyncGrpc {
 
     /**
      */
-    public MultiUserSync.Response setUser(MultiUserSync.User request) {
+    public MultiUserSync.Confirmation setUser(MultiUserSync.User request) {
       return blockingUnaryCall(
           getChannel(), getSetUserMethod(), getCallOptions(), request);
     }
@@ -334,9 +442,23 @@ public final class multiUserSyncGrpc {
 
     /**
      */
-    public MultiUserSync.Response setTracker(MultiUserSync.Tracker request) {
+    public MultiUserSync.Confirmation setTracker(MultiUserSync.Tracker request) {
       return blockingUnaryCall(
           getChannel(), getSetTrackerMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public MultiUserSync.Confirmation setDistanceTeleport(MultiUserSync.Vector request) {
+      return blockingUnaryCall(
+          getChannel(), getSetDistanceTeleportMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public MultiUserSync.Vector getDistanceTeleport(MultiUserSync.RequestUser request) {
+      return blockingUnaryCall(
+          getChannel(), getGetDistanceTeleportMethod(), getCallOptions(), request);
     }
   }
 
@@ -368,7 +490,7 @@ public final class multiUserSyncGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<MultiUserSync.Response> setUser(
+    public com.google.common.util.concurrent.ListenableFuture<MultiUserSync.Confirmation> setUser(
         MultiUserSync.User request) {
       return futureUnaryCall(
           getChannel().newCall(getSetUserMethod(), getCallOptions()), request);
@@ -384,10 +506,26 @@ public final class multiUserSyncGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<MultiUserSync.Response> setTracker(
+    public com.google.common.util.concurrent.ListenableFuture<MultiUserSync.Confirmation> setTracker(
         MultiUserSync.Tracker request) {
       return futureUnaryCall(
           getChannel().newCall(getSetTrackerMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<MultiUserSync.Confirmation> setDistanceTeleport(
+        MultiUserSync.Vector request) {
+      return futureUnaryCall(
+          getChannel().newCall(getSetDistanceTeleportMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<MultiUserSync.Vector> getDistanceTeleport(
+        MultiUserSync.RequestUser request) {
+      return futureUnaryCall(
+          getChannel().newCall(getGetDistanceTeleportMethod(), getCallOptions()), request);
     }
   }
 
@@ -395,6 +533,8 @@ public final class multiUserSyncGrpc {
   private static final int METHODID_SET_USER = 1;
   private static final int METHODID_GET_TRACKER = 2;
   private static final int METHODID_SET_TRACKER = 3;
+  private static final int METHODID_SET_DISTANCE_TELEPORT = 4;
+  private static final int METHODID_GET_DISTANCE_TELEPORT = 5;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -419,7 +559,7 @@ public final class multiUserSyncGrpc {
           break;
         case METHODID_SET_USER:
           serviceImpl.setUser((MultiUserSync.User) request,
-              (io.grpc.stub.StreamObserver<MultiUserSync.Response>) responseObserver);
+              (io.grpc.stub.StreamObserver<MultiUserSync.Confirmation>) responseObserver);
           break;
         case METHODID_GET_TRACKER:
           serviceImpl.getTracker((MultiUserSync.RequestTracker) request,
@@ -427,7 +567,15 @@ public final class multiUserSyncGrpc {
           break;
         case METHODID_SET_TRACKER:
           serviceImpl.setTracker((MultiUserSync.Tracker) request,
-              (io.grpc.stub.StreamObserver<MultiUserSync.Response>) responseObserver);
+              (io.grpc.stub.StreamObserver<MultiUserSync.Confirmation>) responseObserver);
+          break;
+        case METHODID_SET_DISTANCE_TELEPORT:
+          serviceImpl.setDistanceTeleport((MultiUserSync.Vector) request,
+              (io.grpc.stub.StreamObserver<MultiUserSync.Confirmation>) responseObserver);
+          break;
+        case METHODID_GET_DISTANCE_TELEPORT:
+          serviceImpl.getDistanceTeleport((MultiUserSync.RequestUser) request,
+              (io.grpc.stub.StreamObserver<MultiUserSync.Vector>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -494,6 +642,8 @@ public final class multiUserSyncGrpc {
               .addMethod(getSetUserMethod())
               .addMethod(getGetTrackerMethod())
               .addMethod(getSetTrackerMethod())
+              .addMethod(getSetDistanceTeleportMethod())
+              .addMethod(getGetDistanceTeleportMethod())
               .build();
         }
       }

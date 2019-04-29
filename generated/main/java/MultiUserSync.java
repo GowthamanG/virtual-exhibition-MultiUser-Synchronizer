@@ -72,19 +72,6 @@ public final class MultiUserSync {
      * <code>.Quadrublet userPhysicalRotation = 5;</code>
      */
     MultiUserSync.QuadrubletOrBuilder getUserPhysicalRotationOrBuilder();
-
-    /**
-     * <code>.Vector userOtherVRPosition = 6;</code>
-     */
-    boolean hasUserOtherVRPosition();
-    /**
-     * <code>.Vector userOtherVRPosition = 6;</code>
-     */
-    MultiUserSync.Vector getUserOtherVRPosition();
-    /**
-     * <code>.Vector userOtherVRPosition = 6;</code>
-     */
-    MultiUserSync.VectorOrBuilder getUserOtherVRPositionOrBuilder();
   }
   /**
    * Protobuf type {@code User}
@@ -178,19 +165,6 @@ public final class MultiUserSync {
               if (subBuilder != null) {
                 subBuilder.mergeFrom(userPhysicalRotation_);
                 userPhysicalRotation_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 50: {
-              MultiUserSync.Vector.Builder subBuilder = null;
-              if (userOtherVRPosition_ != null) {
-                subBuilder = userOtherVRPosition_.toBuilder();
-              }
-              userOtherVRPosition_ = input.readMessage(MultiUserSync.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(userOtherVRPosition_);
-                userOtherVRPosition_ = subBuilder.buildPartial();
               }
 
               break;
@@ -320,27 +294,6 @@ public final class MultiUserSync {
       return getUserPhysicalRotation();
     }
 
-    public static final int USEROTHERVRPOSITION_FIELD_NUMBER = 6;
-    private MultiUserSync.Vector userOtherVRPosition_;
-    /**
-     * <code>.Vector userOtherVRPosition = 6;</code>
-     */
-    public boolean hasUserOtherVRPosition() {
-      return userOtherVRPosition_ != null;
-    }
-    /**
-     * <code>.Vector userOtherVRPosition = 6;</code>
-     */
-    public MultiUserSync.Vector getUserOtherVRPosition() {
-      return userOtherVRPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : userOtherVRPosition_;
-    }
-    /**
-     * <code>.Vector userOtherVRPosition = 6;</code>
-     */
-    public MultiUserSync.VectorOrBuilder getUserOtherVRPositionOrBuilder() {
-      return getUserOtherVRPosition();
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -370,9 +323,6 @@ public final class MultiUserSync {
       if (userPhysicalRotation_ != null) {
         output.writeMessage(5, getUserPhysicalRotation());
       }
-      if (userOtherVRPosition_ != null) {
-        output.writeMessage(6, getUserOtherVRPosition());
-      }
       unknownFields.writeTo(output);
     }
 
@@ -401,10 +351,6 @@ public final class MultiUserSync {
       if (userPhysicalRotation_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(5, getUserPhysicalRotation());
-      }
-      if (userOtherVRPosition_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getUserOtherVRPosition());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -443,11 +389,6 @@ public final class MultiUserSync {
         if (!getUserPhysicalRotation()
             .equals(other.getUserPhysicalRotation())) return false;
       }
-      if (hasUserOtherVRPosition() != other.hasUserOtherVRPosition()) return false;
-      if (hasUserOtherVRPosition()) {
-        if (!getUserOtherVRPosition()
-            .equals(other.getUserOtherVRPosition())) return false;
-      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -476,10 +417,6 @@ public final class MultiUserSync {
       if (hasUserPhysicalRotation()) {
         hash = (37 * hash) + USERPHYSICALROTATION_FIELD_NUMBER;
         hash = (53 * hash) + getUserPhysicalRotation().hashCode();
-      }
-      if (hasUserOtherVRPosition()) {
-        hash = (37 * hash) + USEROTHERVRPOSITION_FIELD_NUMBER;
-        hash = (53 * hash) + getUserOtherVRPosition().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -640,12 +577,6 @@ public final class MultiUserSync {
           userPhysicalRotation_ = null;
           userPhysicalRotationBuilder_ = null;
         }
-        if (userOtherVRPositionBuilder_ == null) {
-          userOtherVRPosition_ = null;
-        } else {
-          userOtherVRPosition_ = null;
-          userOtherVRPositionBuilder_ = null;
-        }
         return this;
       }
 
@@ -692,11 +623,6 @@ public final class MultiUserSync {
           result.userPhysicalRotation_ = userPhysicalRotation_;
         } else {
           result.userPhysicalRotation_ = userPhysicalRotationBuilder_.build();
-        }
-        if (userOtherVRPositionBuilder_ == null) {
-          result.userOtherVRPosition_ = userOtherVRPosition_;
-        } else {
-          result.userOtherVRPosition_ = userOtherVRPositionBuilder_.build();
         }
         onBuilt();
         return result;
@@ -760,9 +686,6 @@ public final class MultiUserSync {
         }
         if (other.hasUserPhysicalRotation()) {
           mergeUserPhysicalRotation(other.getUserPhysicalRotation());
-        }
-        if (other.hasUserOtherVRPosition()) {
-          mergeUserOtherVRPosition(other.getUserOtherVRPosition());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1286,123 +1209,6 @@ public final class MultiUserSync {
         }
         return userPhysicalRotationBuilder_;
       }
-
-      private MultiUserSync.Vector userOtherVRPosition_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> userOtherVRPositionBuilder_;
-      /**
-       * <code>.Vector userOtherVRPosition = 6;</code>
-       */
-      public boolean hasUserOtherVRPosition() {
-        return userOtherVRPositionBuilder_ != null || userOtherVRPosition_ != null;
-      }
-      /**
-       * <code>.Vector userOtherVRPosition = 6;</code>
-       */
-      public MultiUserSync.Vector getUserOtherVRPosition() {
-        if (userOtherVRPositionBuilder_ == null) {
-          return userOtherVRPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : userOtherVRPosition_;
-        } else {
-          return userOtherVRPositionBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.Vector userOtherVRPosition = 6;</code>
-       */
-      public Builder setUserOtherVRPosition(MultiUserSync.Vector value) {
-        if (userOtherVRPositionBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          userOtherVRPosition_ = value;
-          onChanged();
-        } else {
-          userOtherVRPositionBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector userOtherVRPosition = 6;</code>
-       */
-      public Builder setUserOtherVRPosition(
-          MultiUserSync.Vector.Builder builderForValue) {
-        if (userOtherVRPositionBuilder_ == null) {
-          userOtherVRPosition_ = builderForValue.build();
-          onChanged();
-        } else {
-          userOtherVRPositionBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector userOtherVRPosition = 6;</code>
-       */
-      public Builder mergeUserOtherVRPosition(MultiUserSync.Vector value) {
-        if (userOtherVRPositionBuilder_ == null) {
-          if (userOtherVRPosition_ != null) {
-            userOtherVRPosition_ =
-              MultiUserSync.Vector.newBuilder(userOtherVRPosition_).mergeFrom(value).buildPartial();
-          } else {
-            userOtherVRPosition_ = value;
-          }
-          onChanged();
-        } else {
-          userOtherVRPositionBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector userOtherVRPosition = 6;</code>
-       */
-      public Builder clearUserOtherVRPosition() {
-        if (userOtherVRPositionBuilder_ == null) {
-          userOtherVRPosition_ = null;
-          onChanged();
-        } else {
-          userOtherVRPosition_ = null;
-          userOtherVRPositionBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector userOtherVRPosition = 6;</code>
-       */
-      public MultiUserSync.Vector.Builder getUserOtherVRPositionBuilder() {
-        
-        onChanged();
-        return getUserOtherVRPositionFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Vector userOtherVRPosition = 6;</code>
-       */
-      public MultiUserSync.VectorOrBuilder getUserOtherVRPositionOrBuilder() {
-        if (userOtherVRPositionBuilder_ != null) {
-          return userOtherVRPositionBuilder_.getMessageOrBuilder();
-        } else {
-          return userOtherVRPosition_ == null ?
-              MultiUserSync.Vector.getDefaultInstance() : userOtherVRPosition_;
-        }
-      }
-      /**
-       * <code>.Vector userOtherVRPosition = 6;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> 
-          getUserOtherVRPositionFieldBuilder() {
-        if (userOtherVRPositionBuilder_ == null) {
-          userOtherVRPositionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder>(
-                  getUserOtherVRPosition(),
-                  getParentForChildren(),
-                  isClean());
-          userOtherVRPosition_ = null;
-        }
-        return userOtherVRPositionBuilder_;
-      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -1516,19 +1322,6 @@ public final class MultiUserSync {
      * <code>.Quadrublet trackerPhysicalRotation = 5;</code>
      */
     MultiUserSync.QuadrubletOrBuilder getTrackerPhysicalRotationOrBuilder();
-
-    /**
-     * <code>.Vector userOtherVRPosition = 6;</code>
-     */
-    boolean hasUserOtherVRPosition();
-    /**
-     * <code>.Vector userOtherVRPosition = 6;</code>
-     */
-    MultiUserSync.Vector getUserOtherVRPosition();
-    /**
-     * <code>.Vector userOtherVRPosition = 6;</code>
-     */
-    MultiUserSync.VectorOrBuilder getUserOtherVRPositionOrBuilder();
   }
   /**
    * Protobuf type {@code Tracker}
@@ -1622,19 +1415,6 @@ public final class MultiUserSync {
               if (subBuilder != null) {
                 subBuilder.mergeFrom(trackerPhysicalRotation_);
                 trackerPhysicalRotation_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 50: {
-              MultiUserSync.Vector.Builder subBuilder = null;
-              if (userOtherVRPosition_ != null) {
-                subBuilder = userOtherVRPosition_.toBuilder();
-              }
-              userOtherVRPosition_ = input.readMessage(MultiUserSync.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(userOtherVRPosition_);
-                userOtherVRPosition_ = subBuilder.buildPartial();
               }
 
               break;
@@ -1764,27 +1544,6 @@ public final class MultiUserSync {
       return getTrackerPhysicalRotation();
     }
 
-    public static final int USEROTHERVRPOSITION_FIELD_NUMBER = 6;
-    private MultiUserSync.Vector userOtherVRPosition_;
-    /**
-     * <code>.Vector userOtherVRPosition = 6;</code>
-     */
-    public boolean hasUserOtherVRPosition() {
-      return userOtherVRPosition_ != null;
-    }
-    /**
-     * <code>.Vector userOtherVRPosition = 6;</code>
-     */
-    public MultiUserSync.Vector getUserOtherVRPosition() {
-      return userOtherVRPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : userOtherVRPosition_;
-    }
-    /**
-     * <code>.Vector userOtherVRPosition = 6;</code>
-     */
-    public MultiUserSync.VectorOrBuilder getUserOtherVRPositionOrBuilder() {
-      return getUserOtherVRPosition();
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -1814,9 +1573,6 @@ public final class MultiUserSync {
       if (trackerPhysicalRotation_ != null) {
         output.writeMessage(5, getTrackerPhysicalRotation());
       }
-      if (userOtherVRPosition_ != null) {
-        output.writeMessage(6, getUserOtherVRPosition());
-      }
       unknownFields.writeTo(output);
     }
 
@@ -1845,10 +1601,6 @@ public final class MultiUserSync {
       if (trackerPhysicalRotation_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(5, getTrackerPhysicalRotation());
-      }
-      if (userOtherVRPosition_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getUserOtherVRPosition());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1887,11 +1639,6 @@ public final class MultiUserSync {
         if (!getTrackerPhysicalRotation()
             .equals(other.getTrackerPhysicalRotation())) return false;
       }
-      if (hasUserOtherVRPosition() != other.hasUserOtherVRPosition()) return false;
-      if (hasUserOtherVRPosition()) {
-        if (!getUserOtherVRPosition()
-            .equals(other.getUserOtherVRPosition())) return false;
-      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1920,10 +1667,6 @@ public final class MultiUserSync {
       if (hasTrackerPhysicalRotation()) {
         hash = (37 * hash) + TRACKERPHYSICALROTATION_FIELD_NUMBER;
         hash = (53 * hash) + getTrackerPhysicalRotation().hashCode();
-      }
-      if (hasUserOtherVRPosition()) {
-        hash = (37 * hash) + USEROTHERVRPOSITION_FIELD_NUMBER;
-        hash = (53 * hash) + getUserOtherVRPosition().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -2084,12 +1827,6 @@ public final class MultiUserSync {
           trackerPhysicalRotation_ = null;
           trackerPhysicalRotationBuilder_ = null;
         }
-        if (userOtherVRPositionBuilder_ == null) {
-          userOtherVRPosition_ = null;
-        } else {
-          userOtherVRPosition_ = null;
-          userOtherVRPositionBuilder_ = null;
-        }
         return this;
       }
 
@@ -2136,11 +1873,6 @@ public final class MultiUserSync {
           result.trackerPhysicalRotation_ = trackerPhysicalRotation_;
         } else {
           result.trackerPhysicalRotation_ = trackerPhysicalRotationBuilder_.build();
-        }
-        if (userOtherVRPositionBuilder_ == null) {
-          result.userOtherVRPosition_ = userOtherVRPosition_;
-        } else {
-          result.userOtherVRPosition_ = userOtherVRPositionBuilder_.build();
         }
         onBuilt();
         return result;
@@ -2204,9 +1936,6 @@ public final class MultiUserSync {
         }
         if (other.hasTrackerPhysicalRotation()) {
           mergeTrackerPhysicalRotation(other.getTrackerPhysicalRotation());
-        }
-        if (other.hasUserOtherVRPosition()) {
-          mergeUserOtherVRPosition(other.getUserOtherVRPosition());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -2729,123 +2458,6 @@ public final class MultiUserSync {
           trackerPhysicalRotation_ = null;
         }
         return trackerPhysicalRotationBuilder_;
-      }
-
-      private MultiUserSync.Vector userOtherVRPosition_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> userOtherVRPositionBuilder_;
-      /**
-       * <code>.Vector userOtherVRPosition = 6;</code>
-       */
-      public boolean hasUserOtherVRPosition() {
-        return userOtherVRPositionBuilder_ != null || userOtherVRPosition_ != null;
-      }
-      /**
-       * <code>.Vector userOtherVRPosition = 6;</code>
-       */
-      public MultiUserSync.Vector getUserOtherVRPosition() {
-        if (userOtherVRPositionBuilder_ == null) {
-          return userOtherVRPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : userOtherVRPosition_;
-        } else {
-          return userOtherVRPositionBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.Vector userOtherVRPosition = 6;</code>
-       */
-      public Builder setUserOtherVRPosition(MultiUserSync.Vector value) {
-        if (userOtherVRPositionBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          userOtherVRPosition_ = value;
-          onChanged();
-        } else {
-          userOtherVRPositionBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector userOtherVRPosition = 6;</code>
-       */
-      public Builder setUserOtherVRPosition(
-          MultiUserSync.Vector.Builder builderForValue) {
-        if (userOtherVRPositionBuilder_ == null) {
-          userOtherVRPosition_ = builderForValue.build();
-          onChanged();
-        } else {
-          userOtherVRPositionBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector userOtherVRPosition = 6;</code>
-       */
-      public Builder mergeUserOtherVRPosition(MultiUserSync.Vector value) {
-        if (userOtherVRPositionBuilder_ == null) {
-          if (userOtherVRPosition_ != null) {
-            userOtherVRPosition_ =
-              MultiUserSync.Vector.newBuilder(userOtherVRPosition_).mergeFrom(value).buildPartial();
-          } else {
-            userOtherVRPosition_ = value;
-          }
-          onChanged();
-        } else {
-          userOtherVRPositionBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector userOtherVRPosition = 6;</code>
-       */
-      public Builder clearUserOtherVRPosition() {
-        if (userOtherVRPositionBuilder_ == null) {
-          userOtherVRPosition_ = null;
-          onChanged();
-        } else {
-          userOtherVRPosition_ = null;
-          userOtherVRPositionBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector userOtherVRPosition = 6;</code>
-       */
-      public MultiUserSync.Vector.Builder getUserOtherVRPositionBuilder() {
-        
-        onChanged();
-        return getUserOtherVRPositionFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Vector userOtherVRPosition = 6;</code>
-       */
-      public MultiUserSync.VectorOrBuilder getUserOtherVRPositionOrBuilder() {
-        if (userOtherVRPositionBuilder_ != null) {
-          return userOtherVRPositionBuilder_.getMessageOrBuilder();
-        } else {
-          return userOtherVRPosition_ == null ?
-              MultiUserSync.Vector.getDefaultInstance() : userOtherVRPosition_;
-        }
-      }
-      /**
-       * <code>.Vector userOtherVRPosition = 6;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> 
-          getUserOtherVRPositionFieldBuilder() {
-        if (userOtherVRPositionBuilder_ == null) {
-          userOtherVRPositionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder>(
-                  getUserOtherVRPosition(),
-                  getParentForChildren(),
-                  isClean());
-          userOtherVRPosition_ = null;
-        }
-        return userOtherVRPositionBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -5120,36 +4732,34 @@ public final class MultiUserSync {
 
   }
 
-  public interface ResponseOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:Response)
+  public interface ConfirmationOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:Confirmation)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector posInOtherVR = 1;</code>
+     * <code>string confirm = 1;</code>
      */
-    boolean hasPosInOtherVR();
+    java.lang.String getConfirm();
     /**
-     * <code>.Vector posInOtherVR = 1;</code>
+     * <code>string confirm = 1;</code>
      */
-    MultiUserSync.Vector getPosInOtherVR();
-    /**
-     * <code>.Vector posInOtherVR = 1;</code>
-     */
-    MultiUserSync.VectorOrBuilder getPosInOtherVROrBuilder();
+    com.google.protobuf.ByteString
+        getConfirmBytes();
   }
   /**
-   * Protobuf type {@code Response}
+   * Protobuf type {@code Confirmation}
    */
-  public  static final class Response extends
+  public  static final class Confirmation extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:Response)
-      ResponseOrBuilder {
+      // @@protoc_insertion_point(message_implements:Confirmation)
+      ConfirmationOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use Response.newBuilder() to construct.
-    private Response(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use Confirmation.newBuilder() to construct.
+    private Confirmation(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private Response() {
+    private Confirmation() {
+      confirm_ = "";
     }
 
     @java.lang.Override
@@ -5157,7 +4767,7 @@ public final class MultiUserSync {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private Response(
+    private Confirmation(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -5177,16 +4787,9 @@ public final class MultiUserSync {
               done = true;
               break;
             case 10: {
-              MultiUserSync.Vector.Builder subBuilder = null;
-              if (posInOtherVR_ != null) {
-                subBuilder = posInOtherVR_.toBuilder();
-              }
-              posInOtherVR_ = input.readMessage(MultiUserSync.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(posInOtherVR_);
-                posInOtherVR_ = subBuilder.buildPartial();
-              }
+              java.lang.String s = input.readStringRequireUtf8();
 
+              confirm_ = s;
               break;
             }
             default: {
@@ -5210,36 +4813,49 @@ public final class MultiUserSync {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return MultiUserSync.internal_static_Response_descriptor;
+      return MultiUserSync.internal_static_Confirmation_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return MultiUserSync.internal_static_Response_fieldAccessorTable
+      return MultiUserSync.internal_static_Confirmation_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              MultiUserSync.Response.class, MultiUserSync.Response.Builder.class);
+              MultiUserSync.Confirmation.class, MultiUserSync.Confirmation.Builder.class);
     }
 
-    public static final int POSINOTHERVR_FIELD_NUMBER = 1;
-    private MultiUserSync.Vector posInOtherVR_;
+    public static final int CONFIRM_FIELD_NUMBER = 1;
+    private volatile java.lang.Object confirm_;
     /**
-     * <code>.Vector posInOtherVR = 1;</code>
+     * <code>string confirm = 1;</code>
      */
-    public boolean hasPosInOtherVR() {
-      return posInOtherVR_ != null;
+    public java.lang.String getConfirm() {
+      java.lang.Object ref = confirm_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        confirm_ = s;
+        return s;
+      }
     }
     /**
-     * <code>.Vector posInOtherVR = 1;</code>
+     * <code>string confirm = 1;</code>
      */
-    public MultiUserSync.Vector getPosInOtherVR() {
-      return posInOtherVR_ == null ? MultiUserSync.Vector.getDefaultInstance() : posInOtherVR_;
-    }
-    /**
-     * <code>.Vector posInOtherVR = 1;</code>
-     */
-    public MultiUserSync.VectorOrBuilder getPosInOtherVROrBuilder() {
-      return getPosInOtherVR();
+    public com.google.protobuf.ByteString
+        getConfirmBytes() {
+      java.lang.Object ref = confirm_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        confirm_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
     private byte memoizedIsInitialized = -1;
@@ -5256,8 +4872,8 @@ public final class MultiUserSync {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (posInOtherVR_ != null) {
-        output.writeMessage(1, getPosInOtherVR());
+      if (!getConfirmBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, confirm_);
       }
       unknownFields.writeTo(output);
     }
@@ -5268,9 +4884,8 @@ public final class MultiUserSync {
       if (size != -1) return size;
 
       size = 0;
-      if (posInOtherVR_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getPosInOtherVR());
+      if (!getConfirmBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, confirm_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -5282,16 +4897,13 @@ public final class MultiUserSync {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof MultiUserSync.Response)) {
+      if (!(obj instanceof MultiUserSync.Confirmation)) {
         return super.equals(obj);
       }
-      MultiUserSync.Response other = (MultiUserSync.Response) obj;
+      MultiUserSync.Confirmation other = (MultiUserSync.Confirmation) obj;
 
-      if (hasPosInOtherVR() != other.hasPosInOtherVR()) return false;
-      if (hasPosInOtherVR()) {
-        if (!getPosInOtherVR()
-            .equals(other.getPosInOtherVR())) return false;
-      }
+      if (!getConfirm()
+          .equals(other.getConfirm())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -5303,78 +4915,76 @@ public final class MultiUserSync {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasPosInOtherVR()) {
-        hash = (37 * hash) + POSINOTHERVR_FIELD_NUMBER;
-        hash = (53 * hash) + getPosInOtherVR().hashCode();
-      }
+      hash = (37 * hash) + CONFIRM_FIELD_NUMBER;
+      hash = (53 * hash) + getConfirm().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static MultiUserSync.Response parseFrom(
+    public static MultiUserSync.Confirmation parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static MultiUserSync.Response parseFrom(
+    public static MultiUserSync.Confirmation parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static MultiUserSync.Response parseFrom(
+    public static MultiUserSync.Confirmation parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static MultiUserSync.Response parseFrom(
+    public static MultiUserSync.Confirmation parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static MultiUserSync.Response parseFrom(byte[] data)
+    public static MultiUserSync.Confirmation parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static MultiUserSync.Response parseFrom(
+    public static MultiUserSync.Confirmation parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static MultiUserSync.Response parseFrom(java.io.InputStream input)
+    public static MultiUserSync.Confirmation parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static MultiUserSync.Response parseFrom(
+    public static MultiUserSync.Confirmation parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static MultiUserSync.Response parseDelimitedFrom(java.io.InputStream input)
+    public static MultiUserSync.Confirmation parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static MultiUserSync.Response parseDelimitedFrom(
+    public static MultiUserSync.Confirmation parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static MultiUserSync.Response parseFrom(
+    public static MultiUserSync.Confirmation parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static MultiUserSync.Response parseFrom(
+    public static MultiUserSync.Confirmation parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -5387,7 +4997,7 @@ public final class MultiUserSync {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(MultiUserSync.Response prototype) {
+    public static Builder newBuilder(MultiUserSync.Confirmation prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -5403,26 +5013,26 @@ public final class MultiUserSync {
       return builder;
     }
     /**
-     * Protobuf type {@code Response}
+     * Protobuf type {@code Confirmation}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:Response)
-        MultiUserSync.ResponseOrBuilder {
+        // @@protoc_insertion_point(builder_implements:Confirmation)
+        MultiUserSync.ConfirmationOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return MultiUserSync.internal_static_Response_descriptor;
+        return MultiUserSync.internal_static_Confirmation_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return MultiUserSync.internal_static_Response_fieldAccessorTable
+        return MultiUserSync.internal_static_Confirmation_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                MultiUserSync.Response.class, MultiUserSync.Response.Builder.class);
+                MultiUserSync.Confirmation.class, MultiUserSync.Confirmation.Builder.class);
       }
 
-      // Construct using MultiUserSync.Response.newBuilder()
+      // Construct using MultiUserSync.Confirmation.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -5440,29 +5050,25 @@ public final class MultiUserSync {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (posInOtherVRBuilder_ == null) {
-          posInOtherVR_ = null;
-        } else {
-          posInOtherVR_ = null;
-          posInOtherVRBuilder_ = null;
-        }
+        confirm_ = "";
+
         return this;
       }
 
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return MultiUserSync.internal_static_Response_descriptor;
+        return MultiUserSync.internal_static_Confirmation_descriptor;
       }
 
       @java.lang.Override
-      public MultiUserSync.Response getDefaultInstanceForType() {
-        return MultiUserSync.Response.getDefaultInstance();
+      public MultiUserSync.Confirmation getDefaultInstanceForType() {
+        return MultiUserSync.Confirmation.getDefaultInstance();
       }
 
       @java.lang.Override
-      public MultiUserSync.Response build() {
-        MultiUserSync.Response result = buildPartial();
+      public MultiUserSync.Confirmation build() {
+        MultiUserSync.Confirmation result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -5470,13 +5076,9 @@ public final class MultiUserSync {
       }
 
       @java.lang.Override
-      public MultiUserSync.Response buildPartial() {
-        MultiUserSync.Response result = new MultiUserSync.Response(this);
-        if (posInOtherVRBuilder_ == null) {
-          result.posInOtherVR_ = posInOtherVR_;
-        } else {
-          result.posInOtherVR_ = posInOtherVRBuilder_.build();
-        }
+      public MultiUserSync.Confirmation buildPartial() {
+        MultiUserSync.Confirmation result = new MultiUserSync.Confirmation(this);
+        result.confirm_ = confirm_;
         onBuilt();
         return result;
       }
@@ -5515,18 +5117,19 @@ public final class MultiUserSync {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof MultiUserSync.Response) {
-          return mergeFrom((MultiUserSync.Response)other);
+        if (other instanceof MultiUserSync.Confirmation) {
+          return mergeFrom((MultiUserSync.Confirmation)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(MultiUserSync.Response other) {
-        if (other == MultiUserSync.Response.getDefaultInstance()) return this;
-        if (other.hasPosInOtherVR()) {
-          mergePosInOtherVR(other.getPosInOtherVR());
+      public Builder mergeFrom(MultiUserSync.Confirmation other) {
+        if (other == MultiUserSync.Confirmation.getDefaultInstance()) return this;
+        if (!other.getConfirm().isEmpty()) {
+          confirm_ = other.confirm_;
+          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -5543,11 +5146,11 @@ public final class MultiUserSync {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        MultiUserSync.Response parsedMessage = null;
+        MultiUserSync.Confirmation parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (MultiUserSync.Response) e.getUnfinishedMessage();
+          parsedMessage = (MultiUserSync.Confirmation) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -5557,121 +5160,73 @@ public final class MultiUserSync {
         return this;
       }
 
-      private MultiUserSync.Vector posInOtherVR_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> posInOtherVRBuilder_;
+      private java.lang.Object confirm_ = "";
       /**
-       * <code>.Vector posInOtherVR = 1;</code>
+       * <code>string confirm = 1;</code>
        */
-      public boolean hasPosInOtherVR() {
-        return posInOtherVRBuilder_ != null || posInOtherVR_ != null;
-      }
-      /**
-       * <code>.Vector posInOtherVR = 1;</code>
-       */
-      public MultiUserSync.Vector getPosInOtherVR() {
-        if (posInOtherVRBuilder_ == null) {
-          return posInOtherVR_ == null ? MultiUserSync.Vector.getDefaultInstance() : posInOtherVR_;
+      public java.lang.String getConfirm() {
+        java.lang.Object ref = confirm_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          confirm_ = s;
+          return s;
         } else {
-          return posInOtherVRBuilder_.getMessage();
+          return (java.lang.String) ref;
         }
       }
       /**
-       * <code>.Vector posInOtherVR = 1;</code>
+       * <code>string confirm = 1;</code>
        */
-      public Builder setPosInOtherVR(MultiUserSync.Vector value) {
-        if (posInOtherVRBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          posInOtherVR_ = value;
-          onChanged();
+      public com.google.protobuf.ByteString
+          getConfirmBytes() {
+        java.lang.Object ref = confirm_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          confirm_ = b;
+          return b;
         } else {
-          posInOtherVRBuilder_.setMessage(value);
+          return (com.google.protobuf.ByteString) ref;
         }
-
-        return this;
       }
       /**
-       * <code>.Vector posInOtherVR = 1;</code>
+       * <code>string confirm = 1;</code>
        */
-      public Builder setPosInOtherVR(
-          MultiUserSync.Vector.Builder builderForValue) {
-        if (posInOtherVRBuilder_ == null) {
-          posInOtherVR_ = builderForValue.build();
-          onChanged();
-        } else {
-          posInOtherVRBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector posInOtherVR = 1;</code>
-       */
-      public Builder mergePosInOtherVR(MultiUserSync.Vector value) {
-        if (posInOtherVRBuilder_ == null) {
-          if (posInOtherVR_ != null) {
-            posInOtherVR_ =
-              MultiUserSync.Vector.newBuilder(posInOtherVR_).mergeFrom(value).buildPartial();
-          } else {
-            posInOtherVR_ = value;
-          }
-          onChanged();
-        } else {
-          posInOtherVRBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector posInOtherVR = 1;</code>
-       */
-      public Builder clearPosInOtherVR() {
-        if (posInOtherVRBuilder_ == null) {
-          posInOtherVR_ = null;
-          onChanged();
-        } else {
-          posInOtherVR_ = null;
-          posInOtherVRBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector posInOtherVR = 1;</code>
-       */
-      public MultiUserSync.Vector.Builder getPosInOtherVRBuilder() {
-        
+      public Builder setConfirm(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        confirm_ = value;
         onChanged();
-        return getPosInOtherVRFieldBuilder().getBuilder();
+        return this;
       }
       /**
-       * <code>.Vector posInOtherVR = 1;</code>
+       * <code>string confirm = 1;</code>
        */
-      public MultiUserSync.VectorOrBuilder getPosInOtherVROrBuilder() {
-        if (posInOtherVRBuilder_ != null) {
-          return posInOtherVRBuilder_.getMessageOrBuilder();
-        } else {
-          return posInOtherVR_ == null ?
-              MultiUserSync.Vector.getDefaultInstance() : posInOtherVR_;
-        }
+      public Builder clearConfirm() {
+        
+        confirm_ = getDefaultInstance().getConfirm();
+        onChanged();
+        return this;
       }
       /**
-       * <code>.Vector posInOtherVR = 1;</code>
+       * <code>string confirm = 1;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> 
-          getPosInOtherVRFieldBuilder() {
-        if (posInOtherVRBuilder_ == null) {
-          posInOtherVRBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder>(
-                  getPosInOtherVR(),
-                  getParentForChildren(),
-                  isClean());
-          posInOtherVR_ = null;
-        }
-        return posInOtherVRBuilder_;
+      public Builder setConfirmBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        confirm_ = value;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -5686,41 +5241,41 @@ public final class MultiUserSync {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:Response)
+      // @@protoc_insertion_point(builder_scope:Confirmation)
     }
 
-    // @@protoc_insertion_point(class_scope:Response)
-    private static final MultiUserSync.Response DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:Confirmation)
+    private static final MultiUserSync.Confirmation DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new MultiUserSync.Response();
+      DEFAULT_INSTANCE = new MultiUserSync.Confirmation();
     }
 
-    public static MultiUserSync.Response getDefaultInstance() {
+    public static MultiUserSync.Confirmation getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<Response>
-        PARSER = new com.google.protobuf.AbstractParser<Response>() {
+    private static final com.google.protobuf.Parser<Confirmation>
+        PARSER = new com.google.protobuf.AbstractParser<Confirmation>() {
       @java.lang.Override
-      public Response parsePartialFrom(
+      public Confirmation parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Response(input, extensionRegistry);
+        return new Confirmation(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<Response> parser() {
+    public static com.google.protobuf.Parser<Confirmation> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Response> getParserForType() {
+    public com.google.protobuf.Parser<Confirmation> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public MultiUserSync.Response getDefaultInstanceForType() {
+    public MultiUserSync.Confirmation getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -5757,10 +5312,10 @@ public final class MultiUserSync {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_RequestTracker_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Response_descriptor;
+    internal_static_Confirmation_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_Response_fieldAccessorTable;
+      internal_static_Confirmation_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -5770,28 +5325,28 @@ public final class MultiUserSync {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024multiUser-sync.proto\"\320\001\n\004User\022\n\n\002id\030\001 " +
+      "\n\024multiUser-sync.proto\"\252\001\n\004User\022\n\n\002id\030\001 " +
       "\001(\005\022\037\n\016userVRPosition\030\002 \001(\0132\007.Vector\022#\n\016" +
       "userVRRotation\030\003 \001(\0132\013.Quadrublet\022%\n\024use" +
       "rPhysicalPosition\030\004 \001(\0132\007.Vector\022)\n\024user" +
-      "PhysicalRotation\030\005 \001(\0132\013.Quadrublet\022$\n\023u" +
-      "serOtherVRPosition\030\006 \001(\0132\007.Vector\"\337\001\n\007Tr" +
-      "acker\022\n\n\002id\030\001 \001(\005\022\"\n\021trackerVRPosition\030\002" +
-      " \001(\0132\007.Vector\022&\n\021trackerVRRotation\030\003 \001(\013" +
-      "2\013.Quadrublet\022(\n\027trackerPhysicalPosition" +
-      "\030\004 \001(\0132\007.Vector\022,\n\027trackerPhysicalRotati" +
-      "on\030\005 \001(\0132\013.Quadrublet\022$\n\023userOtherVRPosi" +
-      "tion\030\006 \001(\0132\007.Vector\")\n\006Vector\022\t\n\001x\030\001 \001(\002" +
-      "\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\"8\n\nQuadrublet\022\t\n\001" +
-      "x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\022\t\n\001w\030\004 \001(\002" +
-      "\"$\n\013RequestUser\022\025\n\rrequestUserID\030\001 \001(\005\"*" +
-      "\n\016RequestTracker\022\030\n\020requestTrackerID\030\001 \001" +
-      "(\005\")\n\010Response\022\035\n\014posInOtherVR\030\001 \001(\0132\007.V" +
-      "ector2\240\001\n\rmultiUserSync\022 \n\007getUser\022\014.Req" +
-      "uestUser\032\005.User\"\000\022\035\n\007setUser\022\005.User\032\t.Re" +
-      "sponse\"\000\022)\n\ngetTracker\022\017.RequestTracker\032" +
-      "\010.Tracker\"\000\022#\n\nsetTracker\022\010.Tracker\032\t.Re" +
-      "sponse\"\000b\006proto3"
+      "PhysicalRotation\030\005 \001(\0132\013.Quadrublet\"\271\001\n\007" +
+      "Tracker\022\n\n\002id\030\001 \001(\005\022\"\n\021trackerVRPosition" +
+      "\030\002 \001(\0132\007.Vector\022&\n\021trackerVRRotation\030\003 \001" +
+      "(\0132\013.Quadrublet\022(\n\027trackerPhysicalPositi" +
+      "on\030\004 \001(\0132\007.Vector\022,\n\027trackerPhysicalRota" +
+      "tion\030\005 \001(\0132\013.Quadrublet\")\n\006Vector\022\t\n\001x\030\001" +
+      " \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\"8\n\nQuadrublet" +
+      "\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\022\t\n\001w\030\004" +
+      " \001(\002\"$\n\013RequestUser\022\025\n\rrequestUserID\030\001 \001" +
+      "(\005\"*\n\016RequestTracker\022\030\n\020requestTrackerID" +
+      "\030\001 \001(\005\"\037\n\014Confirmation\022\017\n\007confirm\030\001 \001(\t2" +
+      "\211\002\n\rmultiUserSync\022 \n\007getUser\022\014.RequestUs" +
+      "er\032\005.User\"\000\022!\n\007setUser\022\005.User\032\r.Confirma" +
+      "tion\"\000\022)\n\ngetTracker\022\017.RequestTracker\032\010." +
+      "Tracker\"\000\022\'\n\nsetTracker\022\010.Tracker\032\r.Conf" +
+      "irmation\"\000\022/\n\023setDistanceTeleport\022\007.Vect" +
+      "or\032\r.Confirmation\"\000\022.\n\023getDistanceTelepo" +
+      "rt\022\014.RequestUser\032\007.Vector\"\000b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -5810,13 +5365,13 @@ public final class MultiUserSync {
     internal_static_User_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_User_descriptor,
-        new java.lang.String[] { "Id", "UserVRPosition", "UserVRRotation", "UserPhysicalPosition", "UserPhysicalRotation", "UserOtherVRPosition", });
+        new java.lang.String[] { "Id", "UserVRPosition", "UserVRRotation", "UserPhysicalPosition", "UserPhysicalRotation", });
     internal_static_Tracker_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_Tracker_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Tracker_descriptor,
-        new java.lang.String[] { "Id", "TrackerVRPosition", "TrackerVRRotation", "TrackerPhysicalPosition", "TrackerPhysicalRotation", "UserOtherVRPosition", });
+        new java.lang.String[] { "Id", "TrackerVRPosition", "TrackerVRRotation", "TrackerPhysicalPosition", "TrackerPhysicalRotation", });
     internal_static_Vector_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_Vector_fieldAccessorTable = new
@@ -5841,12 +5396,12 @@ public final class MultiUserSync {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RequestTracker_descriptor,
         new java.lang.String[] { "RequestTrackerID", });
-    internal_static_Response_descriptor =
+    internal_static_Confirmation_descriptor =
       getDescriptor().getMessageTypes().get(6);
-    internal_static_Response_fieldAccessorTable = new
+    internal_static_Confirmation_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_Response_descriptor,
-        new java.lang.String[] { "PosInOtherVR", });
+        internal_static_Confirmation_descriptor,
+        new java.lang.String[] { "Confirm", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
