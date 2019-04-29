@@ -30,10 +30,11 @@ public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
     public void setUser(MultiUserSync.User request, StreamObserver<MultiUserSync.Response> responseObserver) {
         users.put(request.getId(), request);
 
-        responseObserver.onNext(MultiUserSync.Response.newBuilder().
-                setResponse("User with ID: " + request.getId() + " is set: " + users.get(request.getId()).toString()).build());
+        /*responseObserver.onNext(MultiUserSync.Response.newBuilder().
+                setResponse("User with ID: " + request.getId() + " is set: " + users.get(request.getId()).toString()).build());*/
 
-        System.out.println(users);
+        responseObserver.onNext(MultiUserSync.Response.newBuilder()
+                .setPosInOtherVR(users.get(request.getId()).getUserOtherVRPosition()).build());
 
         responseObserver.onCompleted();
     }
@@ -58,8 +59,11 @@ public class MultiUserSyncImpl extends multiUserSyncGrpc.multiUserSyncImplBase {
     public void setTracker(MultiUserSync.Tracker request, StreamObserver<MultiUserSync.Response> responseObserver) {
         trackers.put(request.getId(), request);
 
-        responseObserver.onNext(MultiUserSync.Response.newBuilder().
-                setResponse("Tracker with ID: " + request.getId() + " is set: " + trackers.get(request.getId()).toString()).build());
+        /*responseObserver.onNext(MultiUserSync.Response.newBuilder().
+                setResponse("Tracker with ID: " + request.getId() + " is set: " + trackers.get(request.getId()).toString()).build());*/
+
+        responseObserver.onNext(MultiUserSync.Response.newBuilder()
+                .setPosInOtherVR(trackers.get(request.getId()).getUserOtherVRPosition()).build());
 
         responseObserver.onCompleted();
     }

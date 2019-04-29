@@ -72,6 +72,19 @@ public final class MultiUserSync {
      * <code>.Quadrublet userPhysicalRotation = 5;</code>
      */
     MultiUserSync.QuadrubletOrBuilder getUserPhysicalRotationOrBuilder();
+
+    /**
+     * <code>.Vector userOtherVRPosition = 6;</code>
+     */
+    boolean hasUserOtherVRPosition();
+    /**
+     * <code>.Vector userOtherVRPosition = 6;</code>
+     */
+    MultiUserSync.Vector getUserOtherVRPosition();
+    /**
+     * <code>.Vector userOtherVRPosition = 6;</code>
+     */
+    MultiUserSync.VectorOrBuilder getUserOtherVRPositionOrBuilder();
   }
   /**
    * Protobuf type {@code User}
@@ -165,6 +178,19 @@ public final class MultiUserSync {
               if (subBuilder != null) {
                 subBuilder.mergeFrom(userPhysicalRotation_);
                 userPhysicalRotation_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 50: {
+              MultiUserSync.Vector.Builder subBuilder = null;
+              if (userOtherVRPosition_ != null) {
+                subBuilder = userOtherVRPosition_.toBuilder();
+              }
+              userOtherVRPosition_ = input.readMessage(MultiUserSync.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(userOtherVRPosition_);
+                userOtherVRPosition_ = subBuilder.buildPartial();
               }
 
               break;
@@ -294,6 +320,27 @@ public final class MultiUserSync {
       return getUserPhysicalRotation();
     }
 
+    public static final int USEROTHERVRPOSITION_FIELD_NUMBER = 6;
+    private MultiUserSync.Vector userOtherVRPosition_;
+    /**
+     * <code>.Vector userOtherVRPosition = 6;</code>
+     */
+    public boolean hasUserOtherVRPosition() {
+      return userOtherVRPosition_ != null;
+    }
+    /**
+     * <code>.Vector userOtherVRPosition = 6;</code>
+     */
+    public MultiUserSync.Vector getUserOtherVRPosition() {
+      return userOtherVRPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : userOtherVRPosition_;
+    }
+    /**
+     * <code>.Vector userOtherVRPosition = 6;</code>
+     */
+    public MultiUserSync.VectorOrBuilder getUserOtherVRPositionOrBuilder() {
+      return getUserOtherVRPosition();
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -323,6 +370,9 @@ public final class MultiUserSync {
       if (userPhysicalRotation_ != null) {
         output.writeMessage(5, getUserPhysicalRotation());
       }
+      if (userOtherVRPosition_ != null) {
+        output.writeMessage(6, getUserOtherVRPosition());
+      }
       unknownFields.writeTo(output);
     }
 
@@ -351,6 +401,10 @@ public final class MultiUserSync {
       if (userPhysicalRotation_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(5, getUserPhysicalRotation());
+      }
+      if (userOtherVRPosition_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, getUserOtherVRPosition());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -389,6 +443,11 @@ public final class MultiUserSync {
         if (!getUserPhysicalRotation()
             .equals(other.getUserPhysicalRotation())) return false;
       }
+      if (hasUserOtherVRPosition() != other.hasUserOtherVRPosition()) return false;
+      if (hasUserOtherVRPosition()) {
+        if (!getUserOtherVRPosition()
+            .equals(other.getUserOtherVRPosition())) return false;
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -417,6 +476,10 @@ public final class MultiUserSync {
       if (hasUserPhysicalRotation()) {
         hash = (37 * hash) + USERPHYSICALROTATION_FIELD_NUMBER;
         hash = (53 * hash) + getUserPhysicalRotation().hashCode();
+      }
+      if (hasUserOtherVRPosition()) {
+        hash = (37 * hash) + USEROTHERVRPOSITION_FIELD_NUMBER;
+        hash = (53 * hash) + getUserOtherVRPosition().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -577,6 +640,12 @@ public final class MultiUserSync {
           userPhysicalRotation_ = null;
           userPhysicalRotationBuilder_ = null;
         }
+        if (userOtherVRPositionBuilder_ == null) {
+          userOtherVRPosition_ = null;
+        } else {
+          userOtherVRPosition_ = null;
+          userOtherVRPositionBuilder_ = null;
+        }
         return this;
       }
 
@@ -623,6 +692,11 @@ public final class MultiUserSync {
           result.userPhysicalRotation_ = userPhysicalRotation_;
         } else {
           result.userPhysicalRotation_ = userPhysicalRotationBuilder_.build();
+        }
+        if (userOtherVRPositionBuilder_ == null) {
+          result.userOtherVRPosition_ = userOtherVRPosition_;
+        } else {
+          result.userOtherVRPosition_ = userOtherVRPositionBuilder_.build();
         }
         onBuilt();
         return result;
@@ -686,6 +760,9 @@ public final class MultiUserSync {
         }
         if (other.hasUserPhysicalRotation()) {
           mergeUserPhysicalRotation(other.getUserPhysicalRotation());
+        }
+        if (other.hasUserOtherVRPosition()) {
+          mergeUserOtherVRPosition(other.getUserOtherVRPosition());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1209,6 +1286,123 @@ public final class MultiUserSync {
         }
         return userPhysicalRotationBuilder_;
       }
+
+      private MultiUserSync.Vector userOtherVRPosition_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> userOtherVRPositionBuilder_;
+      /**
+       * <code>.Vector userOtherVRPosition = 6;</code>
+       */
+      public boolean hasUserOtherVRPosition() {
+        return userOtherVRPositionBuilder_ != null || userOtherVRPosition_ != null;
+      }
+      /**
+       * <code>.Vector userOtherVRPosition = 6;</code>
+       */
+      public MultiUserSync.Vector getUserOtherVRPosition() {
+        if (userOtherVRPositionBuilder_ == null) {
+          return userOtherVRPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : userOtherVRPosition_;
+        } else {
+          return userOtherVRPositionBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector userOtherVRPosition = 6;</code>
+       */
+      public Builder setUserOtherVRPosition(MultiUserSync.Vector value) {
+        if (userOtherVRPositionBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          userOtherVRPosition_ = value;
+          onChanged();
+        } else {
+          userOtherVRPositionBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector userOtherVRPosition = 6;</code>
+       */
+      public Builder setUserOtherVRPosition(
+          MultiUserSync.Vector.Builder builderForValue) {
+        if (userOtherVRPositionBuilder_ == null) {
+          userOtherVRPosition_ = builderForValue.build();
+          onChanged();
+        } else {
+          userOtherVRPositionBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector userOtherVRPosition = 6;</code>
+       */
+      public Builder mergeUserOtherVRPosition(MultiUserSync.Vector value) {
+        if (userOtherVRPositionBuilder_ == null) {
+          if (userOtherVRPosition_ != null) {
+            userOtherVRPosition_ =
+              MultiUserSync.Vector.newBuilder(userOtherVRPosition_).mergeFrom(value).buildPartial();
+          } else {
+            userOtherVRPosition_ = value;
+          }
+          onChanged();
+        } else {
+          userOtherVRPositionBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector userOtherVRPosition = 6;</code>
+       */
+      public Builder clearUserOtherVRPosition() {
+        if (userOtherVRPositionBuilder_ == null) {
+          userOtherVRPosition_ = null;
+          onChanged();
+        } else {
+          userOtherVRPosition_ = null;
+          userOtherVRPositionBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector userOtherVRPosition = 6;</code>
+       */
+      public MultiUserSync.Vector.Builder getUserOtherVRPositionBuilder() {
+        
+        onChanged();
+        return getUserOtherVRPositionFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector userOtherVRPosition = 6;</code>
+       */
+      public MultiUserSync.VectorOrBuilder getUserOtherVRPositionOrBuilder() {
+        if (userOtherVRPositionBuilder_ != null) {
+          return userOtherVRPositionBuilder_.getMessageOrBuilder();
+        } else {
+          return userOtherVRPosition_ == null ?
+              MultiUserSync.Vector.getDefaultInstance() : userOtherVRPosition_;
+        }
+      }
+      /**
+       * <code>.Vector userOtherVRPosition = 6;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> 
+          getUserOtherVRPositionFieldBuilder() {
+        if (userOtherVRPositionBuilder_ == null) {
+          userOtherVRPositionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder>(
+                  getUserOtherVRPosition(),
+                  getParentForChildren(),
+                  isClean());
+          userOtherVRPosition_ = null;
+        }
+        return userOtherVRPositionBuilder_;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -1322,6 +1516,19 @@ public final class MultiUserSync {
      * <code>.Quadrublet trackerPhysicalRotation = 5;</code>
      */
     MultiUserSync.QuadrubletOrBuilder getTrackerPhysicalRotationOrBuilder();
+
+    /**
+     * <code>.Vector userOtherVRPosition = 6;</code>
+     */
+    boolean hasUserOtherVRPosition();
+    /**
+     * <code>.Vector userOtherVRPosition = 6;</code>
+     */
+    MultiUserSync.Vector getUserOtherVRPosition();
+    /**
+     * <code>.Vector userOtherVRPosition = 6;</code>
+     */
+    MultiUserSync.VectorOrBuilder getUserOtherVRPositionOrBuilder();
   }
   /**
    * Protobuf type {@code Tracker}
@@ -1415,6 +1622,19 @@ public final class MultiUserSync {
               if (subBuilder != null) {
                 subBuilder.mergeFrom(trackerPhysicalRotation_);
                 trackerPhysicalRotation_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 50: {
+              MultiUserSync.Vector.Builder subBuilder = null;
+              if (userOtherVRPosition_ != null) {
+                subBuilder = userOtherVRPosition_.toBuilder();
+              }
+              userOtherVRPosition_ = input.readMessage(MultiUserSync.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(userOtherVRPosition_);
+                userOtherVRPosition_ = subBuilder.buildPartial();
               }
 
               break;
@@ -1544,6 +1764,27 @@ public final class MultiUserSync {
       return getTrackerPhysicalRotation();
     }
 
+    public static final int USEROTHERVRPOSITION_FIELD_NUMBER = 6;
+    private MultiUserSync.Vector userOtherVRPosition_;
+    /**
+     * <code>.Vector userOtherVRPosition = 6;</code>
+     */
+    public boolean hasUserOtherVRPosition() {
+      return userOtherVRPosition_ != null;
+    }
+    /**
+     * <code>.Vector userOtherVRPosition = 6;</code>
+     */
+    public MultiUserSync.Vector getUserOtherVRPosition() {
+      return userOtherVRPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : userOtherVRPosition_;
+    }
+    /**
+     * <code>.Vector userOtherVRPosition = 6;</code>
+     */
+    public MultiUserSync.VectorOrBuilder getUserOtherVRPositionOrBuilder() {
+      return getUserOtherVRPosition();
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -1573,6 +1814,9 @@ public final class MultiUserSync {
       if (trackerPhysicalRotation_ != null) {
         output.writeMessage(5, getTrackerPhysicalRotation());
       }
+      if (userOtherVRPosition_ != null) {
+        output.writeMessage(6, getUserOtherVRPosition());
+      }
       unknownFields.writeTo(output);
     }
 
@@ -1601,6 +1845,10 @@ public final class MultiUserSync {
       if (trackerPhysicalRotation_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(5, getTrackerPhysicalRotation());
+      }
+      if (userOtherVRPosition_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, getUserOtherVRPosition());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1639,6 +1887,11 @@ public final class MultiUserSync {
         if (!getTrackerPhysicalRotation()
             .equals(other.getTrackerPhysicalRotation())) return false;
       }
+      if (hasUserOtherVRPosition() != other.hasUserOtherVRPosition()) return false;
+      if (hasUserOtherVRPosition()) {
+        if (!getUserOtherVRPosition()
+            .equals(other.getUserOtherVRPosition())) return false;
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1667,6 +1920,10 @@ public final class MultiUserSync {
       if (hasTrackerPhysicalRotation()) {
         hash = (37 * hash) + TRACKERPHYSICALROTATION_FIELD_NUMBER;
         hash = (53 * hash) + getTrackerPhysicalRotation().hashCode();
+      }
+      if (hasUserOtherVRPosition()) {
+        hash = (37 * hash) + USEROTHERVRPOSITION_FIELD_NUMBER;
+        hash = (53 * hash) + getUserOtherVRPosition().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -1827,6 +2084,12 @@ public final class MultiUserSync {
           trackerPhysicalRotation_ = null;
           trackerPhysicalRotationBuilder_ = null;
         }
+        if (userOtherVRPositionBuilder_ == null) {
+          userOtherVRPosition_ = null;
+        } else {
+          userOtherVRPosition_ = null;
+          userOtherVRPositionBuilder_ = null;
+        }
         return this;
       }
 
@@ -1873,6 +2136,11 @@ public final class MultiUserSync {
           result.trackerPhysicalRotation_ = trackerPhysicalRotation_;
         } else {
           result.trackerPhysicalRotation_ = trackerPhysicalRotationBuilder_.build();
+        }
+        if (userOtherVRPositionBuilder_ == null) {
+          result.userOtherVRPosition_ = userOtherVRPosition_;
+        } else {
+          result.userOtherVRPosition_ = userOtherVRPositionBuilder_.build();
         }
         onBuilt();
         return result;
@@ -1936,6 +2204,9 @@ public final class MultiUserSync {
         }
         if (other.hasTrackerPhysicalRotation()) {
           mergeTrackerPhysicalRotation(other.getTrackerPhysicalRotation());
+        }
+        if (other.hasUserOtherVRPosition()) {
+          mergeUserOtherVRPosition(other.getUserOtherVRPosition());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -2458,6 +2729,123 @@ public final class MultiUserSync {
           trackerPhysicalRotation_ = null;
         }
         return trackerPhysicalRotationBuilder_;
+      }
+
+      private MultiUserSync.Vector userOtherVRPosition_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> userOtherVRPositionBuilder_;
+      /**
+       * <code>.Vector userOtherVRPosition = 6;</code>
+       */
+      public boolean hasUserOtherVRPosition() {
+        return userOtherVRPositionBuilder_ != null || userOtherVRPosition_ != null;
+      }
+      /**
+       * <code>.Vector userOtherVRPosition = 6;</code>
+       */
+      public MultiUserSync.Vector getUserOtherVRPosition() {
+        if (userOtherVRPositionBuilder_ == null) {
+          return userOtherVRPosition_ == null ? MultiUserSync.Vector.getDefaultInstance() : userOtherVRPosition_;
+        } else {
+          return userOtherVRPositionBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector userOtherVRPosition = 6;</code>
+       */
+      public Builder setUserOtherVRPosition(MultiUserSync.Vector value) {
+        if (userOtherVRPositionBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          userOtherVRPosition_ = value;
+          onChanged();
+        } else {
+          userOtherVRPositionBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector userOtherVRPosition = 6;</code>
+       */
+      public Builder setUserOtherVRPosition(
+          MultiUserSync.Vector.Builder builderForValue) {
+        if (userOtherVRPositionBuilder_ == null) {
+          userOtherVRPosition_ = builderForValue.build();
+          onChanged();
+        } else {
+          userOtherVRPositionBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector userOtherVRPosition = 6;</code>
+       */
+      public Builder mergeUserOtherVRPosition(MultiUserSync.Vector value) {
+        if (userOtherVRPositionBuilder_ == null) {
+          if (userOtherVRPosition_ != null) {
+            userOtherVRPosition_ =
+              MultiUserSync.Vector.newBuilder(userOtherVRPosition_).mergeFrom(value).buildPartial();
+          } else {
+            userOtherVRPosition_ = value;
+          }
+          onChanged();
+        } else {
+          userOtherVRPositionBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector userOtherVRPosition = 6;</code>
+       */
+      public Builder clearUserOtherVRPosition() {
+        if (userOtherVRPositionBuilder_ == null) {
+          userOtherVRPosition_ = null;
+          onChanged();
+        } else {
+          userOtherVRPosition_ = null;
+          userOtherVRPositionBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector userOtherVRPosition = 6;</code>
+       */
+      public MultiUserSync.Vector.Builder getUserOtherVRPositionBuilder() {
+        
+        onChanged();
+        return getUserOtherVRPositionFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector userOtherVRPosition = 6;</code>
+       */
+      public MultiUserSync.VectorOrBuilder getUserOtherVRPositionOrBuilder() {
+        if (userOtherVRPositionBuilder_ != null) {
+          return userOtherVRPositionBuilder_.getMessageOrBuilder();
+        } else {
+          return userOtherVRPosition_ == null ?
+              MultiUserSync.Vector.getDefaultInstance() : userOtherVRPosition_;
+        }
+      }
+      /**
+       * <code>.Vector userOtherVRPosition = 6;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> 
+          getUserOtherVRPositionFieldBuilder() {
+        if (userOtherVRPositionBuilder_ == null) {
+          userOtherVRPositionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder>(
+                  getUserOtherVRPosition(),
+                  getParentForChildren(),
+                  isClean());
+          userOtherVRPosition_ = null;
+        }
+        return userOtherVRPositionBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -4737,14 +5125,17 @@ public final class MultiUserSync {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string response = 1;</code>
+     * <code>.Vector posInOtherVR = 1;</code>
      */
-    java.lang.String getResponse();
+    boolean hasPosInOtherVR();
     /**
-     * <code>string response = 1;</code>
+     * <code>.Vector posInOtherVR = 1;</code>
      */
-    com.google.protobuf.ByteString
-        getResponseBytes();
+    MultiUserSync.Vector getPosInOtherVR();
+    /**
+     * <code>.Vector posInOtherVR = 1;</code>
+     */
+    MultiUserSync.VectorOrBuilder getPosInOtherVROrBuilder();
   }
   /**
    * Protobuf type {@code Response}
@@ -4759,7 +5150,6 @@ public final class MultiUserSync {
       super(builder);
     }
     private Response() {
-      response_ = "";
     }
 
     @java.lang.Override
@@ -4787,9 +5177,16 @@ public final class MultiUserSync {
               done = true;
               break;
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
+              MultiUserSync.Vector.Builder subBuilder = null;
+              if (posInOtherVR_ != null) {
+                subBuilder = posInOtherVR_.toBuilder();
+              }
+              posInOtherVR_ = input.readMessage(MultiUserSync.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(posInOtherVR_);
+                posInOtherVR_ = subBuilder.buildPartial();
+              }
 
-              response_ = s;
               break;
             }
             default: {
@@ -4824,38 +5221,25 @@ public final class MultiUserSync {
               MultiUserSync.Response.class, MultiUserSync.Response.Builder.class);
     }
 
-    public static final int RESPONSE_FIELD_NUMBER = 1;
-    private volatile java.lang.Object response_;
+    public static final int POSINOTHERVR_FIELD_NUMBER = 1;
+    private MultiUserSync.Vector posInOtherVR_;
     /**
-     * <code>string response = 1;</code>
+     * <code>.Vector posInOtherVR = 1;</code>
      */
-    public java.lang.String getResponse() {
-      java.lang.Object ref = response_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        response_ = s;
-        return s;
-      }
+    public boolean hasPosInOtherVR() {
+      return posInOtherVR_ != null;
     }
     /**
-     * <code>string response = 1;</code>
+     * <code>.Vector posInOtherVR = 1;</code>
      */
-    public com.google.protobuf.ByteString
-        getResponseBytes() {
-      java.lang.Object ref = response_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        response_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public MultiUserSync.Vector getPosInOtherVR() {
+      return posInOtherVR_ == null ? MultiUserSync.Vector.getDefaultInstance() : posInOtherVR_;
+    }
+    /**
+     * <code>.Vector posInOtherVR = 1;</code>
+     */
+    public MultiUserSync.VectorOrBuilder getPosInOtherVROrBuilder() {
+      return getPosInOtherVR();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -4872,8 +5256,8 @@ public final class MultiUserSync {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!getResponseBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, response_);
+      if (posInOtherVR_ != null) {
+        output.writeMessage(1, getPosInOtherVR());
       }
       unknownFields.writeTo(output);
     }
@@ -4884,8 +5268,9 @@ public final class MultiUserSync {
       if (size != -1) return size;
 
       size = 0;
-      if (!getResponseBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, response_);
+      if (posInOtherVR_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getPosInOtherVR());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -4902,8 +5287,11 @@ public final class MultiUserSync {
       }
       MultiUserSync.Response other = (MultiUserSync.Response) obj;
 
-      if (!getResponse()
-          .equals(other.getResponse())) return false;
+      if (hasPosInOtherVR() != other.hasPosInOtherVR()) return false;
+      if (hasPosInOtherVR()) {
+        if (!getPosInOtherVR()
+            .equals(other.getPosInOtherVR())) return false;
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -4915,8 +5303,10 @@ public final class MultiUserSync {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
-      hash = (53 * hash) + getResponse().hashCode();
+      if (hasPosInOtherVR()) {
+        hash = (37 * hash) + POSINOTHERVR_FIELD_NUMBER;
+        hash = (53 * hash) + getPosInOtherVR().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -5050,8 +5440,12 @@ public final class MultiUserSync {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        response_ = "";
-
+        if (posInOtherVRBuilder_ == null) {
+          posInOtherVR_ = null;
+        } else {
+          posInOtherVR_ = null;
+          posInOtherVRBuilder_ = null;
+        }
         return this;
       }
 
@@ -5078,7 +5472,11 @@ public final class MultiUserSync {
       @java.lang.Override
       public MultiUserSync.Response buildPartial() {
         MultiUserSync.Response result = new MultiUserSync.Response(this);
-        result.response_ = response_;
+        if (posInOtherVRBuilder_ == null) {
+          result.posInOtherVR_ = posInOtherVR_;
+        } else {
+          result.posInOtherVR_ = posInOtherVRBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -5127,9 +5525,8 @@ public final class MultiUserSync {
 
       public Builder mergeFrom(MultiUserSync.Response other) {
         if (other == MultiUserSync.Response.getDefaultInstance()) return this;
-        if (!other.getResponse().isEmpty()) {
-          response_ = other.response_;
-          onChanged();
+        if (other.hasPosInOtherVR()) {
+          mergePosInOtherVR(other.getPosInOtherVR());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -5160,73 +5557,121 @@ public final class MultiUserSync {
         return this;
       }
 
-      private java.lang.Object response_ = "";
+      private MultiUserSync.Vector posInOtherVR_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> posInOtherVRBuilder_;
       /**
-       * <code>string response = 1;</code>
+       * <code>.Vector posInOtherVR = 1;</code>
        */
-      public java.lang.String getResponse() {
-        java.lang.Object ref = response_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          response_ = s;
-          return s;
+      public boolean hasPosInOtherVR() {
+        return posInOtherVRBuilder_ != null || posInOtherVR_ != null;
+      }
+      /**
+       * <code>.Vector posInOtherVR = 1;</code>
+       */
+      public MultiUserSync.Vector getPosInOtherVR() {
+        if (posInOtherVRBuilder_ == null) {
+          return posInOtherVR_ == null ? MultiUserSync.Vector.getDefaultInstance() : posInOtherVR_;
         } else {
-          return (java.lang.String) ref;
+          return posInOtherVRBuilder_.getMessage();
         }
       }
       /**
-       * <code>string response = 1;</code>
+       * <code>.Vector posInOtherVR = 1;</code>
        */
-      public com.google.protobuf.ByteString
-          getResponseBytes() {
-        java.lang.Object ref = response_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          response_ = b;
-          return b;
+      public Builder setPosInOtherVR(MultiUserSync.Vector value) {
+        if (posInOtherVRBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          posInOtherVR_ = value;
+          onChanged();
         } else {
-          return (com.google.protobuf.ByteString) ref;
+          posInOtherVRBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector posInOtherVR = 1;</code>
+       */
+      public Builder setPosInOtherVR(
+          MultiUserSync.Vector.Builder builderForValue) {
+        if (posInOtherVRBuilder_ == null) {
+          posInOtherVR_ = builderForValue.build();
+          onChanged();
+        } else {
+          posInOtherVRBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector posInOtherVR = 1;</code>
+       */
+      public Builder mergePosInOtherVR(MultiUserSync.Vector value) {
+        if (posInOtherVRBuilder_ == null) {
+          if (posInOtherVR_ != null) {
+            posInOtherVR_ =
+              MultiUserSync.Vector.newBuilder(posInOtherVR_).mergeFrom(value).buildPartial();
+          } else {
+            posInOtherVR_ = value;
+          }
+          onChanged();
+        } else {
+          posInOtherVRBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector posInOtherVR = 1;</code>
+       */
+      public Builder clearPosInOtherVR() {
+        if (posInOtherVRBuilder_ == null) {
+          posInOtherVR_ = null;
+          onChanged();
+        } else {
+          posInOtherVR_ = null;
+          posInOtherVRBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector posInOtherVR = 1;</code>
+       */
+      public MultiUserSync.Vector.Builder getPosInOtherVRBuilder() {
+        
+        onChanged();
+        return getPosInOtherVRFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector posInOtherVR = 1;</code>
+       */
+      public MultiUserSync.VectorOrBuilder getPosInOtherVROrBuilder() {
+        if (posInOtherVRBuilder_ != null) {
+          return posInOtherVRBuilder_.getMessageOrBuilder();
+        } else {
+          return posInOtherVR_ == null ?
+              MultiUserSync.Vector.getDefaultInstance() : posInOtherVR_;
         }
       }
       /**
-       * <code>string response = 1;</code>
+       * <code>.Vector posInOtherVR = 1;</code>
        */
-      public Builder setResponse(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        response_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string response = 1;</code>
-       */
-      public Builder clearResponse() {
-        
-        response_ = getDefaultInstance().getResponse();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string response = 1;</code>
-       */
-      public Builder setResponseBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        response_ = value;
-        onChanged();
-        return this;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder> 
+          getPosInOtherVRFieldBuilder() {
+        if (posInOtherVRBuilder_ == null) {
+          posInOtherVRBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              MultiUserSync.Vector, MultiUserSync.Vector.Builder, MultiUserSync.VectorOrBuilder>(
+                  getPosInOtherVR(),
+                  getParentForChildren(),
+                  isClean());
+          posInOtherVR_ = null;
+        }
+        return posInOtherVRBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -5325,26 +5770,28 @@ public final class MultiUserSync {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024multiUser-sync.proto\"\252\001\n\004User\022\n\n\002id\030\001 " +
+      "\n\024multiUser-sync.proto\"\320\001\n\004User\022\n\n\002id\030\001 " +
       "\001(\005\022\037\n\016userVRPosition\030\002 \001(\0132\007.Vector\022#\n\016" +
       "userVRRotation\030\003 \001(\0132\013.Quadrublet\022%\n\024use" +
       "rPhysicalPosition\030\004 \001(\0132\007.Vector\022)\n\024user" +
-      "PhysicalRotation\030\005 \001(\0132\013.Quadrublet\"\271\001\n\007" +
-      "Tracker\022\n\n\002id\030\001 \001(\005\022\"\n\021trackerVRPosition" +
-      "\030\002 \001(\0132\007.Vector\022&\n\021trackerVRRotation\030\003 \001" +
-      "(\0132\013.Quadrublet\022(\n\027trackerPhysicalPositi" +
-      "on\030\004 \001(\0132\007.Vector\022,\n\027trackerPhysicalRota" +
-      "tion\030\005 \001(\0132\013.Quadrublet\")\n\006Vector\022\t\n\001x\030\001" +
-      " \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\"8\n\nQuadrublet" +
-      "\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\022\t\n\001w\030\004" +
-      " \001(\002\"$\n\013RequestUser\022\025\n\rrequestUserID\030\001 \001" +
-      "(\005\"*\n\016RequestTracker\022\030\n\020requestTrackerID" +
-      "\030\001 \001(\005\"\034\n\010Response\022\020\n\010response\030\001 \001(\t2\240\001\n" +
-      "\rmultiUserSync\022 \n\007getUser\022\014.RequestUser\032" +
-      "\005.User\"\000\022\035\n\007setUser\022\005.User\032\t.Response\"\000\022" +
-      ")\n\ngetTracker\022\017.RequestTracker\032\010.Tracker" +
-      "\"\000\022#\n\nsetTracker\022\010.Tracker\032\t.Response\"\000b" +
-      "\006proto3"
+      "PhysicalRotation\030\005 \001(\0132\013.Quadrublet\022$\n\023u" +
+      "serOtherVRPosition\030\006 \001(\0132\007.Vector\"\337\001\n\007Tr" +
+      "acker\022\n\n\002id\030\001 \001(\005\022\"\n\021trackerVRPosition\030\002" +
+      " \001(\0132\007.Vector\022&\n\021trackerVRRotation\030\003 \001(\013" +
+      "2\013.Quadrublet\022(\n\027trackerPhysicalPosition" +
+      "\030\004 \001(\0132\007.Vector\022,\n\027trackerPhysicalRotati" +
+      "on\030\005 \001(\0132\013.Quadrublet\022$\n\023userOtherVRPosi" +
+      "tion\030\006 \001(\0132\007.Vector\")\n\006Vector\022\t\n\001x\030\001 \001(\002" +
+      "\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\"8\n\nQuadrublet\022\t\n\001" +
+      "x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\022\t\n\001w\030\004 \001(\002" +
+      "\"$\n\013RequestUser\022\025\n\rrequestUserID\030\001 \001(\005\"*" +
+      "\n\016RequestTracker\022\030\n\020requestTrackerID\030\001 \001" +
+      "(\005\")\n\010Response\022\035\n\014posInOtherVR\030\001 \001(\0132\007.V" +
+      "ector2\240\001\n\rmultiUserSync\022 \n\007getUser\022\014.Req" +
+      "uestUser\032\005.User\"\000\022\035\n\007setUser\022\005.User\032\t.Re" +
+      "sponse\"\000\022)\n\ngetTracker\022\017.RequestTracker\032" +
+      "\010.Tracker\"\000\022#\n\nsetTracker\022\010.Tracker\032\t.Re" +
+      "sponse\"\000b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -5363,13 +5810,13 @@ public final class MultiUserSync {
     internal_static_User_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_User_descriptor,
-        new java.lang.String[] { "Id", "UserVRPosition", "UserVRRotation", "UserPhysicalPosition", "UserPhysicalRotation", });
+        new java.lang.String[] { "Id", "UserVRPosition", "UserVRRotation", "UserPhysicalPosition", "UserPhysicalRotation", "UserOtherVRPosition", });
     internal_static_Tracker_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_Tracker_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Tracker_descriptor,
-        new java.lang.String[] { "Id", "TrackerVRPosition", "TrackerVRRotation", "TrackerPhysicalPosition", "TrackerPhysicalRotation", });
+        new java.lang.String[] { "Id", "TrackerVRPosition", "TrackerVRRotation", "TrackerPhysicalPosition", "TrackerPhysicalRotation", "UserOtherVRPosition", });
     internal_static_Vector_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_Vector_fieldAccessorTable = new
@@ -5399,7 +5846,7 @@ public final class MultiUserSync {
     internal_static_Response_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Response_descriptor,
-        new java.lang.String[] { "Response", });
+        new java.lang.String[] { "PosInOtherVR", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
